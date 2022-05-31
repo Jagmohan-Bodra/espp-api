@@ -1,0 +1,267 @@
+[{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721001"
+  },
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754001"
+  },
+  "sendDate": "09-09-2000",
+  "message": "Internal note 1",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.149Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:26.149Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721002"
+  },
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754002"
+  },
+  "sendDate": "09-09-2000",
+  "message": "Internal note 2",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27.149Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:27.149Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721003"
+  },
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754003"
+  },
+  "sendDate": "09-09-2000",
+  "message": "Internal note 3",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:28.149Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:28.149Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721004"
+  },
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754001"
+  },
+  "sendDate": "09-09-2000",
+  "message": "Internal note 4",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.149Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:29.149Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721005"
+  },
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754002"
+  },
+  "sendDate": "09-09-2000",
+  "message": "Internal note 5",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30.149Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:30.149Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721006"
+  },
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754003"
+  },
+  "sendDate": "09-09-2000",
+  "message": "Internal note 6",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720002"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:31.149Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:31.149Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721007"
+  },
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754001"
+  },
+  "sendDate": "09-09-2000",
+  "message": "Internal note 7",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720002"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:32.149Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:32.149Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721008"
+  },
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754002"
+  },
+  "sendDate": "09-09-2000",
+  "message": "Internal note 8",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720003"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:33.149Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:33.149Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721009"
+  },
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754003"
+  },
+  "sendDate": "09-09-2000",
+  "message": "Internal note 9",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720003"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:34.149Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:34.149Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721010"
+  },
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754001"
+  },
+  "sendDate": "09-09-2000",
+  "message": "Internal note 10",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720003"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:35.149Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:35.149Z"
+  }
+},{
+  "_id": {
+    "$oid": "60efe219996abd0020d02123"
+  },
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754001"
+  },
+  "sendDate": "2021-07-15T07:22:01+00:00",
+  "message": "a",
+  "customer": {
+    "$oid": "60e2b88f388b7700212e3b68"
+  },
+  "createdAt": {
+    "$date": "2021-07-15T07:22:01.634Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-15T07:22:01.634Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60efe2fb996abd0020d02124"
+  },
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754001"
+  },
+  "sendDate": "2021-07-15T07:25:47+00:00",
+  "message": "b",
+  "customer": {
+    "$oid": "60e2b88f388b7700212e3b68"
+  },
+  "createdAt": {
+    "$date": "2021-07-15T07:25:47.699Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-15T07:25:47.699Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610777791df5340020d31c66"
+  },
+  "user": {
+    "$oid": "6103d2d01df5340020d31c5d"
+  },
+  "sendDate": "2021-08-02T04:41:29+00:00",
+  "message": "1",
+  "customer": {
+    "$oid": "610228af6133d70020b8a4a4"
+  },
+  "createdAt": {
+    "$date": "2021-08-02T04:41:29.578Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:41:29.578Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6107777f1df5340020d31c67"
+  },
+  "user": {
+    "$oid": "6103d2d01df5340020d31c5d"
+  },
+  "sendDate": "2021-08-02T04:41:35+00:00",
+  "message": "1",
+  "customer": {
+    "$oid": "610228af6133d70020b8a4a4"
+  },
+  "createdAt": {
+    "$date": "2021-08-02T04:41:35.916Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:41:35.916Z"
+  },
+  "__v": 0
+}]

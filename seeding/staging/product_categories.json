@@ -1,0 +1,3652 @@
+[{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723014"
+  },
+  "name": "Art & Craft Materials",
+  "url": "art-&-craft-materials",
+  "code": "art-&-craft-materials",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Art & Craft Materials",
+  "status": "ENABLED",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:26.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723001"
+  },
+  "name": "Modelling Clay / Dough",
+  "url": "codelling-clay-dough",
+  "code": "codelling-clay-dough",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Modelling Clay / Dough",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723015"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:28.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:28.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723015"
+  },
+  "name": "Craft Materials",
+  "url": "craft-materials",
+  "code": "craft-materials",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Craft Materials",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723014"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:27.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723002"
+  },
+  "name": "Glue",
+  "url": "glue",
+  "code": "glue",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Glue",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723015"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:29.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723019"
+  },
+  "name": "Marker / Pencil",
+  "url": "marker-pencil",
+  "code": "marker-pencil",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "marker-pencil",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723014"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:31.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:31.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723004"
+  },
+  "name": "Fibre Tip Markers",
+  "url": "fibre-tip-markers",
+  "code": "fibre-tip-markers",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "fibre-tip-markers",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723019"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:32.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:32.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723003"
+  },
+  "name": "Board / Paper",
+  "url": "board-paper",
+  "code": "board-paper",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Board / Paper",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723015"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:30.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723005"
+  },
+  "name": "Colour Pen",
+  "url": "colour-pen",
+  "code": "colour-pen",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "colour-pen",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723019"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:33.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:33.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723006"
+  },
+  "name": "Drawing Pencil",
+  "url": "drawing-pencil",
+  "code": "drawing-pencil",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "drawing-pencil",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723019"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:34.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:34.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723009"
+  },
+  "name": "Colour Paper / Card",
+  "url": "colour-paper-card",
+  "code": "colour-paper-card",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "colour-paper-card",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723023"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:38.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:38.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723023"
+  },
+  "name": "Paper",
+  "url": "paper",
+  "code": "paper",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "paper",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723014"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:35.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:35.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723008"
+  },
+  "name": "Construction Paper",
+  "url": "construction-paper",
+  "code": "construction-paper",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "construction-paper",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723023"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:37.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:37.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723007"
+  },
+  "name": "Drawing Paper",
+  "url": "drawing-paper",
+  "code": "drawing-paper",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "drawing-paper",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723023"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:36.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:36.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723010"
+  },
+  "name": "Acrylic Colours",
+  "url": "acrylic-colours",
+  "code": "acrylic-colours",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "acrylic-colours",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723027"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:40.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:40.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723027"
+  },
+  "name": "Colouring & Painting Products",
+  "url": "colouring-&-painting-products",
+  "code": "colouring-&-painting-products",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "colouring-&-painting-products",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723014"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:39.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:39.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723012"
+  },
+  "name": "Crayons",
+  "url": "crayons",
+  "code": "crayons",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "crayons",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723027"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:42.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:42.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723011"
+  },
+  "name": "Colour Pencil",
+  "url": "colour-pencil",
+  "code": "colour-pencil",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "colour-pencil",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723027"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:41.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:41.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723013"
+  },
+  "name": "Watercolours / Pencil",
+  "url": "watercolours-pencil",
+  "code": "watercolours-pencil",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "watercolours-pencil",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723027"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:43.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:43.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723033"
+  },
+  "name": "Poster Colours",
+  "url": "poster-colours",
+  "code": "poster-colours",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "poster-colours",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723027"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:45.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:45.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723032"
+  },
+  "name": "Oil Pastel",
+  "url": "oil-pastel",
+  "code": "oil-pastel",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "oil-Pastel",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723027"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:44.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:44.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723035"
+  },
+  "name": "Nylon Brush",
+  "url": "nylon-brush",
+  "code": "nylon-brush",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "nylon-Brush",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723034"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:47.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:47.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723034"
+  },
+  "name": "Brush",
+  "url": "brush",
+  "code": "brush",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "brush",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723014"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:46.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:46.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723036"
+  },
+  "name": "Watercolour Brush",
+  "url": "watercolour-brush",
+  "code": "watercolour-brush",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "watercolour-Brush",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723034"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:48.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:48.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723037"
+  },
+  "name": "Craft Machinery / Tools",
+  "url": "craft-machinery-tools",
+  "code": "craft-machinery-tools",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "craft-machinery-tools",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723014"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:49.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:49.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723038"
+  },
+  "name": "Others",
+  "url": "others",
+  "code": "others",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "others",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723037"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:50.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:50.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723039"
+  },
+  "name": "Hot Glue Gun",
+  "url": "hot-glue-gun",
+  "code": "hot-glue-gun",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "hot-glue-gun",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723037"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:51.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:51.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723040"
+  },
+  "name": "Paper products",
+  "url": "paper-products",
+  "code": "paper-products",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Paper products",
+  "status": "ENABLED",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:52.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:52.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723042"
+  },
+  "name": "Envelope",
+  "url": "envelope",
+  "code": "envelope",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Envelope",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723041"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:54.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:54.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723041"
+  },
+  "name": "Invoice / Voucher / Envelope",
+  "url": "invoice-voucher-envelope",
+  "code": "invoice-voucher-envelope",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Invoice / Voucher / Envelope",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723040"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:53.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:53.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723043"
+  },
+  "name": "Voucher Pads",
+  "url": "voucher-pads",
+  "code": "voucher-pads",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Voucher Pads",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723041"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:55.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:55.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723044"
+  },
+  "name": "Invoice / Receipt Book",
+  "url": "invoice-receipt-book",
+  "code": "invoice-receipt-book",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Invoice / Receipt Book",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723041"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:56.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:56.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723045"
+  },
+  "name": "Card",
+  "url": "card",
+  "code": "card",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Card",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723040"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:57.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:57.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723047"
+  },
+  "name": "Stock Card",
+  "url": "stock-card",
+  "code": "stock-card",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Stock Card",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723045"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:59.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:59.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723048"
+  },
+  "name": "Time Card / Worker Card",
+  "url": "time-card-worker-card",
+  "code": "time-card-worker-card",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Time Card / Worker Card",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723045"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:00.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:00.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723046"
+  },
+  "name": "Ruled Card",
+  "url": "ruled-card",
+  "code": "ruled-card",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Ruled Card",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723045"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:58.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:58.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723052"
+  },
+  "name": "Lecture Pad / Lecture Paper",
+  "url": "lecture-pad-lecture-paper",
+  "code": "lecture-pad-lecture-paper",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Lecture Pad / Lecture Paper",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723049"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:04.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:04.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723049"
+  },
+  "name": "Writing Pad",
+  "url": "writing-pad",
+  "code": "writing-pad",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Writing Pad",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723040"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:01.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:01.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723051"
+  },
+  "name": "Graph Pad / Graph Paper",
+  "url": "graph-pad-graph-paper",
+  "code": "graph-pad-graph-paper",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Graph Pad / Graph Paper",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723049"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:03.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:03.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723053"
+  },
+  "name": "Writing Pad / Writing Paper",
+  "url": "writing-pad-writing-paper",
+  "code": "writing-pad-writing-paper",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Writing Pad / Writing Paper",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723049"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:05.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:05.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723054"
+  },
+  "name": "Memo Pad",
+  "url": "memo-pad",
+  "code": "memo-pad",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Memo Pad",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723049"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:06.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:06.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723056"
+  },
+  "name": "Sticky Note",
+  "url": "sticky-note",
+  "code": "sticky-note",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Sticky Note",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723055"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:08.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:08.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723055"
+  },
+  "name": "Adhesive Notepad",
+  "url": "adhesive-notepad",
+  "code": "adhesive-notepad",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Adhesive Notepad",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723040"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:07.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:07.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723057"
+  },
+  "name": "Paper",
+  "url": "paper",
+  "code": "paper",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Paper",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723040"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:09.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:09.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723050"
+  },
+  "name": "Exam Paper",
+  "url": "exam-paper",
+  "code": "exam-paper",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Exam Paper",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723049"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:02.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:02.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723059"
+  },
+  "name": "Exercise Book",
+  "url": "exercise-book",
+  "code": "exercise-book",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Exercise Book",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723040"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:11.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:11.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723060"
+  },
+  "name": "Exercise Book",
+  "url": "exercise-book",
+  "code": "exercise-book",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Exercise Book",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723059"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:12.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:12.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723058"
+  },
+  "name": "Copier Paper",
+  "url": "copier-paper",
+  "code": "copier-paper",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Copier Paper",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723057"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:10.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:10.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723061"
+  },
+  "name": "Hardcover Book",
+  "url": "hardcover-book",
+  "code": "hardcover-book",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Hardcover Book",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723059"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:13.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:13.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723062"
+  },
+  "name": "Art Materials",
+  "url": "art-materials",
+  "code": "art-materials",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Art Materials",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723040"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:14.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:14.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723063"
+  },
+  "name": "Drawing Block",
+  "url": "drawing-block",
+  "code": "drawing-block",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Drawing Block",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723062"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:15.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:15.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723064"
+  },
+  "name": "Layout Pad",
+  "url": "layout-pad",
+  "code": "layout-pad",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Layout Pad",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723062"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:16.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:16.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723065"
+  },
+  "name": "Sketch Book / Drawing Book",
+  "url": "sketch-book-drawing-book",
+  "code": "sketch-book-drawing-book",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Sketch Book / Drawing Book",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723062"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:17.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:17.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723067"
+  },
+  "name": "Correction Products",
+  "url": "correction-products",
+  "code": "correction-products",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Correction Products",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723066"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:19.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:19.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723066"
+  },
+  "name": "Desktop Supplies",
+  "url": "desktop-supplies",
+  "code": "desktop-supplies",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Desktop Supplies",
+  "status": "ENABLED",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:18.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:18.013Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723070"
+  },
+  "name": "Eraser",
+  "url": "eraser",
+  "code": "eraser",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Eraser",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723067"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:22.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:22.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723068"
+  },
+  "name": "Correction Pen",
+  "url": "correction-pen",
+  "code": "correction-pen",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Correction Pen",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723067"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:20.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:20.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723069"
+  },
+  "name": "Correction Fluid",
+  "url": "correction-fluid",
+  "code": "correction-fluid",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Correction Fluid",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723067"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:21.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:21.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723072"
+  },
+  "name": "Cutter / Cutting Mat",
+  "url": "cutter-cutting mat",
+  "code": "cutter-cutting mat",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Cutter / Cutting Mat",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723071"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:24.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:24.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723071"
+  },
+  "name": "Cutting and Measuring Tools",
+  "url": "cutting-and-measuring-tools",
+  "code": "cutting-and-measuring-tools",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Cutting and Measuring Tools",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723066"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:23.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:23.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723073"
+  },
+  "name": "Ruler & Template",
+  "url": "ruler-&-template",
+  "code": "ruler-&-template",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Ruler & Template",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723071"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:25.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:25.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723076"
+  },
+  "name": "Stapler / Staples",
+  "url": "stapler-staples",
+  "code": "stapler-staples",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Stapler / Staples",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723066"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:28.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:28.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723075"
+  },
+  "name": "Sharpener",
+  "url": "sharpener",
+  "code": "sharpener",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Sharpener",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723071"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:27.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:27.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723074"
+  },
+  "name": "Scissors",
+  "url": "scissors",
+  "code": "scissors",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Scissors",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723071"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:26.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:26.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723078"
+  },
+  "name": "Stapler",
+  "url": "stapler",
+  "code": "stapler",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Stapler",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723076"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:30.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:30.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723077"
+  },
+  "name": "Staples",
+  "url": "staples",
+  "code": "staples",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Staples",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723076"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:29.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:29.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723079"
+  },
+  "name": "Staples Remover",
+  "url": "staples-remover",
+  "code": "staples-remover",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Staples Remover",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723076"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:31.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:31.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723080"
+  },
+  "name": "Stampers & Ink",
+  "url": "stampers-ink",
+  "code": "stampers-ink",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Stampers & Ink",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723066"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:32.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:32.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723081"
+  },
+  "name": "Numbering machine",
+  "url": "numbering-machine",
+  "code": "numbering-machine",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Numbering machine",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723080"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:33.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:33.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723082"
+  },
+  "name": "Stamp pad",
+  "url": "stamp-pad",
+  "code": "stamp-pad",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Stamp pad",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723080"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:34.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:34.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723084"
+  },
+  "name": "Clips & Pins",
+  "url": "clips-&-pins",
+  "code": "clips-&-pins",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Clips & Pins",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723066"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:36.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:36.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723085"
+  },
+  "name": "Clips",
+  "url": "clips",
+  "code": "clips",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Clips",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723084"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:37.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:37.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723086"
+  },
+  "name": "Pins",
+  "url": "pins",
+  "code": "pins",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Pins",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723084"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:38.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:38.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723087"
+  },
+  "name": "Accessories",
+  "url": "accessories",
+  "code": "accessories",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Accessories",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723066"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:39.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:39.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723088"
+  },
+  "name": "Tape Dispenser",
+  "url": "tape-dispenser",
+  "code": "tape-dispenser",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Tape Dispenser",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723087"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:40.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:40.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723089"
+  },
+  "name": "Book End / Cash Box",
+  "url": "book-end-cash box",
+  "code": "book-end-cash box",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Book End / Cash Box",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723087"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:41.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:41.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723083"
+  },
+  "name": "Stamp pad ink",
+  "url": "stamp-pad-ink",
+  "code": "stamp-pad-ink",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Stamp pad ink",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723080"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:35.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:35.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723093"
+  },
+  "name": "Blu Tack / Super Glue",
+  "url": "blu-tack-super-glue",
+  "code": "blu-tack-super-glue",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Blu Tack / Super Glue",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723092"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:45.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:45.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723092"
+  },
+  "name": "Adhesive Putty / Glue",
+  "url": "adhesive-putty-glue",
+  "code": "adhesive-putty-glue",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Adhesive Putty / Glue",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723066"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:44.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:44.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723094"
+  },
+  "name": "Clear Glue / Liquid Glue",
+  "url": "clear-glue-liquid-glue",
+  "code": "clear-glue-liquid-glue",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Clear Glue / Liquid Glue",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723092"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:46.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:46.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723090"
+  },
+  "name": "Pen Holder",
+  "url": "pen-holder",
+  "code": "pen-holder",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Pen Holder",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723087"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:42.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:42.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723095"
+  },
+  "name": "Glue Stick / Glue Tape",
+  "url": "glue-stick-glue-tape",
+  "code": "glue-stick-glue-tape",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Glue Stick / Glue Tape",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723092"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:47.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:47.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723096"
+  },
+  "name": "PVA / White Glue",
+  "url": "pva-white-glue",
+  "code": "pva-white-glue",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "PVA / White Glue",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723092"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:48.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:48.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723098"
+  },
+  "name": "Two hole punch",
+  "url": "two-hole-punch",
+  "code": "two-hole-punch",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Two hole punch",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723097"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:50.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:50.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723097"
+  },
+  "name": "Puncher",
+  "url": "puncher",
+  "code": "puncher",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Puncher",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723066"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:49.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:49.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723091"
+  },
+  "name": "Shelving & Trays",
+  "url": "shelving-&-trays",
+  "code": "shelving-&-trays",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Shelving & Trays",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723087"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:43.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:43.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723101"
+  },
+  "name": "Filing Products",
+  "url": "filing-products",
+  "code": "filing-products",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Filing Products",
+  "status": "ENABLED",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:53.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:53.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723099"
+  },
+  "name": "One hole punch",
+  "url": "one-hole-punch",
+  "code": "one-hole-punch",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "One hole punch",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723097"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:51.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:51.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723102"
+  },
+  "name": "Divider",
+  "url": "divider",
+  "code": "divider",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Divider",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723101"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:54.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:54.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723104"
+  },
+  "name": "Divider Plastic",
+  "url": "divider-plastic",
+  "code": "divider-plastic",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Divider Plastic",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723102"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:56.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:56.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723103"
+  },
+  "name": "Divider Paper",
+  "url": "divider-paper",
+  "code": "divider-paper",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Divider Paper",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723102"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:55.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:55.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723105"
+  },
+  "name": "File",
+  "url": "file",
+  "code": "file",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "File",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723101"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:57.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:57.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723100"
+  },
+  "name": "3 & 4 hole punch",
+  "url": "3-4-hole-punch",
+  "code": "3-4-hole-punch",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "3 & 4 hole punch",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723097"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:52.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:52.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723106"
+  },
+  "name": "Arch File",
+  "url": "arch-file",
+  "code": "arch-file",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Arch File",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723105"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:58.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:58.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723109"
+  },
+  "name": "Document Case",
+  "url": "document-case",
+  "code": "document-case",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Document Case",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723105"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:01.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:01.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723110"
+  },
+  "name": "Expanding File",
+  "url": "expanding-file",
+  "code": "expanding-file",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Expanding File",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723105"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:02.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:02.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723108"
+  },
+  "name": "Clear Holder",
+  "url": "clear-holder",
+  "code": "clear-holder",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Clear Holder",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723105"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:00.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:00.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723111"
+  },
+  "name": "Folder",
+  "url": "folder",
+  "code": "folder",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Folder",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723101"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:03.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:03.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723114"
+  },
+  "name": "PVC Folder with board",
+  "url": "pvc-folder-with-board",
+  "code": "pvc-folder-with-board",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "PVC Folder with board",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723111"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:06.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:06.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723113"
+  },
+  "name": "PVC 2 sided clear",
+  "url": "pvc-2-sided-clear",
+  "code": "pvc-2-sided-clear",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "PVC 2 sided clear",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723111"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:05.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:05.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723115"
+  },
+  "name": "PVC & PP Folder",
+  "url": "pvc-&-pp-folder",
+  "code": "pvc-&-pp-folder",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "PVC & PP Folder",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723111"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:07.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:07.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723112"
+  },
+  "name": "Management File",
+  "url": "management-file",
+  "code": "management-file",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Management File",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723111"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:04.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:04.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723107"
+  },
+  "name": "Ring File",
+  "url": "ring-file",
+  "code": "ring-file",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Ring File",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723105"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:53:59.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:53:59.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723118"
+  },
+  "name": "Others",
+  "url": "others",
+  "code": "others",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Others",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723101"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:10.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:10.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723116"
+  },
+  "name": "Paper File",
+  "url": "paper-file",
+  "code": "paper-file",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Paper File",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723101"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:08.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:08.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723120"
+  },
+  "name": "Magazine Holder",
+  "url": "magazine-holder",
+  "code": "magazine-holder",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Magazine Holder",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723118"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:12.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:12.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723119"
+  },
+  "name": "Card case",
+  "url": "card-case",
+  "code": "card-case",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Card case",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723118"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:11.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:11.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723121"
+  },
+  "name": "Divider File",
+  "url": "divider-file",
+  "code": "divider-file",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Divider File",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723118"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:13.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:13.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723122"
+  },
+  "name": "Accessories",
+  "url": "accessories",
+  "code": "accessories",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Accessories",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723101"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:14.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:14.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723117"
+  },
+  "name": "Inner File",
+  "url": "inner-file",
+  "code": "inner-file",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Inner File",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723116"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:09.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:09.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723123"
+  },
+  "name": "Fastener",
+  "url": "fastener",
+  "code": "fastener",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Fastener",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723122"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:15.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:15.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723124"
+  },
+  "name": "Reinforcement ring",
+  "url": "reinforcement-ring",
+  "code": "reinforcement-ring",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Reinforcement ring",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723122"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:16.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:16.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723125"
+  },
+  "name": "Sheet Protector",
+  "url": "sheet-protector",
+  "code": "sheet-protector",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Sheet Protector",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723122"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:17.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:17.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723126"
+  },
+  "name": "Flags & Markers",
+  "url": "flags-&-markers",
+  "code": "flags-&-markers",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Flags & Markers",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723122"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:18.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:18.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723127"
+  },
+  "name": "Packing Material",
+  "url": "packing-material",
+  "code": "packing-material",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Packing Material",
+  "status": "ENABLED",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:19.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:19.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723128"
+  },
+  "name": "Adhesive Tape",
+  "url": "adhesive-tape",
+  "code": "adhesive-tape",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Adhesive Tape",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723127"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:20.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:20.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723130"
+  },
+  "name": "Insulating Tape",
+  "url": "insulating-tape",
+  "code": "insulating-tape",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Insulating Tape",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723128"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:22.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:22.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723129"
+  },
+  "name": "Double sided tape",
+  "url": "double-sided-tape",
+  "code": "double-sided-tape",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Double sided tape",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723128"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:21.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:21.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723131"
+  },
+  "name": "Magic Tape",
+  "url": "magic-tape",
+  "code": "magic-tape",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Magic Tape",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723128"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:23.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:23.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723133"
+  },
+  "name": "OPP Tape",
+  "url": "opp-tape",
+  "code": "opp-tape",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "OPP Tape",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723128"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:25.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:25.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723135"
+  },
+  "name": "Labels and Stickers",
+  "url": "labels-and-stickers",
+  "code": "labels-and-stickers",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Labels and Stickers",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723127"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:27.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:27.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723136"
+  },
+  "name": "Labels",
+  "url": "labels",
+  "code": "labels",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Labels",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723135"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:28.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:28.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723137"
+  },
+  "name": "Packing Accessories",
+  "url": "packing-accessories",
+  "code": "packing-accessories",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Packing Accessories",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723127"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:29.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:29.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723134"
+  },
+  "name": "Stationery Tape",
+  "url": "stationery-tape",
+  "code": "stationery-tape",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Stationery Tape",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723128"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:26.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:26.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723139"
+  },
+  "name": "Labelling Machines",
+  "url": "labelling-machines",
+  "code": "labelling-machines",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Labelling Machines",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723137"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:31.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:31.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723138"
+  },
+  "name": "Labelling",
+  "url": "labelling-",
+  "code": "labelling-",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Labelling",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723137"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:30.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:30.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723140"
+  },
+  "name": "Rubber Band",
+  "url": "rubber-band",
+  "code": "rubber-band",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Rubber Band",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723137"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:32.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:32.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723132"
+  },
+  "name": "Masking Tape",
+  "url": "masking-tape",
+  "code": "masking-tape",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Masking Tape",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723128"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:24.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:24.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723144"
+  },
+  "name": "Notice Board",
+  "url": "notice-board",
+  "code": "notice-board",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Notice Board",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723142"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:36.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:36.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723143"
+  },
+  "name": "Memo Board",
+  "url": "memo-board",
+  "code": "memo-board",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Memo Board",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723142"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:35.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:35.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723142"
+  },
+  "name": "Boards",
+  "url": "boards",
+  "code": "boards",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Boards",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723141"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:34.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:34.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723145"
+  },
+  "name": "White Board",
+  "url": "white-board",
+  "code": "white-board",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "White Board",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723142"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:37.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:37.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723146"
+  },
+  "name": "Cork Board",
+  "url": "cork-board",
+  "code": "cork-board",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Cork Board",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723142"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:38.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:38.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723149"
+  },
+  "name": "Easel Board",
+  "url": "easel-board",
+  "code": "easel-board",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Easel Board",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723147"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:41.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:41.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723150"
+  },
+  "name": "Flipchart Board",
+  "url": "flipchart-board",
+  "code": "flipchart-board",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Flipchart Board",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723147"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:42.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:42.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723148"
+  },
+  "name": "Easel Pad",
+  "url": "easel-pad",
+  "code": "easel-pad",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Easel Pad",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723147"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:40.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:40.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723152"
+  },
+  "name": "Air Purifer",
+  "url": "air-purifer",
+  "code": "air-purifer",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Air Purifer",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723141"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:44.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:44.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723153"
+  },
+  "name": "Shredder",
+  "url": "shredder",
+  "code": "shredder",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Shredder",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723141"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:45.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:45.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723154"
+  },
+  "name": "Commercial Shredders",
+  "url": "commercial-shredders",
+  "code": "commercial-shredders",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Commercial Shredders",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723153"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:46.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:46.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723155"
+  },
+  "name": "Personal Shredders",
+  "url": "personal-shredders",
+  "code": "personal-shredders",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Personal Shredders",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723153"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:47.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:47.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723156"
+  },
+  "name": "Small office / Home shredders",
+  "url": "Small-office-home-shredders",
+  "code": "Small-office-home-shredders",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Small office / Home shredders",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723153"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:48.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:48.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723157"
+  },
+  "name": "Binding",
+  "url": "binding",
+  "code": "binding",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Binding",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723141"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:49.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:49.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723141"
+  },
+  "name": "Office Equipments",
+  "url": "office-equipments",
+  "code": "office-equipments",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Office Equipments",
+  "status": "ENABLED",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:33.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:33.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723147"
+  },
+  "name": "Flipchart / Easel",
+  "url": "flipchart-easel",
+  "code": "flipchart-easel",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Flipchart / Easel",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723141"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:39.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:39.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723158"
+  },
+  "name": "Binding machines",
+  "url": "binding-machines",
+  "code": "binding-machines",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Binding machines",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723157"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:50.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:50.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723159"
+  },
+  "name": "Binding accessories",
+  "url": "binding-accessories",
+  "code": "binding-accessories",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Binding accessories",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723157"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:51.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:51.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723161"
+  },
+  "name": "Laminating Machines",
+  "url": "laminating-machines",
+  "code": "laminating-machines",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Laminating Machines",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723160"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:53.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:53.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723162"
+  },
+  "name": "Pouches",
+  "url": "pouches",
+  "code": "pouches",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Pouches",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723160"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:54.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:54.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723160"
+  },
+  "name": "Laminating",
+  "url": "laminating",
+  "code": "laminating",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Laminating",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723141"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:52.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:52.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723164"
+  },
+  "name": "Labelling Tape",
+  "url": "labelling-tape",
+  "code": "labelling-tape",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Labelling Tape",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723160"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:56.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:56.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723165"
+  },
+  "name": "Accessories",
+  "url": "accessories",
+  "code": "accessories",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Accessories",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723141"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:57.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:57.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723163"
+  },
+  "name": "Labeler",
+  "url": "labeler",
+  "code": "labeler",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Labeler",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723160"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:55.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:55.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723166"
+  },
+  "name": "Projectors",
+  "url": "projectors",
+  "code": "projectors",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Projectors",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723165"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:58.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:58.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723167"
+  },
+  "name": "Dusters",
+  "url": "dusters",
+  "code": "dusters",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Dusters",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723165"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:59.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:59.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723168"
+  },
+  "name": "Storage",
+  "url": "storage",
+  "code": "storage",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Storage",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723165"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:00.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:00.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723169"
+  },
+  "name": "Pointer / Presenter",
+  "url": "pointer-presenter",
+  "code": "pointer-presenter",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Pointer / Presenter",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723165"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:01.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:01.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723170"
+  },
+  "name": "Others",
+  "url": "others",
+  "code": "others",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Others",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723165"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:02.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:02.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723151"
+  },
+  "name": "Flipchart Paper",
+  "url": "flipchart-paper",
+  "code": "flipchart-paper",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Flipchart Paper",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723147"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:54:43.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:54:43.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723174"
+  },
+  "name": "Lifestyle & Gifts",
+  "url": "lifestyle-&-gifts",
+  "code": "lifestyle-&-gifts",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Lifestyle & Gifts",
+  "status": "ENABLED",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:06.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:06.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723171"
+  },
+  "name": "Trimming & Guillotines",
+  "url": "trimming-&-guillotines",
+  "code": "trimming-&-guillotines",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Trimming & Guillotines",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723141"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:03.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:03.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723173"
+  },
+  "name": "Trimmer",
+  "url": "trimmer",
+  "code": "trimmer",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Trimmer",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723171"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:05.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:05.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723175"
+  },
+  "name": "Pencil Case",
+  "url": "pencil-case",
+  "code": "pencil-case",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Pencil Case",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723174"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:07.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:07.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723177"
+  },
+  "name": "Backpacks",
+  "url": "backpacks",
+  "code": "backpacks",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Backpacks",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723174"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:09.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:09.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723176"
+  },
+  "name": "Shoes / Socks",
+  "url": "shoes-socks",
+  "code": "shoes-socks",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Shoes / Socks",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723174"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:08.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:08.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723178"
+  },
+  "name": "Water Bottle",
+  "url": "water-bottle",
+  "code": "water-bottle",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Water Bottle",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723174"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:10.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:10.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723179"
+  },
+  "name": "Writing Instruments",
+  "url": "writing-instruments",
+  "code": "writing-instruments",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Writing Instruments",
+  "status": "ENABLED",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:11.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:11.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723172"
+  },
+  "name": "Paper cutter",
+  "url": "paper-cutter",
+  "code": "paper-cutter",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Paper cutter",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723171"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:04.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:04.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723181"
+  },
+  "name": "Name Pen",
+  "url": "name-pen",
+  "code": "name-pen",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Name Pen",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723180"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:13.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:13.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723183"
+  },
+  "name": "Permanent Marker",
+  "url": "permanent-marker",
+  "code": "permanent-marker",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Permanent Marker",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723180"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:15.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:15.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723184"
+  },
+  "name": "Whiteboard Marker",
+  "url": "whiteboard-marker",
+  "code": "whiteboard-marker",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Whiteboard Marker",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723180"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:16.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:16.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723185"
+  },
+  "name": "Pen & Refills",
+  "url": "pen-&-refills",
+  "code": "pen-&-refills",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Pen & Refills",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723179"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:17.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:17.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723186"
+  },
+  "name": "Ball Pen",
+  "url": "ball-pen",
+  "code": "ball-pen",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Ball Pen",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723185"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:18.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:18.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723180"
+  },
+  "name": "Markers & Refills",
+  "url": "markers-&-refills",
+  "code": "markers-&-refills",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Markers & Refills",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723179"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:12.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:12.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723188"
+  },
+  "name": "Fine Liner",
+  "url": "fine-liner",
+  "code": "fine-liner",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Fine Liner",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723185"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:20.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:20.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723187"
+  },
+  "name": "Drawing Pen",
+  "url": "drawing-pen",
+  "code": "drawing-pen",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Drawing Pen",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723185"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:19.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:19.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723182"
+  },
+  "name": "Paint Marker",
+  "url": "paint-marker",
+  "code": "paint-marker",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Paint Marker",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723180"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:14.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:14.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723189"
+  },
+  "name": "Gel Pen",
+  "url": "gel-pen",
+  "code": "gel-pen",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Gel Pen",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723185"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:21.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:21.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723190"
+  },
+  "name": "Refill",
+  "url": "refill",
+  "code": "refill",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Refill",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723185"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:22.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:22.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723191"
+  },
+  "name": "Roller Ball",
+  "url": "roller-ball",
+  "code": "roller-ball",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Roller Ball",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723185"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:23.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:23.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723193"
+  },
+  "name": "Pencil",
+  "url": "pencil-",
+  "code": "pencil",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Pencil",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723192"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:25.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:25.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723194"
+  },
+  "name": "Mechanical Pencil",
+  "url": "mechanical-pencil",
+  "code": "mechanical-pencil",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Mechanical Pencil",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723192"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:26.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:26.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723195"
+  },
+  "name": "Lead",
+  "url": "lead",
+  "code": "lead",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Lead",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723192"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:27.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:27.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723192"
+  },
+  "name": "Pencil Lead",
+  "url": "pencil-lead",
+  "code": "pencil-lead",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Pencil Lead",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723179"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:24.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:24.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723196"
+  },
+  "name": "Highlighter",
+  "url": "highlighter",
+  "code": "highlighter",
+  "image": "https://kiemtienbaobao.com/wp-content/uploads/2019/02/Category-l%C3%A0-g%C3%AC-2-728x400.jpg",
+  "description": "Highlighter",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723179"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:55:28.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:55:28.015Z"
+  }
+},{
+  "_id": {
+    "$oid": "6107b81c1df5340020d31c74"
+  },
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "1116afc66d44e1ceb3723196"
+  },
+  "url": "",
+  "createdAt": {
+    "$date": "2021-08-02T09:17:16.178Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T09:17:16.178Z"
+  }
+}]

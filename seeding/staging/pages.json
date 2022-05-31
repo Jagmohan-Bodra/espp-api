@@ -1,0 +1,754 @@
+[{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721004"
+  },
+  "description": "Mission, Vision and Value Page",
+  "name": "About us - Mission, Vision and Value",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "CONTENT",
+  "url": "mission-vision-and-value",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:28.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:28.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721002"
+  },
+  "description": "Corporate profiles page",
+  "name": "About us - Corporate profiles",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "CONTENT",
+  "url": "corporate-profiles",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:26.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721003"
+  },
+  "description": "Our Joumey page",
+  "name": "About us - Our Joumey",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "CONTENT",
+  "url": "our-joumey",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:27.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721005"
+  },
+  "description": "Corporate news Page",
+  "name": "About us - Corporate news",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "CONTENT",
+  "url": "corporate-news",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:29.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721006"
+  },
+  "description": "CSR Initiatives Page",
+  "name": "About us - CSR Initiatives",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "CONTENT",
+  "url": "csr-initiatives",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:30.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721007"
+  },
+  "description": "Product Catalogue Page",
+  "name": "About us - Product Catalogue",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "CONTENT",
+  "url": "product-catalogue",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:31.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:31.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721009"
+  },
+  "description": "Product details page",
+  "name": "Shop - Product details",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "PRODUCT",
+  "url": "products/:product-name",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:33.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:33.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721008"
+  },
+  "description": "Product list Page",
+  "name": "Shop - Product list",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "PRODUCT",
+  "url": "products",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:32.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:32.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721001"
+  },
+  "description": "Our story page",
+  "name": "About us - Our story page",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "CONTENT",
+  "url": "our-story-page",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:25.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:25.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721013"
+  },
+  "description": "Payment method page",
+  "name": "Order - Payment method",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "FUNCTION",
+  "url": "cart-payment-method",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:37.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:37.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721010"
+  },
+  "description": "Compare product page",
+  "name": "Shop - Compare product",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "PRODUCT",
+  "url": "product-compare",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:34.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:34.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721014"
+  },
+  "description": "SignIn page",
+  "name": "AUTH - SignIn",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "FUNCTION",
+  "url": "sign-in",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:38.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:38.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721012"
+  },
+  "description": "Process page",
+  "name": "Order - Process",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "FUNCTION",
+  "url": "cart-process",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:36.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:36.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721015"
+  },
+  "description": "SignUp page",
+  "name": "AUTH - SignUp",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "FUNCTION",
+  "url": "sign-up",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:39.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:39.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721016"
+  },
+  "description": "Enquiry form page",
+  "name": "Contact us - Enquiry form",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "FUNCTION",
+  "url": "contact-us-enquiry-form",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:40.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:40.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721017"
+  },
+  "description": "Tracking order page",
+  "name": "Me - Tracking order page",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "FUNCTION",
+  "url": "me-tracking-order-page",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:41.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:41.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3721011"
+  },
+  "description": "In shop page",
+  "name": "Order - In shop",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "FUNCTION",
+  "url": "cart-in-shop",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:35.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:35.965Z"
+  }
+},{
+  "_id": {
+    "$oid": "60adb6631b5b73156da74876"
+  },
+  "description": "Contact Us",
+  "name": "Contact Us",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "CONTENT",
+  "url": "contact-us",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:44.966Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:44.966Z"
+  }
+},{
+  "_id": {
+    "$oid": "60a1e503b8204d2a6d786bcc"
+  },
+  "name": "Home",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "CONTENT",
+  "url": "home",
+  "variants": [
+    {
+      "$oid": "5143afc12e44e1ceb3754017"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754016"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754015"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754014"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754013"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754012"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754011"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754010"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754009"
+    },
+    {
+      "$oid": "60d9750562b63a0021877cae"
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-06-28T02:52:42.965Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-01T08:02:00.794Z"
+  },
+  "seoProps": {
+    "title": "ESPP",
+    "description": "dexription",
+    "keywords": "keyword",
+    "images": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNDg4NTMxMTc0MV9EYWNvXzkzODc4My5wbmciLCJpYXQiOjE2MzI5Nzc4MDIsImV4cCI6MzE3MTc3NDIwMjAyfQ.Ipq8GqB6KGJlxWNe_RD0TBNVJ2aFKlHbQLS5RuOzTHA"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "60da8d7262b63a0021877cfb"
+  },
+  "type": "CONTENT",
+  "variants": [
+    {
+      "$oid": "60da8df662b63a0021877cfc"
+    },
+    {
+      "$oid": "60da8e2062b63a0021877cfd"
+    }
+  ],
+  "name": "Brands",
+  "url": "brands",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-06-29T03:03:14.519Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-29T03:06:08.068Z"
+  },
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "60da9bf962b63a0021877d13"
+  },
+  "type": "CONTENT",
+  "variants": [
+    {
+      "$oid": "60da9d4562b63a0021877d1b"
+    },
+    {
+      "$oid": "60da9d3262b63a0021877d1a"
+    },
+    {
+      "$oid": "60da9d0262b63a0021877d19"
+    },
+    {
+      "$oid": "60da9ce262b63a0021877d18"
+    },
+    {
+      "$oid": "60da9cc962b63a0021877d17"
+    },
+    {
+      "$oid": "60da9ca462b63a0021877d16"
+    },
+    {
+      "$oid": "60da9c7862b63a0021877d15"
+    },
+    {
+      "$oid": "60da9c5562b63a0021877d14"
+    },
+    {
+      "$oid": "60daa29e62b63a0021877d1c"
+    }
+  ],
+  "name": "Corporate Profile",
+  "url": "about-us/corporate-profile",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-06-29T04:05:13.010Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-29T04:33:34.637Z"
+  },
+  "__v": 9
+},{
+  "_id": {
+    "$oid": "60dae66762b63a0021877d3e"
+  },
+  "type": "CONTENT",
+  "variants": [
+    {
+      "$oid": "60dae69e62b63a0021877d3f"
+    }
+  ],
+  "name": "Our Story",
+  "url": "about-us/our-story",
+  "pushlish": true,
+  "createdAt": {
+    "$date": "2021-06-29T09:22:47.669Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-29T09:35:22.160Z"
+  },
+  "__v": 1,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  }
+},{
+  "_id": {
+    "$oid": "60dac1f262b63a0021877d1f"
+  },
+  "type": "CONTENT",
+  "variants": [
+    {
+      "$oid": "60dac23562b63a0021877d21"
+    },
+    {
+      "$oid": "60dac22062b63a0021877d20"
+    },
+    {
+      "$oid": "60dac26662b63a0021877d22"
+    }
+  ],
+  "name": "Mission Vision Values",
+  "url": "about-us/mission-vision-values",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-06-29T06:47:14.960Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-05T09:32:30.081Z"
+  },
+  "__v": 3,
+  "seoProps": {
+    "title": "ABC",
+    "description": "Lorem",
+    "keywords": "Ipsum ",
+    "images": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTQ3NzU0NzI4M19keF93d3ctMVJGeERFOWZ3TlUtdW5zcGxhc2guanBnIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.XdghJvp4ZYe3P9Rq48JxL08eNFAWeVuIQJOEoyAWhN0"
+  }
+},{
+  "_id": {
+    "$oid": "60dac9ac62b63a0021877d2d"
+  },
+  "type": "CONTENT",
+  "variants": [
+    {
+      "$oid": "60dac9d162b63a0021877d2e"
+    },
+    {
+      "$oid": "60dac9f662b63a0021877d2f"
+    }
+  ],
+  "name": "Our Journey",
+  "url": "about-us/our-journey",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-06-29T07:20:12.735Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-29T07:21:26.955Z"
+  },
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "60a737c419463f1d9c22f7fe"
+  },
+  "name": "Order - Thank you",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "type": "CONTENT",
+  "url": "order-complete",
+  "createdAt": {
+    "$date": "2021-06-28T02:52:43.966Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:43.966Z"
+  }
+},{
+  "_id": {
+    "$oid": "60de86d286a57b0021d5f1c8"
+  },
+  "type": "CONTENT",
+  "variants": [],
+  "name": "Product Details",
+  "url": "product-details",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-07-02T03:24:02.491Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-02T03:24:02.491Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e185b086a57b0021d5f1de"
+  },
+  "type": "CONTENT",
+  "variants": [],
+  "name": "Sign In",
+  "url": "auth/sign-in",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-07-04T09:56:00.878Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-04T09:56:00.878Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60daf84962b63a0021877d44"
+  },
+  "type": "CONTENT",
+  "variants": [
+    {
+      "$oid": "60daf96062b63a0021877d45"
+    }
+  ],
+  "name": "Contact",
+  "url": "contact",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-06-29T10:39:05.295Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-29T10:43:44.640Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "60e185ca86a57b0021d5f1df"
+  },
+  "type": "CONTENT",
+  "variants": [],
+  "name": "Sign Up",
+  "url": "auth/sign-up",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-07-04T09:56:26.507Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-04T09:56:26.510Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e41756396b27002074afb0"
+  },
+  "type": "CONTENT",
+  "variants": [],
+  "name": "My Cart Page",
+  "url": "my-cart",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-07-06T08:41:58.392Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-06T08:41:58.392Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e90f6507e0b8002174763b"
+  },
+  "type": "CONTENT",
+  "variants": [],
+  "name": "My Compare page",
+  "url": "my-compares",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-07-10T03:09:25.684Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-10T03:09:25.684Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e6a131bcc6d3002e6b6a43"
+  },
+  "type": "CONTENT",
+  "variants": [],
+  "name": "Checking Page",
+  "url": "checking",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-07-08T06:54:41.959Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-08T06:54:41.960Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60dfe3c486a57b0021d5f1d9"
+  },
+  "type": "CONTENT",
+  "variants": [],
+  "name": "Shop",
+  "url": "shop",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-07-03T04:12:52.064Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-03T04:12:52.065Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f91d4d996abd0020d021e0"
+  },
+  "type": "CONTENT",
+  "variants": [],
+  "name": "Forgot password",
+  "url": "auth/forgot-password",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-07-22T07:25:01.094Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T07:25:01.095Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f921b2f1607f002192f1a5"
+  },
+  "type": "CONTENT",
+  "variants": [],
+  "name": "Profile",
+  "url": "profile",
+  "pushlish": true,
+  "theme": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "createdAt": {
+    "$date": "2021-07-22T07:43:46.550Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T13:19:10.475Z"
+  },
+  "__v": 0,
+  "seoProps": {
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "keywords": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "images": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNzQ3ODM0NjEyMl9FU1BQX0xvZ29fQ01ZSy5wbmciLCJpYXQiOjE2MzI5Nzc4MDIsImV4cCI6MzE3MTc3NDIwMjAyfQ.fTg5Oqeao8rGXuQz3wRvzbQcXccqqoy_-hvU1ZE7vzo"
+  }
+}]

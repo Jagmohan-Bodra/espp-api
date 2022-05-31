@@ -1,0 +1,260 @@
+[{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723003"
+  },
+  "type": "PERCENTAGE",
+  "percentageValue": "15",
+  "name": "name 3",
+  "status": "ENABLED",
+  "startDate": "2020-10-11 8:09:12",
+  "endDate": "2020-10-11 8:09:12",
+  "applyFor": "SPECIAL_PRODUCTS",
+  "capacity": "2000",
+  "couponLimit": "3",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27.994Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:27.994Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723002"
+  },
+  "type": "PERCENTAGE",
+  "percentageValue": "10",
+  "name": "name 2",
+  "status": "ENABLED",
+  "startDate": "2020-10-10 8:09:12",
+  "endDate": "2020-10-10 8:09:12",
+  "applyFor": "ALL_PRODUCTS",
+  "capacity": "2000",
+  "couponLimit": "2",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.994Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:26.994Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723004"
+  },
+  "type": "PERCENTAGE",
+  "percentageValue": "20",
+  "name": "name 4",
+  "status": "ENABLED",
+  "startDate": "2020-10-12 8:09:12",
+  "endDate": "2020-10-12 8:09:12",
+  "applyFor": "SPECIAL_PRODUCTS",
+  "capacity": "2000",
+  "couponLimit": "4",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:28.994Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:28.994Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723001"
+  },
+  "type": "PERCENTAGE",
+  "percentageValue": "5",
+  "name": "name 1",
+  "status": "ENABLED",
+  "startDate": "2020-10-09 8:09:12",
+  "endDate": "2020-10-09 8:09:12",
+  "applyFor": "ALL_PRODUCTS",
+  "capacity": "2000",
+  "couponLimit": "1",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:25.994Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:25.994Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723005"
+  },
+  "type": "CASH_REBATE",
+  "cashRebateValue": "150",
+  "name": "name 5",
+  "status": "ENABLED",
+  "startDate": "2020-10-13 8:09:12",
+  "endDate": "2020-10-13 8:09:12",
+  "applyFor": "ALL_PRODUCTS",
+  "capacity": "2000",
+  "couponLimit": "5",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.994Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:29.994Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723006"
+  },
+  "type": "CASH_REBATE",
+  "cashRebateValue": "200",
+  "name": "name 6",
+  "status": "ENABLED",
+  "startDate": "2020-10-14 8:09:12",
+  "endDate": "2020-10-14 8:09:12",
+  "applyFor": "ALL_PRODUCTS",
+  "capacity": "2000",
+  "couponLimit": "6",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30.994Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:30.994Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723007"
+  },
+  "type": "CASH_REBATE",
+  "cashRebateValue": "250",
+  "name": "name 7",
+  "status": "ENABLED",
+  "startDate": "2020-10-15 8:09:12",
+  "endDate": "2020-10-15 8:09:12",
+  "applyFor": "SPECIAL_PRODUCTS",
+  "capacity": "2000",
+  "couponLimit": "7",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:31.994Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:31.994Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723008"
+  },
+  "type": "CASH_REBATE",
+  "cashRebateValue": "300",
+  "name": "name 8",
+  "status": "ENABLED",
+  "startDate": "2020-10-16 8:09:12",
+  "endDate": "2020-10-16 8:09:12",
+  "applyFor": "SPECIAL_PRODUCTS",
+  "capacity": "2000.8",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:32.994Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:32.994Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723009"
+  },
+  "type": "FREE_SHIPPING",
+  "isFullShippingFee": "1",
+  "name": "name 9",
+  "status": "ENABLED",
+  "startDate": "2020-10-17 8:09:12",
+  "endDate": "2020-10-17 8:09:12",
+  "applyFor": "ALL_PRODUCTS",
+  "capacity": "2000",
+  "couponLimit": "9",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:33.994Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:33.994Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723010"
+  },
+  "type": "FREE_SHIPPING",
+  "isFullShippingFee": "1",
+  "name": "name 10",
+  "status": "ENABLED",
+  "startDate": "2020-10-18 8:09:12",
+  "endDate": "2020-10-18 8:09:12",
+  "applyFor": "SPECIAL_PRODUCTS",
+  "capacity": "2000",
+  "couponLimit": "10",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:34.995Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:34.995Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723012"
+  },
+  "type": "FREE_SHIPPING",
+  "isFullShippingFee": "0",
+  "freeShippingMaximum": "30",
+  "name": "name 12",
+  "status": "ENABLED",
+  "startDate": "2020-10-20 8:09:12",
+  "endDate": "2020-10-20 8:09:12",
+  "applyFor": "SPECIAL_PRODUCTS",
+  "capacity": "2000",
+  "couponLimit": "12",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:36.995Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:36.995Z"
+  }
+},{
+  "_id": {
+    "$oid": "1116afc66d44e1ceb3723011"
+  },
+  "type": "FREE_SHIPPING",
+  "isFullShippingFee": "0",
+  "freeShippingMaximum": "20",
+  "name": "name 11",
+  "status": "ENABLED",
+  "startDate": "2020-10-19 8:09:12",
+  "endDate": "2020-10-19 8:09:12",
+  "applyFor": "ALL_PRODUCTS",
+  "capacity": "2000",
+  "couponLimit": "11",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:35.995Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:35.995Z"
+  }
+},{
+  "_id": {
+    "$oid": "6107c57a1df5340020d31c7a"
+  },
+  "isFullShippingFee": false,
+  "status": "ENABLED",
+  "applyFor": "ALL_PRODUCTS",
+  "type": "PERCENTAGE",
+  "percentageValue": 14,
+  "cashRebateValue": null,
+  "freeShippingMaximum": null,
+  "createdAt": {
+    "$date": "2021-08-02T10:14:18.443Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T10:14:18.443Z"
+  },
+  "__v": 0
+}]

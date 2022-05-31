@@ -1,0 +1,37 @@
+version: '3.1'
+
+services:
+  mongodb:
+    image: 'mongo'
+    ports:
+      - '27017-27019:27017-27019'
+    networks:
+      - wi_network
+    environment:
+      - MONGO_INITDB_DATABASE=ideabox
+      - MONGO_INITDB_ROOT_USERNAME=user
+      - MONGO_INITDB_ROOT_PASSWORD=passwww3
+
+  redis:
+    image: 'redis:6.0-alpine'
+    ports:
+      - '6379:6379'
+    command: redis-server --requirepass passQu@kh1
+    networks:
+      - wi_network
+      
+  s3:
+    image: minio/minio:latest
+    ports:
+      - '9000:9000'
+    entrypoint: [""]
+    command: ["sh", "-c", "mkdir -p /export/default && /usr/bin/minio server /export"]
+    volumes:
+      - ./upload:/export
+    environment:
+      - MINIO_ACCESS_KEY=AM3UQ867SPQQ
+      - MINIO_SECRET_KEY=7BJ86wekitnifILbZam
+
+networks:
+  wi_network:
+    driver: bridge

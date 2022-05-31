@@ -1,0 +1,915 @@
+[{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754001"
+  },
+  "group": "Header",
+  "type": "PHOTO",
+  "label": "Logo",
+  "order": 1,
+  "key": "theme_logo",
+  "value": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzk2NzQ2N19ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.BbkgEvoHdKg9__IeJo9LQMUZvQlFsyDP5N6HMKQTwrc",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.113Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:58:50.755Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754004"
+  },
+  "group": "Footer",
+  "type": "RICHTEXT",
+  "label": "About Us",
+  "order": 3,
+  "key": "theme_about_us",
+  "value": "<ul><li>Our Story</li><li>Career Opportunities</li><li>Corporate News</li><li>Product Catalogue</li></ul>",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:28.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:58:50.755Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754005"
+  },
+  "group": "Footer",
+  "type": "RICHTEXT",
+  "label": "Customer Care",
+  "order": 4,
+  "key": "theme_customer_care",
+  "value": "<ul><li>FAQs</li><li>Delivery, Returns and Exchanges</li><li>Enquiry</li></ul>",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:58:50.755Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754006"
+  },
+  "group": "Footer",
+  "type": "RICHTEXT",
+  "label": "Connect with Us",
+  "order": 5,
+  "key": "theme_connect_with_us",
+  "value": "<div class=\"raw-html-embed\"><div>\n  <p>\n    <i class=\"fab fa-facebook\"></i>\n  </p>\n  <p>\n    <i class=\"fab fa-instagram-square\"></i>\n  </p>\n  <p>\n    <i class=\"fab fa-linkedin\"></i>\n  </p>\n<p>\n  <i class=\"fab fa-tiktok\"></i> \n  </p>\n</div>\n</div>",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:58:50.755Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754007"
+  },
+  "group": "Footer",
+  "type": "RICHTEXT",
+  "label": "Contact Us",
+  "order": 6,
+  "key": "theme_contact_us",
+  "value": "<div class=\"raw-html-embed\"><div>\n  <p>\n    <i class=\"fas fa-map-marker-alt\"></i>\n    <span> 14 Arumugam Road LTC Building C\n      #08-01\n      Singapore 409959</span>\n  </p>\n  <p>\n    <i class=\"fa fa-envelope\"></i> <span> sales@eesin.net</span>\n  </p>\n  <p>\n    <i class=\"fa fa-phone\"></i> <span> +65 6288 7787</span>\n  </p>\n  <p>\n    <i class=\"fa fa-phone\"></i> <span> +65 6464 0110</span>\n  </p>\n</div>\n</div>",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:31.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:58:50.755Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754010"
+  },
+  "group": "Home Our Story",
+  "type": "RICHTEXT",
+  "label": "Home Our Story",
+  "order": 9,
+  "key": "home_our_story",
+  "value": "<h2 style=\"text-align:center;\"><span style=\"color:hsl(6,63%,24%);\"><strong>Our Story</strong></span></h2><p style=\"text-align:center;\">&nbsp;</p><p style=\"text-align:center;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p><p style=\"text-align:center;\">&nbsp;</p><p style=\"text-align:center;\"><span style=\"background-color:rgb(238,229,215);color:rgb(68,68,68);font-family:Roboto, sans-serif;font-size:14px;\"><strong><u>READ MORE</u></strong></span></p>",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:34.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T02:44:08.039Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754011"
+  },
+  "group": "Home Feature Product",
+  "type": "GALLERY",
+  "label": "Home Feature Product - Left",
+  "order": 10,
+  "key": "home_feature_product_left",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:35.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T02:44:08.039Z"
+  },
+  "value": [
+    {
+      "image": "/v1/drive/1625017468834_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzQ2ODgzNF9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.jFAeTcXMhL8u_roL-0GxeVheGyB-ujvXj_4UD67s_M0",
+      "content": "<p><span style=\"font-size:24px;\"><strong>Featured Products</strong></span></p>",
+      "url": "#"
+    },
+    {
+      "content": "<p><span style=\"color:hsl(210,29%,13%);font-size:24px;\"><strong>Featured Products</strong></span></p>",
+      "image": "/v1/drive/1625017482300_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzQ4MjMwMF9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.MPgh_-LRga_5DwUKF7Ofa3f7lVzBMoloUkCWxk2tb2A"
+    },
+    {
+      "image": "/v1/drive/1625017493956_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzQ5Mzk1Nl9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.2wWJV9y9gDECtM8WhocBb0GL6v_-hYV1ja6zf2387wo",
+      "content": "<p><span style=\"color:hsl(24,100%,31%);font-size:24px;\"><strong>Featured Products</strong></span></p>"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754012"
+  },
+  "group": "Home Feature Product",
+  "type": "PRODUCT_LIST",
+  "label": "Home Feature Product – Right",
+  "order": 11,
+  "key": "home_feature_product_right",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:36.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T02:44:08.039Z"
+  },
+  "value": [
+    "1111afc66d44e1ceb3723011",
+    "1111afc66d44e1ceb3723004",
+    "1111afc66d44e1ceb3723008",
+    "1111afc66d44e1ceb3723009"
+  ]
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754013"
+  },
+  "group": "Home Best Sellers",
+  "type": "PRODUCT_LIST",
+  "label": "Home Best Sellers",
+  "order": 12,
+  "key": "home_best_sellers",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:37.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T02:44:08.039Z"
+  },
+  "value": [
+    "1111afc66d44e1ceb3723005",
+    "1111afc66d44e1ceb3723007",
+    "1111afc66d44e1ceb3723009",
+    "1111afc66d44e1ceb3723010"
+  ]
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754014"
+  },
+  "group": "Home New Arrivals",
+  "type": "PRODUCT_LIST",
+  "label": "Home New Arrivals - left",
+  "order": 13,
+  "key": "home_new_arrivals_left",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:38.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T02:44:08.039Z"
+  },
+  "value": [
+    "1111afc66d44e1ceb3723010",
+    "1111afc66d44e1ceb3723007",
+    "1111afc66d44e1ceb3723005",
+    "1111afc66d44e1ceb3723009"
+  ]
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754015"
+  },
+  "group": "Home New Arrivals",
+  "type": "GALLERY",
+  "label": "Home New Arrivals – right",
+  "order": 14,
+  "key": "home_new_arrivals_right",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:39.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T02:44:08.039Z"
+  },
+  "value": [
+    {
+      "image": "/v1/drive/1625017548086_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzU0ODA4Nl9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.8sNauDjvIL9VvkNc4z99Qx91SDrVVn2Jn30wHq2oITQ",
+      "content": "<p><span style=\"font-size:24px;\"><strong>New Arrivals</strong></span></p>",
+      "url": "#"
+    },
+    {
+      "content": "<p><span style=\"font-size:24px;\"><strong>New Arrivals</strong></span></p>",
+      "url": "#",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzU2NTI0Ml9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.dvdWdlzUpb9zUmNNCnLUBtSb-osAE9zOfDzHttBKzEw",
+      "image": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzU2NTI0Ml9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.dvdWdlzUpb9zUmNNCnLUBtSb-osAE9zOfDzHttBKzEw"
+    },
+    {
+      "content": "<p><span style=\"font-size:24px;\"><strong>New Arrivals</strong></span></p>",
+      "url": "#",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzU3Njk2M19ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.NlY2PFvilUf3DxEWfZ208jF77UzrdLz1aFYkjcuW7wQ",
+      "image": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzU3Njk2M19ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.NlY2PFvilUf3DxEWfZ208jF77UzrdLz1aFYkjcuW7wQ"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754016"
+  },
+  "group": "Home Our Brand Partners",
+  "type": "GALLERY",
+  "label": "Home Our Brand Partners",
+  "order": 15,
+  "key": "home_our_brand_partners",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:40.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T02:44:08.039Z"
+  },
+  "value": [
+    {
+      "image": "/v1/drive/1625017621878_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzYyMTg3OF9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.CVGuKACn8ZcSVpYgWj2LnOLQUjJffmELUDrnIu77TcI",
+      "content": ""
+    },
+    {
+      "image": "/v1/drive/1625017633402_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzYzMzQwMl9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.hAbsevVOk8t9fAIDxXl6ArS99GjGUu61G8OvhyE_WnY",
+      "content": ""
+    },
+    {
+      "image": "/v1/drive/1625124647463_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTEyNDY0NzQ2M19ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.9yKkkbRs4UjV9ntIcNOaGk8QO864cDWHpmNtwui55wY",
+      "content": ""
+    },
+    {
+      "image": "/v1/drive/1625017689970_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzY4OTk3MF9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.N8AZxJzAl2nIjdfjgi3PMl6XdGeJHVUzTE5cxfNJqpY",
+      "content": ""
+    },
+    {
+      "image": "/v1/drive/1625017702243_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzcwMjI0M19ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.6hQ7hrw8RyNYZbNXIrgPMZq37KYQeTiZ_el5VkdyMLg",
+      "content": ""
+    },
+    {
+      "image": "/v1/drive/1625017713257_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzcxMzI1N19ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.3pIrl0AsxLnaqS1wv0xiCBRPwDWalURTmMCj3qxdvR8",
+      "content": ""
+    },
+    {
+      "image": "/v1/drive/1625017725412_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzcyNTQxMl9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.yM8ccZ0cBUZjNwfwdncpKDBlN5yj1x91IpO6o7HwhEA",
+      "content": ""
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754017"
+  },
+  "group": "Home More For You",
+  "type": "POST_LIST",
+  "label": "Home More For You",
+  "order": 16,
+  "key": "home_more_for_you",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:41.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T02:44:08.039Z"
+  },
+  "value": [
+    "5143afc66d44e1ceb3723008",
+    "5143afc66d44e1ceb3723003",
+    "5143afc66d44e1ceb3723001",
+    "5143afc66d44e1ceb3723002",
+    "5143afc66d44e1ceb3723005",
+    "5143afc66d44e1ceb3723007",
+    "5143afc66d44e1ceb3723006",
+    "61015b1f6133d70020b8a49f"
+  ]
+},{
+  "_id": {
+    "$oid": "60d9750562b63a0021877cae"
+  },
+  "group": "Home Join Mailing List!",
+  "type": "PHOTO",
+  "label": "Join Mailing List Backgroup",
+  "key": "join-mailing_list",
+  "order": 17,
+  "createdAt": {
+    "$date": "2021-06-28T07:06:45.304Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T02:44:08.039Z"
+  },
+  "__v": 0,
+  "value": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTEyNDczNTI4Nl9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.gIIReYMq1gihYEQByL7D22-VMZwwEDSiCZrSM04dATU"
+},{
+  "_id": {
+    "$oid": "60d9852862b63a0021877cb5"
+  },
+  "group": "Footer",
+  "type": "RICHTEXT",
+  "label": "Copyright",
+  "key": "footer_copyright",
+  "order": 8,
+  "createdAt": {
+    "$date": "2021-06-28T08:15:36.528Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:58:50.755Z"
+  },
+  "__v": 0,
+  "value": "<p>© 2021 Ee Sin Paper Products Pte Ltd (197301012N)</p>"
+},{
+  "_id": {
+    "$oid": "60da8df662b63a0021877cfc"
+  },
+  "group": "Header",
+  "type": "RICHTEXT",
+  "label": "Description",
+  "key": "brand_header",
+  "order": 1,
+  "createdAt": {
+    "$date": "2021-06-29T03:05:26.970Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:51:10.534Z"
+  },
+  "__v": 0,
+  "value": "<p style=\"text-align:center;\"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</i></p>"
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754002"
+  },
+  "group": "Header",
+  "type": "TREE",
+  "label": "Menu",
+  "order": 2,
+  "key": "theme_menu",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27.114Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:58:50.755Z"
+  },
+  "value": [
+    {
+      "key": "1624963538409",
+      "title": "HOME",
+      "url": "/"
+    },
+    {
+      "key": "1624864718102",
+      "title": "ABOUT US",
+      "url": "#",
+      "children": [
+        {
+          "key": "1624864879078",
+          "title": "OUR JOURNEY",
+          "url": "/about-us/our-journey"
+        },
+        {
+          "key": "1624864819588",
+          "title": "MISSION VISION VALUES",
+          "url": "/about-us/mission-vision-values",
+          "children": []
+        },
+        {
+          "key": "1624865007751",
+          "url": "/about-us/our-story",
+          "title": "OUR STORY"
+        },
+        {
+          "key": "1624865072559",
+          "url": "/about-us/corporate-profile",
+          "title": "CORPORATE PROFILE"
+        }
+      ]
+    },
+    {
+      "key": "1624864731872",
+      "title": "BRANDS",
+      "url": "/brands"
+    },
+    {
+      "key": "1624864738911",
+      "title": "SHOP",
+      "url": "/shop"
+    },
+    {
+      "key": "1624864746570",
+      "title": "CONTACT",
+      "url": "/contact"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754009"
+  },
+  "group": "Home Header Slider",
+  "type": "GALLERY",
+  "label": "Home Header Gallery",
+  "order": 8,
+  "key": "home_header_gallery",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:33.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T02:44:08.039Z"
+  },
+  "value": [
+    {
+      "content": "<p><span style=\"font-size:36px;\">LOREM IPSUM <strong>DOLOR SIT AMET</strong></span></p>",
+      "image": "/v1/drive/1625017376792_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzM3Njc5Ml9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.pvT-f77T1RZsoISH2M-M3vxF8BuLtKR3p6opSqaw2OU",
+      "url": "#"
+    },
+    {
+      "content": "<p><span style=\"background-color:rgb(250,250,250);font-family:Poppins, sans-serif;font-size:48px;\">LOREM IPSUM</span><span style=\"font-size:48px;\"><strong> DOLOR SIT AMET</strong></span></p>",
+      "image": "/v1/drive/1625017390905_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzM5MDkwNV9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.EeaZczH1yYNGSazAdLlpqXll3-J7zS0jAY0HVRQxGWA"
+    },
+    {
+      "content": "<p><span style=\"background-color:rgb(250,250,250);font-family:Poppins, sans-serif;font-size:48px;\">LOREM IPSUM</span><span style=\"background-color:rgba(250,250,250,0.424);font-family:Poppins, sans-serif;font-size:48px;\"><strong> DOLOR SIT AMET</strong></span></p>",
+      "url": "#",
+      "image": "/v1/drive/1625017401907_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzQwMTkwN19ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.zAz9aFQhbmeh2Mmbeql_w-rQI52pSfLBLvKVeRmgAUs"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5143afc12e44e1ceb3754008"
+  },
+  "group": "Footer",
+  "type": "PHOTO",
+  "label": "Logo",
+  "order": 7,
+  "key": "theme_footer_logo",
+  "value": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxNzk4MDk1NV9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.nfCbcNXHO2pvDUEJiAF1yOisQ0AJIGhH4jvjj-GiQAA",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:32.115Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:58:50.755Z"
+  }
+},{
+  "_id": {
+    "$oid": "60da8e2062b63a0021877cfd"
+  },
+  "group": "Body",
+  "type": "GALLERY",
+  "label": "Brand List",
+  "key": "brand_list",
+  "order": 2,
+  "createdAt": {
+    "$date": "2021-06-29T03:06:08.066Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:51:10.534Z"
+  },
+  "__v": 0,
+  "value": [
+    {
+      "content": "",
+      "image": "/v1/drive/1625020017266_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAyMDAxNzI2Nl9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.GL8x1_FRbo-SRtpiwHAAcgKtf3OHb5udNa-zRaRfFNM"
+    },
+    {
+      "content": "",
+      "image": "/v1/drive/1625020024754_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAyMDAyNDc1NF9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.A2H2NkeE81FKmddh5QRK2FChzXO0V8OdbgTuMh4IiTk"
+    },
+    {
+      "content": "",
+      "image": "/v1/drive/1625020032023_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAyMDAzMjAyM19ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.ajGIVDIaEfFt5VGQXSYWR_0ox5QoXsSpqMBAyOlkvNc"
+    },
+    {
+      "content": "",
+      "image": "/v1/drive/1625020041079_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAyMDA0MTA3OV9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.iBoSBfe9seg2JbH9sxg6UrTEaQa3NiJi5_DJINoxfuk"
+    },
+    {
+      "content": "",
+      "image": "/v1/drive/1625020052525_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAyMDA1MjUyNV9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.ScPGVa4ggnDFvTGWr7S1MnZh5Pojt6QOlESX9x8pRDA"
+    },
+    {
+      "content": "",
+      "image": "/v1/drive/1625020062622_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAyMDA2MjYyMl9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.iVm8xIUwsTlxEuFPW4IUqW0KBsQ9NlhPHa-dxJ8Q8tE"
+    },
+    {
+      "content": "",
+      "image": "/v1/drive/1625020070066_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAyMDA3MDA2Nl9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.9BtRsbOdBosHrVKYq-t09KlwGmdew-bE1MuKTdW9W2U"
+    },
+    {
+      "content": "",
+      "image": "/v1/drive/1625020077549_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAyMDA3NzU0OV9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.TKRPEwvhwsl82fCSHEYFYImQ8SyI3MKpX-dAIJkdqtA"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60da9c7862b63a0021877d15"
+  },
+  "group": "Corporate Profile Header",
+  "type": "RICHTEXT",
+  "label": "Description",
+  "key": "corporate_profile_header_description",
+  "order": 2,
+  "createdAt": {
+    "$date": "2021-06-29T04:07:20.611Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:26:23.747Z"
+  },
+  "__v": 0,
+  "value": "<p style=\"text-align:center;\"><span style=\"font-size:19px;\"><strong>5 Decades.</strong></span><br><span style=\"font-size:19px;\"><strong>Same Passion</strong></span></p>"
+},{
+  "_id": {
+    "$oid": "60da9ce262b63a0021877d18"
+  },
+  "group": "Corporate Profile Criteria",
+  "type": "RICHTEXT",
+  "label": "Col 2",
+  "key": "corporate_profile_criteria_col_2",
+  "order": 5,
+  "createdAt": {
+    "$date": "2021-06-29T04:09:06.922Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:26:23.747Z"
+  },
+  "__v": 0,
+  "value": "<h2><span style=\"color:hsl(204,51%,67%);font-size:36px;\"><strong>02</strong></span></h2><h4><strong>Best Distributor</strong></h4><p>to brand principals</p>"
+},{
+  "_id": {
+    "$oid": "60da9d0262b63a0021877d19"
+  },
+  "group": "Corporate Profile Criteria",
+  "type": "RICHTEXT",
+  "label": "Col 3",
+  "key": "corporate_profile_criteria_col_3",
+  "order": 6,
+  "createdAt": {
+    "$date": "2021-06-29T04:09:38.504Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:26:23.747Z"
+  },
+  "__v": 0,
+  "value": "<h2><span style=\"color:hsl(204,51%,67%);font-size:36px;\"><strong>03</strong></span></h2><h4><strong>Best Value Contributor</strong></h4><p>to our customers</p>"
+},{
+  "_id": {
+    "$oid": "60da9d3262b63a0021877d1a"
+  },
+  "group": "Corporate Profile Image Text",
+  "type": "RICHTEXT",
+  "label": "Text",
+  "key": "corporate_profile_text",
+  "order": 7,
+  "createdAt": {
+    "$date": "2021-06-29T04:10:26.184Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:26:23.747Z"
+  },
+  "__v": 0,
+  "value": "<p style=\"text-align:justify;\">A pivotal moment in Ee Sin Paper Products’ history is the partnership with Intrapac (Singapore) Pte Ltd in 2003, which saw an enormous growth in the company and subsequently turned it into a regional one.</p><p style=\"text-align:justify;\">In 2011, Ee Sin Paper Products increased its warehouse capacity to 20,000 sqf and ventured into the file manufacturing industry. Over the next few years, the company was awarded authorized dealership for some of the biggest brands in the region such as Casio (school), Dr Kong, Max, Maped, Plus, Stabilo and Zebra; as well as the distributorship for 3M, Helix, Kodak and Toyogo.<br>&nbsp;</p><p style=\"text-align:justify;\">Today, as Ee Sin Paper Products moves to a 24,000 sqf warehouse at Pandan Crescent and strives to reach even greater heights, the company continues to serve its customers with the same passion since its founding.</p><p style=\"text-align:justify;\"><br>With a rich history and unparalleled breadth of experience spanning more than 5 decades, Ee Sin Paper Products has evolved from a paper converting business to becoming a regional distributor and OEM for stationery, file and paper products.</p>"
+},{
+  "_id": {
+    "$oid": "60da9d4562b63a0021877d1b"
+  },
+  "group": "Corporate Profile Image Text",
+  "type": "PHOTO",
+  "label": "Image",
+  "key": "corporate_profile_image",
+  "order": 8,
+  "createdAt": {
+    "$date": "2021-06-29T04:10:45.834Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:26:23.747Z"
+  },
+  "__v": 0,
+  "value": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxOTk4MDIwNl9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.MJxguC_c5hUDbFHjSDbQzQ_C7KlpZ5jmMqCr5feCWGI"
+},{
+  "_id": {
+    "$oid": "60daa29e62b63a0021877d1c"
+  },
+  "group": "Corporate Profile Criteria",
+  "type": "RICHTEXT",
+  "label": "Col 4",
+  "key": "corporate_profile_criteria_col_4",
+  "order": 9,
+  "createdAt": {
+    "$date": "2021-06-29T04:33:34.635Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:26:23.747Z"
+  },
+  "__v": 0,
+  "value": "<h2><span style=\"color:hsl(204,51%,67%);font-size:36px;\"><strong>04</strong></span></h2><h4><strong>Best Friend</strong></h4><p>of the environment &amp; community</p>"
+},{
+  "_id": {
+    "$oid": "60dac22062b63a0021877d20"
+  },
+  "group": "Mission Vision Header",
+  "type": "RICHTEXT",
+  "label": "Title",
+  "key": "mission_vision_header_title",
+  "order": 1,
+  "createdAt": {
+    "$date": "2021-06-29T06:48:00.457Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:17:38.734Z"
+  },
+  "__v": 0,
+  "value": "<h2 style=\"text-align:center;\"><span style=\"font-size:36px;\"><strong>MISSION, VISION &amp; VALUES</strong></span></h2>"
+},{
+  "_id": {
+    "$oid": "60dac23562b63a0021877d21"
+  },
+  "group": "Mission Vision Header",
+  "type": "RICHTEXT",
+  "label": "Description",
+  "key": "mission_vision_header_description",
+  "order": 2,
+  "createdAt": {
+    "$date": "2021-06-29T06:48:21.963Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:17:38.734Z"
+  },
+  "__v": 0,
+  "value": "<p style=\"text-align:center;\"><strong>What guides us?</strong></p>"
+},{
+  "_id": {
+    "$oid": "60dac26662b63a0021877d22"
+  },
+  "group": "Mission Vision Body",
+  "type": "GALLERY",
+  "label": "Slider",
+  "key": "mission_vision_header_slider",
+  "order": 3,
+  "createdAt": {
+    "$date": "2021-06-29T06:49:10.414Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:17:38.734Z"
+  },
+  "__v": 0,
+  "value": [
+    {
+      "content": "<p>To align with our customers’ values by making their products<br><i><strong>Complete, Competitive and Carefree</strong></i></p>",
+      "image": "/v1/drive/1625019429920_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxOTQyOTkyMF9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.6eD3_lEfy6E-mc6yCMQg1Ge1i1xeBL0_yimDYBBcOYc",
+      "title": "Vision"
+    },
+    {
+      "content": "<p>&nbsp;</p><p>&nbsp;</p><p><strong>Best Brand Choice</strong> in partnership<br><strong>Best Distributor</strong> to brand principals<br><strong>Best Value Contributor </strong>to our customers<br><strong>Best Friend</strong> of the environment and community</p>",
+      "image": "/v1/drive/1625019441015_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxOTQ0MTAxNV9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.DCUOChirts2NqazkMPJVTF3igfmbQQ1JMUWATJhSBz8",
+      "title": "Mission"
+    },
+    {
+      "content": "<p>&nbsp;</p><p>&nbsp;</p><p><strong>Embrace:</strong> Being accepting toward changes &amp; innovation.<br><strong>People-Focused:</strong> Our valued partners are our focus.<br><strong>Service-Centric:</strong> We emphasize on satisfactory user experience.<br><strong>Professionalism:</strong> Consideration, exceed expectations and respect for others’ needs.</p>",
+      "image": "/v1/drive/1625019450281_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxOTQ1MDI4MV9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.QHdHzx15ytjI9RJsyu-UKrvd2EUMVV1B0ohy9Gl5ggc",
+      "title": "Values"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60dac9d162b63a0021877d2e"
+  },
+  "group": "Our journey",
+  "type": "RICHTEXT",
+  "label": "Title",
+  "key": "our_journey_title",
+  "order": 1,
+  "createdAt": {
+    "$date": "2021-06-29T07:20:49.726Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:20:18.978Z"
+  },
+  "__v": 0,
+  "value": "<h2 style=\"text-align:center;\"><span style=\"font-size:36px;\"><strong>OUR JOURNEY</strong></span></h2><p style=\"text-align:center;\"><br><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</i><br><i>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</i><br><i>laboris nisi ut aliquip ex ea commodo consequat. Duis aute</i></p>"
+},{
+  "_id": {
+    "$oid": "60dac9f662b63a0021877d2f"
+  },
+  "group": "Our journey",
+  "type": "GALLERY",
+  "label": "Slider",
+  "key": "our_journey_slider",
+  "order": 2,
+  "createdAt": {
+    "$date": "2021-06-29T07:21:26.953Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:20:18.978Z"
+  },
+  "__v": 0,
+  "value": [
+    {
+      "content": "<p>Ee Sin Paper Products Pte Ltd was established, focusing on paper converting business.</p>",
+      "image": "/v1/drive/1625019578106_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxOTU3ODEwNl9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.dQemHj9qz0EU3X4pfZ1Qori-zabEmK8gyDOpkjxmLWM",
+      "title": "1966"
+    },
+    {
+      "content": "<p>Shifted its manufacturing operations to Malaysia.</p>",
+      "image": "/v1/drive/1625019586683_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxOTU4NjY4M19ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.9-2jq16QY1595RdZ70QjtlOA-Fv68dUMYPbMxAl_6iU",
+      "title": "1988"
+    },
+    {
+      "content": "<p>• Joint partnership between Ee Sin Paper Products and Intrapac (Singapore) Pte Ltd; thus the birthof its in-houce brand ESPP.</p><p>• Distributor for M&amp;G products.</p><p>• Diversified into general stationery business.</p><p>• Embarked on digitization of supply chain process.</p>",
+      "image": "/v1/drive/1625019595085_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxOTU5NTA4NV9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.tcsIQRVRiD_B7oA3Q1JeqcSChKNku8QuE7bvoxGcVGo",
+      "title": "2003"
+    },
+    {
+      "content": "<p>Increased warehouse capacity from 4,000 sqf to 10,000 sqf.</p>",
+      "image": "/v1/drive/1625019604998_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxOTYwNDk5OF9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.WhJ9vqDiN7WaKRQSfVXaN46nwbcNApUR1kd8-QKB8dI",
+      "title": "2009"
+    },
+    {
+      "content": "<p>Ee Sin Paper Products Pte Ltd was established, focusing on paper converting business.</p>",
+      "image": "/v1/drive/1625019612368_blob",
+      "imagePath": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxOTYxMjM2OF9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.ZyYby6QZnd3rtMnSfBDUzMurtyoO0vL1FpWwkhLOBEw",
+      "title": "1966"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60dae69e62b63a0021877d3f"
+  },
+  "group": "Out Story Block",
+  "type": "RICHTEXT",
+  "label": "Block",
+  "key": "out_story_block",
+  "order": 1,
+  "createdAt": {
+    "$date": "2021-06-29T09:23:42.098Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:22:56.706Z"
+  },
+  "__v": 0,
+  "value": "<h2 style=\"text-align:center;\">&nbsp;</h2><p style=\"text-align:center;\">&nbsp;</p><h2 style=\"text-align:center;\"><span style=\"font-size:36px;\"><strong>OUR STORY</strong></span></h2><p style=\"text-align:center;\">&nbsp;</p><p style=\"text-align:center;\"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</i><br><i>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</i><br><i>laboris nisi ut aliquip ex ea commodo consequat. Duis aute...</i></p><p style=\"text-align:center;\">&nbsp;</p><p style=\"text-align:center;\">&nbsp;</p><figure class=\"image image_resized\" style=\"width:100%;\"><img src=\"http://staging.wiooh.com:3001/v1/drive/1625019673196_Group_203.png\"></figure><p>&nbsp;</p><p><strong>HISTORY, PURPOSE AND USAGE</strong></p><p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero’s De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:</p><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”&nbsp;</p><p>The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn’t distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.</p><p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop<br>publishers bundled the text with their software. Today it’s seen all around the web; on templates, websites, and stock designs. Use our generator to get your<br>own, or read on for the authoritative history of lorem ipsum.</p><p>&nbsp;</p><div class=\"raw-html-embed\"><div class=\"our-story-component_title\">“Lorem ipsum began as scrambled, nonsensical Latin derived from Cicero’s 1st-century BC text De Finibus\nBonorum et Malorum”.</div></div><p style=\"text-align:center;\">&nbsp;</p><figure class=\"image image-style-side\"><img src=\"http://staging.wiooh.com:3001/v1/drive/1625019704018_pexels-karolina-grabowska-4466104.png\"></figure><p><strong>HEDONIST ROOTS</strong></p><p style=\"text-align:justify;\">Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It’s not Latin, though it looks like it, and it actually says nothing,” Before &amp; After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”</p><p style=\"text-align:justify;\"><br>As Cicero would put it, “Um, not so fast.”</p><p style=\"text-align:justify;\"><br>The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.</p><p style=\"text-align:justify;\"><br>Richard McClintock, a Latin scholar from Hampden-Sydney College, is credited with discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur—a genuine, albeit rare, Latin word. Consulting a Latin dictionary led McClintock to a passage from De Finibus Bonorum et Malorum (“On the Extremes of Good and Evil”), a first-century B.C. text from the Roman philosopher Cicero.</p><p style=\"text-align:justify;\">&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><div class=\"raw-html-embed\"><div class=\"our-story-component_title\">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\ndolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea\ncommodo consequat. Duis aute...”</div></div><p style=\"text-align:center;\">&nbsp;</p><p><strong>REMIXING A CLASSIC</strong></p><p>&nbsp;</p><figure class=\"image image_resized\" style=\"width:100%;\"><img src=\"http://staging.wiooh.com:3001/v1/drive/1625019742325_Mask_Group_3.png\"></figure><p>&nbsp;</p><p>So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero’s De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book. It’s difficult to find examples of lorem ipsum in use before Letraset made it popular as a dummy text in the 1960s, although McClintock says he remembers coming across the lorem ipsum passage in a book of old metal type samples. So far he hasn’t relocated where he once saw the passage, but the popularity of Cicero in the 15th century supports the theory that the filler text has been used for centuries.<br>And anyways, as Cecil Adams reasoned, “[Do you really] think graphic arts supply houses were hiring classics scholars in the 1960s?” Perhaps. But it seems<br>reasonable to imagine that there was a version in use far before the age of Letraset.</p><p><strong>INTERPRETING NONSENSE</strong></p><p>Don’t bother typing “lorem ipsum” into Google translate. If you already tried, you may have gotten anything from “NATO” to “China”, depending on how you capitalized the letters. The bizarre translation was fodder for conspiracy theories, but Google has since updated its “lorem ipsum” translation to, boringly enough, “lorem ipsum”.</p><p>One brave soul did take a stab at translating the almost-not-quite-Latin. According to The Guardian, Jaspreet Singh Boparai undertook the challenge with the<br>goal of making the text “precisely as incoherent in English as it is in Latin - and to make it incoherent in the same way”. As a result, “the Greek ‘eu’ in Latin<br>became the French ‘bien’ [...] and the ‘-ing’ ending in ‘lorem ipsum’ seemed best rendered by an ‘-iendum’ in English.”</p><p>&nbsp;</p><figure class=\"image image_resized\" style=\"width:100%;\"><img src=\"http://staging.wiooh.com:3001/v1/drive/1625019766814_pexels-cottonbro-4066294.png\"></figure><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>"
+},{
+  "_id": {
+    "$oid": "60da9c5562b63a0021877d14"
+  },
+  "group": "Corporate Profile Header",
+  "type": "RICHTEXT",
+  "label": "Title",
+  "key": "corporate_profile_header_title",
+  "order": 1,
+  "createdAt": {
+    "$date": "2021-06-29T04:06:46.003Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:26:23.747Z"
+  },
+  "__v": 0,
+  "value": "<h2 style=\"text-align:center;\"><strong>CORPORATE PROFILE</strong></h2>"
+},{
+  "_id": {
+    "$oid": "60dfd3a286a57b0021d5f1d2"
+  },
+  "group": "GROUP",
+  "type": "GALLERY",
+  "label": "LABEL",
+  "key": "abc",
+  "order": 1,
+  "createdAt": {
+    "$date": "2021-07-03T03:04:02.476Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-03T03:04:02.476Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60dfd40886a57b0021d5f1d3"
+  },
+  "group": "GROUP",
+  "type": "PHOTO",
+  "label": "baleb 2",
+  "key": "key-2",
+  "order": 2,
+  "createdAt": {
+    "$date": "2021-07-03T03:05:44.485Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-03T03:05:44.485Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60dfd45686a57b0021d5f1d6"
+  },
+  "group": "bfv",
+  "type": "RICHTEXT",
+  "label": "nmbvnm",
+  "key": "u6576",
+  "order": -1,
+  "createdAt": {
+    "$date": "2021-07-03T03:07:02.405Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-03T03:07:02.405Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60daf96062b63a0021877d45"
+  },
+  "group": "Contact",
+  "type": "PHOTO",
+  "label": "Photo",
+  "key": "contact_image",
+  "order": 1,
+  "createdAt": {
+    "$date": "2021-06-29T10:43:44.637Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:29:08.068Z"
+  },
+  "__v": 0,
+  "value": "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAyMDE0NjIwNl9ibG9iIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.dht4q6VGgV24NPkT1hSti6yhcam7PQmG2tyZzUKASQ4"
+},{
+  "_id": {
+    "$oid": "60da9ca462b63a0021877d16"
+  },
+  "group": "Corporate Profile Header",
+  "type": "RICHTEXT",
+  "label": "Content",
+  "key": "corporate_profile_header_content",
+  "order": 3,
+  "createdAt": {
+    "$date": "2021-06-29T04:08:04.935Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:26:23.747Z"
+  },
+  "__v": 0,
+  "value": "<p style=\"text-align:justify;\">Ee Sin Paper Products (Pte) Ltd is the leading distributor and Original Equipment Manufacturer (OEM) for stationery file and paper products. Founded in 1966, the company began business operations in the paper converting industry. Armed with a vision “to align with our customers’ values by making their products complete, competitive and carefree”, Ee Sin Paper Products today has cemented its name as a leading brand in the industry.</p><p style=\"text-align:justify;\"><br>Ee Sin Paper Products’ operations and business dealings are guided by four core mission statements:</p>"
+},{
+  "_id": {
+    "$oid": "60da9cc962b63a0021877d17"
+  },
+  "group": "Corporate Profile Criteria",
+  "type": "RICHTEXT",
+  "label": "Col 1",
+  "key": "corporate_profile_criteria_col_1",
+  "order": 4,
+  "createdAt": {
+    "$date": "2021-06-29T04:08:41.860Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:26:23.747Z"
+  },
+  "__v": 0,
+  "value": "<h2><span style=\"color:hsl(204,51%,67%);font-size:36px;\"><strong>01</strong></span></h2><h4><strong>Best Brand Choice</strong></h4><p>in partnership</p>"
+}]

@@ -1,0 +1,228 @@
+[{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3722001"
+  },
+  "name": "category 1",
+  "url": "category-1",
+  "description": "description 1",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "5143afc66d44e1ceb3722004"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:25.974Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:25.974Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3722004"
+  },
+  "name": "category 4",
+  "url": "category-4",
+  "description": "description 4",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "5143afc66d44e1ceb3722009"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:28.974Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:28.974Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3722005"
+  },
+  "name": "category 5",
+  "url": "category-5",
+  "description": "description 5",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "5143afc66d44e1ceb3722004"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.974Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:29.974Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3722002"
+  },
+  "name": "category 2",
+  "url": "category-2",
+  "description": "description 2",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "5143afc66d44e1ceb3722004"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.974Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:26.974Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3722006"
+  },
+  "name": "category 6",
+  "url": "category-6",
+  "description": "description 6",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "5143afc66d44e1ceb3722009"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30.974Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:30.974Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3722007"
+  },
+  "name": "category 7",
+  "url": "category-7",
+  "description": "description 7",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "5143afc66d44e1ceb3722006"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:31.974Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:31.974Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3722008"
+  },
+  "name": "category 8",
+  "url": "category-8",
+  "description": "description 8",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "5143afc66d44e1ceb3722006"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:32.974Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:32.974Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3722009"
+  },
+  "name": "category 9",
+  "url": "category-9",
+  "description": "description 9",
+  "status": "ENABLED",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:33.974Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:33.974Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3722003"
+  },
+  "name": "category 3",
+  "url": "category-3",
+  "description": "description 3",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "5143afc66d44e1ceb3722004"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27.974Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:27.974Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3722010"
+  },
+  "name": "category 10",
+  "url": "category-10",
+  "description": "description 10",
+  "status": "ENABLED",
+  "parent": {
+    "$oid": "5143afc66d44e1ceb3722009"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:34.974Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:34.974Z"
+  }
+},{
+  "_id": {
+    "$oid": "61077a311df5340020d31c69"
+  },
+  "status": "ENABLED",
+  "name": "What is Lorem Ipsum?",
+  "url": "what-is-lorem-ipsum",
+  "createdAt": {
+    "$date": "2021-08-02T04:53:05.108Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T04:53:13.976Z"
+  },
+  "__v": 0,
+  "seoProps": {}
+},{
+  "_id": {
+    "$oid": "6107a4e81df5340020d31c6d"
+  },
+  "status": "ENABLED",
+  "name": "Khóa 1",
+  "url": "kh-a-1",
+  "parent": {
+    "$oid": "5143afc66d44e1ceb3722009"
+  },
+  "createdAt": {
+    "$date": "2021-08-02T07:55:20.645Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T07:55:20.645Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6107a50e1df5340020d31c6f"
+  },
+  "status": "ENABLED",
+  "name": "Khóa 12",
+  "url": "kh-a-12",
+  "parent": {
+    "$oid": "6107a4e81df5340020d31c6d"
+  },
+  "createdAt": {
+    "$date": "2021-08-02T07:55:58.077Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T08:02:42.467Z"
+  },
+  "__v": 0,
+  "seoProps": {}
+}]

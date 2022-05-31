@@ -1,0 +1,1238 @@
+[{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720001"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723001"
+    }
+  ],
+  "orderNo": "INV0000001",
+  "orderDateTime": "2021-05-04T04:41:08.373Z",
+  "total": "1000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "20",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "132",
+  "membershipDiscount": "13.2",
+  "gstPayable": "8.32",
+  "grandTotal": "127.12",
+  "payment": "Payment Method 1",
+  "quantity": "10",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.070Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:26.070Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720002"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723002"
+    }
+  ],
+  "orderNo": "INV0000002",
+  "orderDateTime": "2022-05-04T04:41:08.373Z",
+  "total": "2000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "21",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "133",
+  "membershipDiscount": "14.2",
+  "gstPayable": "9.32",
+  "grandTotal": "128.12",
+  "payment": "Payment Method 2",
+  "quantity": "11",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27.070Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:27.070Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720003"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723003"
+    }
+  ],
+  "orderNo": "INV0000003",
+  "orderDateTime": "2023-05-04T04:41:08.373Z",
+  "total": "3000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "22",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "134",
+  "membershipDiscount": "15.2",
+  "gstPayable": "10.32",
+  "grandTotal": "129.12",
+  "payment": "Payment Method 3",
+  "quantity": "12",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:28.071Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:28.071Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720004"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723004"
+    }
+  ],
+  "orderNo": "INV0000004",
+  "orderDateTime": "2024-05-04T04:41:08.373Z",
+  "total": "4000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "23",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "135",
+  "membershipDiscount": "16.2",
+  "gstPayable": "11.32",
+  "grandTotal": "130.12",
+  "payment": "Payment Method 4",
+  "quantity": "13",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.071Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:29.071Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720006"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723006"
+    }
+  ],
+  "orderNo": "INV0000006",
+  "orderDateTime": "2026-05-04T04:41:08.373Z",
+  "total": "6000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "25",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "137",
+  "membershipDiscount": "18.2",
+  "gstPayable": "13.32",
+  "grandTotal": "132.12",
+  "payment": "Payment Method 6",
+  "quantity": "15",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:31.071Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:31.071Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720005"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723005"
+    }
+  ],
+  "orderNo": "INV0000005",
+  "orderDateTime": "2025-05-04T04:41:08.373Z",
+  "total": "5000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "24",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "136",
+  "membershipDiscount": "17.2",
+  "gstPayable": "12.32",
+  "grandTotal": "131.12",
+  "payment": "Payment Method 5",
+  "quantity": "14",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30.071Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:30.071Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720008"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723008"
+    }
+  ],
+  "orderNo": "INV0000008",
+  "orderDateTime": "2028-05-04T04:41:08.373Z",
+  "total": "8000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "27",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "139",
+  "membershipDiscount": "20.2",
+  "gstPayable": "15.32",
+  "grandTotal": "134.12",
+  "payment": "Payment Method 8",
+  "quantity": "17",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:33.072Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:33.072Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720007"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723007"
+    }
+  ],
+  "orderNo": "INV0000007",
+  "orderDateTime": "2027-05-04T04:41:08.373Z",
+  "total": "7000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "26",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "138",
+  "membershipDiscount": "19.2",
+  "gstPayable": "14.32",
+  "grandTotal": "133.12",
+  "payment": "Payment Method 7",
+  "quantity": "16",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:32.072Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:32.072Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720009"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723009"
+    }
+  ],
+  "orderNo": "INV0000009",
+  "orderDateTime": "2029-05-04T04:41:08.373Z",
+  "total": "9000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "28",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "140",
+  "membershipDiscount": "21.2",
+  "gstPayable": "16.32",
+  "grandTotal": "135.12",
+  "payment": "Payment Method 9",
+  "quantity": "18",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:34.072Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:34.072Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720010"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723010"
+    }
+  ],
+  "orderNo": "INV0000010",
+  "orderDateTime": "2030-05-04T04:41:08.373Z",
+  "total": "10000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "29",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "141",
+  "membershipDiscount": "22.2",
+  "gstPayable": "17.32",
+  "grandTotal": "136.12",
+  "payment": "Payment Method 10",
+  "quantity": "19",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:35.072Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:35.072Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720013"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723013"
+    }
+  ],
+  "orderNo": "INV0000013",
+  "orderDateTime": "2033-05-04T04:41:08.373Z",
+  "total": "13000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "32",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "144",
+  "membershipDiscount": "25.2",
+  "gstPayable": "20.32",
+  "grandTotal": "139.12",
+  "payment": "Payment Method 13",
+  "quantity": "22",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:38.073Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:38.073Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720011"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723011"
+    }
+  ],
+  "orderNo": "INV0000011",
+  "orderDateTime": "2031-05-04T04:41:08.373Z",
+  "total": "11000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "30",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "142",
+  "membershipDiscount": "23.2",
+  "gstPayable": "18.32",
+  "grandTotal": "137.12",
+  "payment": "Payment Method 11",
+  "quantity": "20",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:36.073Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:36.073Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720014"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723014"
+    }
+  ],
+  "orderNo": "INV0000014",
+  "orderDateTime": "2034-05-04T04:41:08.373Z",
+  "total": "14000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "33",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "145",
+  "membershipDiscount": "26.2",
+  "gstPayable": "21.32",
+  "grandTotal": "140.12",
+  "payment": "Payment Method 14",
+  "quantity": "23",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:39.074Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:39.074Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720012"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723012"
+    }
+  ],
+  "orderNo": "INV0000012",
+  "orderDateTime": "2032-05-04T04:41:08.373Z",
+  "total": "12000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "31",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "143",
+  "membershipDiscount": "24.2",
+  "gstPayable": "19.32",
+  "grandTotal": "138.12",
+  "payment": "Payment Method 12",
+  "quantity": "21",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:37.073Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:37.073Z"
+  }
+},{
+  "_id": {
+    "$oid": "1233afc66d44e1ceb3720015"
+  },
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "orderProducts": [
+    {
+      "$oid": "1321afc66d44e1ceb3723015"
+    }
+  ],
+  "orderNo": "INV0000015",
+  "orderDateTime": "2035-05-04T04:41:08.373Z",
+  "total": "15000",
+  "shippingLocation": "Empire State Building",
+  "status": "PENDING",
+  "totalWeight": "34",
+  "discountCode": "0",
+  "discountValue": "0",
+  "discountName": "0",
+  "tax": "0",
+  "shippingFee": "0",
+  "HandlingFee": "0",
+  "subTotal": "146",
+  "membershipDiscount": "27.2",
+  "gstPayable": "22.32",
+  "grandTotal": "141.12",
+  "payment": "Payment Method 15",
+  "quantity": "24",
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:40.074Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:40.074Z"
+  }
+},{
+  "_id": {
+    "$oid": "60f925b6f1607f002192f1bc"
+  },
+  "orderProducts": [
+    {
+      "$oid": "60f925b6f1607f002192f1b5"
+    },
+    {
+      "$oid": "60f925b6f1607f002192f1b6"
+    },
+    {
+      "$oid": "60f925b6f1607f002192f1b7"
+    },
+    {
+      "$oid": "60f925b6f1607f002192f1b8"
+    },
+    {
+      "$oid": "60f925b6f1607f002192f1b9"
+    },
+    {
+      "$oid": "60f925b6f1607f002192f1ba"
+    },
+    {
+      "$oid": "60f925b6f1607f002192f1bb"
+    }
+  ],
+  "status": "COMPLETED",
+  "gstPayable": 0,
+  "membership": [],
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "membershipDiscount": 17800,
+  "total": 29020,
+  "subTotal": 11200,
+  "shippingAddress": {
+    "firstName": "Super",
+    "lastName": "Admin",
+    "phone": "123456189",
+    "blockNo": "1",
+    "stresstName": "123 Alexandre de Rhodes New York NEW YORK USA",
+    "floor": "1",
+    "unitNo": "123",
+    "buildingName": "Empire State Building",
+    "state": "NEW YORK",
+    "country": "24",
+    "city": "BS",
+    "postCode": "74000"
+  },
+  "billingAddress": {
+    "firstName": "Super",
+    "lastName": "Admin",
+    "phone": "123456189",
+    "blockNo": "1",
+    "stresstName": "123 Alexandre de Rhodes New York NEW YORK USA",
+    "floor": "1",
+    "unitNo": "123",
+    "buildingName": "Empire State Building",
+    "state": "NEW YORK",
+    "country": "04",
+    "city": "AS",
+    "postCode": "74000"
+  },
+  "shippingFee": 20,
+  "payment": "CASH_ON_DELIVERY",
+  "paymentStatus": "UNPAID",
+  "orderDateTime": {
+    "$date": "2021-07-22T08:00:54Z"
+  },
+  "orderNo": "21072200001",
+  "grandTotal": 11200,
+  "createdAt": {
+    "$date": "2021-07-22T08:00:54.268Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T09:07:04.727Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f9384af1607f002192f1c6"
+  },
+  "orderProducts": [
+    {
+      "$oid": "60f9384af1607f002192f1c5"
+    }
+  ],
+  "status": "PENDING",
+  "gstPayable": 0,
+  "membership": [],
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720021"
+  },
+  "membershipDiscount": 41420,
+  "total": 207100,
+  "subTotal": 165680,
+  "shippingAddress": {
+    "firstName": "first 28",
+    "lastName": "Last 29",
+    "phone": "123456216",
+    "blockNo": "2",
+    "stresstName": "124 Alexandre de Rhodes New York NEW YORK USA",
+    "floor": "3",
+    "unitNo": "124",
+    "buildingName": "Empire State Building",
+    "state": "NEW YORK",
+    "country": "USA",
+    "city": "New York",
+    "postCode": "74000"
+  },
+  "billingAddress": {
+    "firstName": "first 28",
+    "lastName": "Last 29",
+    "phone": "123456216",
+    "blockNo": "2",
+    "stresstName": "124 Alexandre de Rhodes New York NEW YORK USA",
+    "floor": "3",
+    "unitNo": "124",
+    "buildingName": "Empire State Building",
+    "state": "NEW YORK",
+    "country": "USA",
+    "city": "New York",
+    "postCode": "74000"
+  },
+  "shippingFee": 0,
+  "payment": "CASH_ON_DELIVERY",
+  "paymentStatus": "UNPAID",
+  "orderDateTime": {
+    "$date": "2021-07-22T09:20:10Z"
+  },
+  "orderNo": "21072200002",
+  "grandTotal": 165680,
+  "createdAt": {
+    "$date": "2021-07-22T09:20:10.247Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T09:20:22.251Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f945e6f1607f002192f1c8"
+  },
+  "orderProducts": [
+    {
+      "$oid": "60f945e6f1607f002192f1c7"
+    }
+  ],
+  "status": "DELIVERED",
+  "gstPayable": 0,
+  "membership": [],
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720021"
+  },
+  "membershipDiscount": 5000,
+  "total": 25020,
+  "subTotal": 20000,
+  "shippingAddress": {
+    "firstName": "first 28",
+    "lastName": "Last 29",
+    "phone": "123456216",
+    "blockNo": "2",
+    "stresstName": "124 Alexandre de Rhodes New York NEW YORK USA",
+    "floor": "3",
+    "unitNo": "124",
+    "buildingName": "Empire State Building",
+    "state": "NEW YORK",
+    "country": "USA",
+    "city": "New York",
+    "postCode": "74000"
+  },
+  "billingAddress": {
+    "firstName": "first 28",
+    "lastName": "Last 29",
+    "phone": "123456216",
+    "blockNo": "2",
+    "stresstName": "124 Alexandre de Rhodes New York NEW YORK USA",
+    "floor": "3",
+    "unitNo": "124",
+    "buildingName": "Empire State Building",
+    "state": "NEW YORK",
+    "country": "USA",
+    "city": "New York",
+    "postCode": "74000"
+  },
+  "shippingFee": 20,
+  "payment": "CASH_ON_DELIVERY",
+  "paymentStatus": "UNPAID",
+  "orderDateTime": {
+    "$date": "2021-07-22T10:18:14Z"
+  },
+  "orderNo": "21072200003",
+  "grandTotal": 20000,
+  "createdAt": {
+    "$date": "2021-07-22T10:18:14.641Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-26T09:49:17.864Z"
+  },
+  "__v": 0,
+  "added": false
+},{
+  "_id": {
+    "$oid": "60fbd1b7f1607f002192f1de"
+  },
+  "orderProducts": [
+    {
+      "$oid": "60fbd1b7f1607f002192f1dc"
+    },
+    {
+      "$oid": "60fbd1b7f1607f002192f1dd"
+    }
+  ],
+  "status": "PENDING",
+  "gstPayable": 0,
+  "membership": [],
+  "customer": {
+    "$oid": "60f93236f1607f002192f1c2"
+  },
+  "membershipDiscount": 430.71999999999935,
+  "total": 8614.4,
+  "subTotal": 8183.68,
+  "shippingAddress": {
+    "firstName": "Mia",
+    "lastName": "Bush",
+    "phone": "0123456789",
+    "stresstName": " "
+  },
+  "billingAddress": {
+    "firstName": "Mia",
+    "lastName": "Bush",
+    "phone": "0123456789",
+    "stresstName": " "
+  },
+  "shippingFee": 0,
+  "payment": "CASH_ON_DELIVERY",
+  "paymentStatus": "UNPAID",
+  "orderDateTime": {
+    "$date": "2021-07-24T08:39:19Z"
+  },
+  "orderNo": "21072400001",
+  "grandTotal": 8183.68,
+  "createdAt": {
+    "$date": "2021-07-24T08:39:19.980Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-24T08:39:41.985Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610113cc6133d70020b8a49b"
+  },
+  "orderProducts": [
+    {
+      "$oid": "610113cc6133d70020b8a49a"
+    }
+  ],
+  "status": "PENDING",
+  "gstPayable": 0,
+  "membership": [],
+  "added": false,
+  "customer": {
+    "$oid": "61010d126133d70020b8a491"
+  },
+  "membershipDiscount": 6.018000000000001,
+  "total": 40.12,
+  "subTotal": 34.102,
+  "shippingAddress": {
+    "firstName": "Mia",
+    "lastName": "Bush",
+    "phone": "0123456789",
+    "blockNo": "Lorem Ipsum",
+    "stresstName": "Lorem Ipsum 123 123 Lorem Ipsum Lorem Ipsum",
+    "floor": "Lorem Ipsum",
+    "unitNo": "Lorem Ipsum",
+    "buildingName": "Lorem Ipsum",
+    "state": "Lorem Ipsum",
+    "country": "Lorem Ipsum",
+    "city": "123",
+    "postCode": "Lorem Ipsum"
+  },
+  "billingAddress": {
+    "firstName": "Mia",
+    "lastName": "Bush",
+    "phone": "0123456789",
+    "blockNo": "Lorem Ipsum",
+    "stresstName": "Lorem Ipsum 123 123 Lorem Ipsum Lorem Ipsum",
+    "floor": "Lorem Ipsum",
+    "unitNo": "Lorem Ipsum",
+    "buildingName": "Lorem Ipsum",
+    "state": "Lorem Ipsum",
+    "country": "Lorem Ipsum",
+    "city": "123",
+    "postCode": "Lorem Ipsum"
+  },
+  "shippingFee": 0,
+  "payment": "CASH_ON_DELIVERY",
+  "paymentStatus": "UNPAID",
+  "orderDateTime": {
+    "$date": "2021-07-28T08:22:36Z"
+  },
+  "orderNo": "21072800001",
+  "grandTotal": 34.102,
+  "createdAt": {
+    "$date": "2021-07-28T08:22:36.098Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T08:22:38.134Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6102302a6133d70020b8a4ab"
+  },
+  "orderProducts": [
+    {
+      "$oid": "6102302a6133d70020b8a4aa"
+    }
+  ],
+  "status": "CANCELLED",
+  "gstPayable": 0,
+  "membership": [],
+  "added": true,
+  "customer": {
+    "$oid": "610228af6133d70020b8a4a4"
+  },
+  "membershipDiscount": 32.096000000000004,
+  "total": 180.48,
+  "subTotal": 128.384,
+  "shippingAddress": {
+    "firstName": "Anna",
+    "lastName": "Bell",
+    "phone": "Lorem Ipsum 01 Shipping",
+    "blockNo": "Lorem Ipsum 01 Shipping",
+    "stresstName": "Lorem Ipsum 01 Shipping",
+    "floor": "Lorem Ipsum 01 Shipping",
+    "unitNo": "Lorem Ipsum 01 Shipping",
+    "buildingName": "Lorem Ipsum 01 Shipping",
+    "state": "Lorem Ipsum 01 Shipping",
+    "country": "AU",
+    "city": "VIC",
+    "postCode": "Lorem Ipsum 01 Shipping"
+  },
+  "billingAddress": {
+    "firstName": "Anna",
+    "lastName": "Bell",
+    "phone": "Lorem Ipsum 02 billing",
+    "blockNo": "Lorem Ipsum 02 billing",
+    "stresstName": " Lorem Ipsum 02 billing",
+    "floor": "Lorem Ipsum 02 billing",
+    "unitNo": "Lorem Ipsum 02 billing",
+    "buildingName": "Lorem Ipsum 02 billing",
+    "state": "Lorem Ipsum 02 billing",
+    "country": "CC",
+    "city": "DI",
+    "postCode": "Lorem Ipsum 02 billing"
+  },
+  "shippingFee": 20,
+  "payment": "CASH_ON_DELIVERY",
+  "paymentStatus": "UNPAID",
+  "orderDateTime": {
+    "$date": "2021-07-29T04:35:54Z"
+  },
+  "orderNo": "21072900001",
+  "purchaseOrder": "Lorem Ipsum purchase",
+  "notes": "Lorem Ispum Notes",
+  "grandTotal": 128.384,
+  "createdAt": {
+    "$date": "2021-07-29T04:35:54.069Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T06:06:34.031Z"
+  },
+  "__v": 0,
+  "active": true
+},{
+  "_id": {
+    "$oid": "61036a0d1df5340020d31c57"
+  },
+  "orderProducts": [
+    {
+      "$oid": "61036a0d1df5340020d31c54"
+    },
+    {
+      "$oid": "61036a0d1df5340020d31c55"
+    },
+    {
+      "$oid": "61036a0d1df5340020d31c56"
+    }
+  ],
+  "status": "PENDING",
+  "gstPayable": 0,
+  "membership": [],
+  "added": false,
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720024"
+  },
+  "membershipDiscount": 34280.23999999999,
+  "total": 171401.2,
+  "subTotal": 137120.96000000002,
+  "shippingAddress": {
+    "firstName": "first 31",
+    "lastName": "Last 32",
+    "phone": "123456219",
+    "blockNo": "6",
+    "stresstName": "25 Alexandre de Rhodes New York NEW YORK USA",
+    "floor": "2",
+    "unitNo": "25",
+    "buildingName": "Empire State Building",
+    "state": "NEW YORK",
+    "country": "USA",
+    "city": "New York",
+    "postCode": "74000"
+  },
+  "billingAddress": {
+    "firstName": "first 31",
+    "lastName": "Last 32",
+    "phone": "123456219",
+    "blockNo": "6",
+    "stresstName": "25 Alexandre de Rhodes New York NEW YORK USA",
+    "floor": "2",
+    "unitNo": "25",
+    "buildingName": "Empire State Building",
+    "state": "NEW YORK",
+    "country": "USA",
+    "city": "New York",
+    "postCode": "74000"
+  },
+  "shippingFee": 0,
+  "payment": "CASH_ON_DELIVERY",
+  "paymentStatus": "UNPAID",
+  "orderDateTime": {
+    "$date": "2021-07-30T02:55:09Z"
+  },
+  "orderNo": "21073000001",
+  "purchaseOrder": "2121234",
+  "notes": "2323werwerew23",
+  "grandTotal": 137120.96000000002,
+  "createdAt": {
+    "$date": "2021-07-30T02:55:09.969Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:55:12.295Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6103c6c51df5340020d31c5b"
+  },
+  "orderProducts": [
+    {
+      "$oid": "6103c6c51df5340020d31c5a"
+    }
+  ],
+  "status": "READY_TO_SHIP",
+  "gstPayable": 0,
+  "membership": [],
+  "added": false,
+  "customer": {
+    "$oid": "610228af6133d70020b8a4a4"
+  },
+  "membershipDiscount": 481.4399999999998,
+  "total": 2407.2,
+  "subTotal": 1925.76,
+  "shippingAddress": {
+    "firstName": "Anna",
+    "lastName": "Bell",
+    "phone": "121212121",
+    "stresstName": " "
+  },
+  "billingAddress": {
+    "firstName": "Anna",
+    "lastName": "Bell",
+    "phone": "121212121",
+    "stresstName": " "
+  },
+  "shippingFee": 0,
+  "payment": "CASH_ON_DELIVERY",
+  "paymentStatus": "UNPAID",
+  "orderDateTime": {
+    "$date": "2021-07-30T09:30:45Z"
+  },
+  "orderNo": "21073000002",
+  "grandTotal": 1925.76,
+  "createdAt": {
+    "$date": "2021-07-30T09:30:45.646Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-02T09:46:35.026Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6129d216d692980021c7c5dc"
+  },
+  "orderProducts": [
+    {
+      "$oid": "6129d216d692980021c7c5da"
+    },
+    {
+      "$oid": "6129d216d692980021c7c5db"
+    }
+  ],
+  "status": "COMPLETED",
+  "gstPayable": 0,
+  "membership": [],
+  "added": false,
+  "active": true,
+  "customer": {
+    "$oid": "610228af6133d70020b8a4a4"
+  },
+  "membershipDiscount": 776.0479999999998,
+  "total": 3880.24,
+  "subTotal": 3104.192,
+  "shippingAddress": {
+    "firstName": "Anna",
+    "lastName": "Bell",
+    "phone": "121212121",
+    "stresstName": " "
+  },
+  "billingAddress": {
+    "firstName": "Anna",
+    "lastName": "Bell",
+    "phone": "121212121",
+    "stresstName": " "
+  },
+  "shippingFee": 0,
+  "payment": "CASH_ON_DELIVERY",
+  "paymentStatus": "UNPAID",
+  "orderDateTime": {
+    "$date": "2021-08-28T06:05:10Z"
+  },
+  "orderNo": "21082800001",
+  "grandTotal": 3104.192,
+  "createdAt": {
+    "$date": "2021-08-28T06:05:10.914Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T06:06:56.587Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6129d253d692980021c7c5df"
+  },
+  "orderProducts": [
+    {
+      "$oid": "6129d253d692980021c7c5de"
+    }
+  ],
+  "status": "PENDING",
+  "gstPayable": 0,
+  "membership": [],
+  "added": false,
+  "active": true,
+  "customer": {
+    "$oid": "610228af6133d70020b8a4a4"
+  },
+  "membershipDiscount": 360,
+  "total": 1800,
+  "subTotal": 1440,
+  "shippingAddress": {
+    "firstName": "Anna",
+    "lastName": "Bell",
+    "phone": "121212121",
+    "stresstName": " "
+  },
+  "billingAddress": {
+    "firstName": "Anna",
+    "lastName": "Bell",
+    "phone": "121212121",
+    "stresstName": " "
+  },
+  "shippingFee": 0,
+  "payment": "CASH_ON_DELIVERY",
+  "paymentStatus": "UNPAID",
+  "orderDateTime": {
+    "$date": "2021-08-28T06:06:11Z"
+  },
+  "orderNo": "21082800002",
+  "grandTotal": 1440,
+  "createdAt": {
+    "$date": "2021-08-28T06:06:11.032Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T06:06:11.032Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6129d330d692980021c7c5e2"
+  },
+  "orderProducts": [
+    {
+      "$oid": "6129d330d692980021c7c5e1"
+    }
+  ],
+  "status": "PENDING",
+  "gstPayable": 0,
+  "membership": [],
+  "added": true,
+  "active": true,
+  "customer": {
+    "$oid": "610228af6133d70020b8a4a4"
+  },
+  "membershipDiscount": 377.12800000000016,
+  "total": 1885.64,
+  "subTotal": 1508.512,
+  "shippingAddress": {
+    "firstName": "Anna",
+    "lastName": "Bell",
+    "phone": "121212121",
+    "stresstName": " "
+  },
+  "billingAddress": {
+    "firstName": "Anna",
+    "lastName": "Bell",
+    "phone": "121212121",
+    "stresstName": " "
+  },
+  "shippingFee": 0,
+  "payment": "CASH_ON_DELIVERY",
+  "paymentStatus": "UNPAID",
+  "orderDateTime": {
+    "$date": "2021-08-28T06:09:52Z"
+  },
+  "orderNo": "21082800003",
+  "grandTotal": 1508.512,
+  "createdAt": {
+    "$date": "2021-08-28T06:09:52.360Z"
+  },
+  "updatedAt": {
+    "$date": "2021-09-20T08:43:57.878Z"
+  },
+  "__v": 0
+}]

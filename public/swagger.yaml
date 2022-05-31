@@ -1,0 +1,7750 @@
+swagger: '2.0'
+info:
+  description: api
+  version: 1.0.0
+  title: ESPP Project - APIs document
+  contact:
+    email: tuan@ideabox.com.au
+host: espp.staging.wiooh.com:3001
+schemes:
+  - http
+paths:
+  /v1/enquiries:
+    get:
+      tags:
+        - Enquiry
+      summary: get-list Enquiry
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: enquiryId
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Enquiry'
+              meta: 
+                $ref: '#/definitions/Meta'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Enquiry
+      summary: Create a enquiry
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+              email:
+                type: string
+              contact:
+                type: string
+              product:
+                type: string
+              message:
+                type: string
+              internalNote:
+                type: array
+                items: 
+                  type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              _id: 
+                type: string
+              name:
+                type: string
+              email:
+                type: string
+              contact:
+                type: string
+              product:
+                type: string
+              message:
+                type: string
+              internalNote:
+                type: array
+                items: 
+                  type: string
+              pushlish: 
+                type: boolean
+              status: 
+                type: string
+              createdAt: 
+                type: string
+              updatedAt: 
+                type: string
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/enquiries/{enquiryId}':
+    get:
+      tags:
+        - Enquiry
+      summary: Get an existing enquiry
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: enquiryId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data: 
+                $ref: '#/definitions/Enquiry'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Enquiry
+      summary: Update an existing enquiry
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: enquiryId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              reason:
+                type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data: 
+                $ref: '#/definitions/Enquiry'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Enquiry
+      summary: Delete a enquiry
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: enquiryId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data: 
+                $ref: '#/definitions/Enquiry'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/orders':
+    get:
+      tags:
+        - Order
+      summary: Order
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - in: query
+          name: name
+          type: string
+        - in: query
+          name: _id
+          type: string
+        - in: query
+          name: quantity
+          type: number
+        - in: query
+          name: customer
+          type: string
+        - in: query
+          name: user
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Order'
+              meta: 
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Order
+      summary: Create a order
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              cartIds:
+                type: array
+                items: 
+                  type: string
+              shippingLocation:
+                type: string
+      responses:
+        '200':
+          description: successful
+          schema: 
+            type: object
+            properties: 
+              data: 
+                type: object
+                properties: 
+                  _id: 
+                    type: string
+                  orderProducts: 
+                    type: array
+                    items:
+                      type: string
+                  status: 
+                    type: string
+                  gstPayable: 
+                    type: string
+                  customer: 
+                    type: string
+                  membershipDiscount: 
+                    type: number 
+                  total: 
+                    type: number
+                  subTotal: 
+                    type: number
+                  grandTotal:
+                    type: string
+                  orderDateTime: 
+                    type: string
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/orders/{orderId}':
+    get:
+      tags:
+        - Order
+      summary: Get an existing order
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: orderId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema: 
+            type: object
+            properties: 
+              data:
+                $ref: '#/definitions/Order'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Order
+      summary: Update an existing order
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: orderId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+      responses:
+        '200':
+          description: successful
+          schema: 
+            type: object
+            properties: 
+              data:
+                $ref: '#/definitions/Order'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Order
+      summary: Delete a order
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: orderId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema: 
+            type: object
+            properties: 
+              data:
+                $ref: '#/definitions/Order'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/orders/{orderId}/print':
+    post:
+      tags: 
+        - Order 
+      summary: print order infomation
+      description: ''
+      produces: 
+        - application/json
+      parameters:
+        - name: orderId
+          in: path
+          required: true
+          type: string
+        - in: body
+          name: body
+          schema:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: 
+                  - ORDER_INVOICE 
+                  - ORDER_RECEIPT 
+                  - ORDER_SLIP
+      responses: 
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data: 
+                $ref: '#/definitions/Order'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+  '/v1/orders/{orderId}/send-email':
+    post:
+      tags: 
+        - Order 
+      summary: print order infomation
+      description: ''
+      produces: 
+        - application/json
+      parameters:
+        - name: orderId
+          in: path
+          required: true
+          type: string
+        - in: body
+          name: body
+          schema:
+            type: object
+            properties:
+              type:
+                type: string
+                enum: 
+                  - ORDER_INVOICE 
+                  - ORDER_RECEIPT 
+                  - ORDER_SLIP
+      responses: 
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data: 
+                $ref: '#/definitions/Order'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+  /v1/carts:
+    get:
+      tags:
+        - Carts
+      summary: Carts
+      description: ''
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Membership'
+              meta:
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Cart
+      summary: create a Cart
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              productId: 
+                type: string
+              quantity:
+                type: string
+      responses:
+        '200':
+          description: successful
+          schema: 
+            type: object
+            properties:
+              data: 
+                $ref: '#/definitions/CartCreateIn'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Cart
+      summary: Delete a cart
+      description: ''
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Cart'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/carts/{cartId}':
+    get:
+      tags:
+        - Cart
+      summary: Get an existing cart
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: cartId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Cart'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Cart
+      summary: Update an existing Cart
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: cartId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              quantity:
+                type: number
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Cart'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Cart
+      summary: Delete a cart
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: cartId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Cart'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/products':
+    get:
+      tags:
+        - Product
+      summary: Product
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          type: string
+        - name: quantity
+          in: query
+          type: string
+        - name: sku
+          in: query
+          type: string
+        - name: description
+          in: query
+          type: string
+        - name: unit
+          in: query
+          type: string
+        - name: size
+          in: query
+          type: string
+        - name: typeAndMaterial
+          in: query
+          type: string
+        - name: uom
+          in: query
+          type: string
+        - name: itemPackingSize
+          in: query
+          type: string
+        - name: qtyPerCtn
+          in: query
+          type: string
+        - name: images
+          in: query
+          type: string
+        - name: taxApply
+          in: query
+          type: string
+        - name: status
+          in: query
+          type: string
+        - name: content
+          in: query
+          type: string
+        - name: styles
+          in: query
+          type: string
+        - name: published
+          in: query
+          type: string
+        - name: productCategories
+          in: query
+          type: string
+        - name: brands
+          in: query
+          type: string
+        - name: colors
+          in: query
+          type: string
+        - name: tags
+          in: query
+          type: string
+        - name: publicPrice
+          in: query
+          type: string
+        - name: seoProps
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Product'
+              meta: 
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Product
+      summary: Create a product
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              productCategories:
+                type: array
+                items: 
+                  type: string
+              brands:
+                type: array
+                items: 
+                  type: string 
+              colors: 
+                type: array 
+                items: 
+                  type: string 
+              tags: 
+                type: array 
+                items: 
+                  type: string 
+              images: 
+                type: array 
+                items: 
+                  type: string 
+              name: 
+                type: string
+              sku: 
+                type: string 
+              description: 
+                type: string 
+              publicPrice: 
+                type: number 
+              unit: 
+                type: string
+              size: 
+                type: string 
+              typeAndMaterial: 
+                type: string 
+              uom: 
+                type: string 
+              itemPackingSize: 
+                type: string 
+              qtyPerCtn: 
+                type: number 
+              taxApply:
+                type: number 
+              status: 
+                type: string 
+              content:
+                type: string 
+              style:
+                $ref: '#/definitions/CmsStyle' 
+              published: 
+                type: boolean
+              seoProps:
+                $ref: '#/definitions/SeoProp'
+      responses: 
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data: 
+                type: object
+                properties:
+                  _id:
+                    type: string
+                  name:
+                    type: string
+                  sku:
+                    type: string
+                  description:
+                    type: string
+                  unit:
+                    type: string
+                  size:
+                    type: string
+                  typeAndMaterial:
+                    type: string
+                  uom:
+                    type: string
+                  itemPackingSize:
+                    type: string
+                  publicPrice:
+                    type: number
+                  qtyPerCtn:
+                    type: number
+                  taxApply:
+                    type: number
+                  content:
+                    type: string
+                  images: 
+                    type: array
+                    items:
+                      type: string       
+                  status: 
+                    type: boolean
+                  productCategories: 
+                    type: array
+                    items:
+                      type: string 
+                  brands: 
+                    type: array
+                    items:
+                      type: string 
+                  colors: 
+                    type: array
+                    items:
+                      type: string 
+                  tags: 
+                    type: array
+                    items:
+                      type: string   
+                  published: 
+                    type: boolean
+                  url: 
+                    type: string
+                  createdAt:
+                    type: string
+                  updatedAt: 
+                    type: string
+                  seoProps:
+                    $ref: '#/definitions/SeoProp'
+                  styles: 
+                    $ref: '#/definitions/CmsStyle'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+    
+  '/v1/products/{id}':
+    get:
+      tags:
+        - Product
+      summary: Get an existing productId
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data: 
+                $ref: '#/definitions/Product'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Product
+      summary: Update an existing product
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              quantity:
+                type: number
+              name:
+                type: string
+              sku:
+                type: string
+              description:
+                type: string
+              publicPrice:
+                type: number
+              unit: 
+                type: string
+              size:
+                type: string
+              typeAndMaterial:
+                type: string
+              uom:
+                type: string
+              itemPackingSize:
+                type: string
+              qtyPerCtn:
+                type: string
+              taxApply:
+                type: boolean
+              status:
+                type: string
+              content: 
+                type: string
+              styles: 
+                $ref: '#/definitions/CmsStyle'
+              published:
+                type: boolean
+              seoProps:
+                $ref: '#/definitions/SeoProp'
+              images:
+                type: array 
+                items: 
+                  type: string
+              productCategories:
+                type: array 
+                items: 
+                  $ref: '#/definitions/ProductCategory'
+              brands:
+                type: array 
+                items: 
+                  $ref: '#/definitions/Brand'
+              colors:
+                type: array
+                items:
+                  type: string
+              tags:
+                type: array
+                items:
+                  $ref: '#/definitions/Tag'
+      responses: 
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data: 
+                $ref: '#/definitions/Product'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Product
+      summary: Delete a product
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: id
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses: 
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data: 
+                $ref: '#/definitions/Product'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/products/import:
+    post:
+      tags:
+        - Product
+      summary: Import Bulk Products
+      consumes:
+        - multipart/form-data
+      parameters:
+        - in: formData
+          name: upfile
+          type: file
+          description: The file to upload.
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Product'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+  /v1/product-url/{url}:
+    get:
+      tags:
+        - Product
+      summary: get Product by url
+      produces: 
+        - application/json
+      description: ''
+      parameters:
+        - name: url
+          in: path
+          type: string
+          required: true
+          description: url
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Product'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+  /v1/product-categories:
+    get:
+      tags:
+        - Product Category
+      summary: Brand
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          type: string
+        - name: url
+          in: query
+          type: string
+        - name: description
+          in: query
+          type: string
+        - name: status
+          in: query
+          type: string
+        - name: parent
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/ProductCategory'
+              meta: 
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Product Category
+      summary: Create a product category
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/ProductCategory'
+      responses:
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/product-categories/{productCategoryId}':
+    get:
+      tags:
+        - Product Category
+      summary: Get an existing ban
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: productCategoryId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties: 
+              data: 
+                $ref: '#/definitions/ProductCategory'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Product Category
+      summary: Update an existing Product Category
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: productCategoryId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/ProductCategory'
+      responses:
+        '200':
+          description: successful
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Product Category
+      summary: Delete a product category
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: productCategoryId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/product-categories-url/{url}:
+    get:
+      tags:
+        - Product Category
+      summary: Get a product-category by url
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: url
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties: 
+              data: 
+                $ref: '#/definitions/ProductCategory'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/brands:
+    get:
+      tags:
+        - Brand
+      summary: Brand
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          type: string
+        - name: code
+          in: query
+          type: string
+        - name: image
+          in: query
+          type: string
+        - name: description
+          in: query
+          type: string
+        - name: seoProps
+          in: query
+          type: string
+        - name: status
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Brand'
+              meta: 
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'     
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Brand
+      summary: Create a brand
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/Brand'
+      responses:
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+  '/v1/brands/{brandId}':
+    get:
+      tags:
+        - Brand
+      summary: Get an existing ban
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: brandId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Brand'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Brand
+      summary: Update an existing Brand
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: brandId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/Brand'
+      responses:
+        '200':
+          description: successful
+          schema: 
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Brand'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Brand
+      summary: Delete a brand
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: brandId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema: 
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Brand'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+  /v1/colors:
+    get:
+      tags:
+        - Color
+      summary: Color
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          type: string
+        - name: code
+          in: query
+          type: string
+        - name: image
+          in: query
+          type: string
+        - name: description
+          in: query
+          type: string
+        - name: seoProps
+          in: query
+          type: string
+        - name: status
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Color'
+              meta: 
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Color
+      summary: Create a color
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/Color'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Color'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+  '/v1/colors/{colorId}':
+    get:
+      tags:
+        - Color
+      summary: Get an existing color
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: colorId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            $ref: '#/definitions/Color'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Color
+      summary: Update an existing color
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: colorId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/Color'
+      responses:
+        '200':
+          description: successful
+          schema:
+            $ref: '#/definitions/Color'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Color
+      summary: Delete a color
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: colorId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            $ref: '#/definitions/Color'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+  /v1/tags:
+    get:
+      tags:
+        - Tag
+      summary: Tag
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          type: string
+        - name: description
+          in: query
+          type: string
+        - name: seoProps
+          in: query
+          type: string
+        - name: status
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Tag'
+              meta: 
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Tag
+      summary: Create a tag
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/Tag'
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Tag'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+  '/v1/tags/{tagId}':
+    get:
+      tags:
+        - Tag
+      summary: Get an existing tag
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: tagId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Tag'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Tag
+      summary: Update an existing tag
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: tagId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/Tag'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Tag'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Tag
+      summary: Delete a tag
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: tagId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Tag'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+  /v1/customers:
+    get:
+      tags:
+        - Customer
+      summary: Customer
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Customer'
+              meta:
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Customer
+      summary: Create a customer
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              membership:
+                type: string
+              user:
+                type: string
+              addressBlockNo:
+                type: string
+              addressStresstName:
+                type: string
+              addressFloor:
+                type: string
+              addressUnitNo:
+                type: string
+              addressBuildingName:
+                type: string
+              addressPostCode:
+                type: string
+              addressCity:
+                type: string
+              addressState:
+                type: string
+              addressCountry:
+                type: string
+              financeSalutation:
+                type: string
+              financeFirstName:
+                type: string
+              financeLastName:
+                type: string
+              financeContactNo:
+                type: string
+              financeEmail:
+                type: string
+              companyName:
+                type: string
+              companyRegNo:
+                type: string
+              companyContactNo:
+                type: string
+              companyFax:
+                type: string
+              companyNatureOfBusiness:
+                type: string
+              remark:
+                type: string
+              designation:
+                type: string
+              contactNo:
+                type: string
+              personalEmail:
+                type: string
+              status:
+                type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Customer'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+  '/v1/customers/{customerId}':
+    get:
+      tags:
+        - Customer
+      summary: Get an existing customer
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: customerId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Customer'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Customer
+      summary: Update an existing customer
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: customerId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              membership:
+                type: string
+              user:
+                type: string
+              addressBlockNo:
+                type: string
+              addressStresstName:
+                type: string
+              addressFloor:
+                type: string
+              addressUnitNo:
+                type: string
+              addressBuildingName:
+                type: string
+              addressPostCode:
+                type: string
+              addressCity:
+                type: string
+              addressState:
+                type: string
+              addressCountry:
+                type: string
+              financeSalutation:
+                type: string
+              financeFirstName:
+                type: string
+              financeLastName:
+                type: string
+              financeContactNo:
+                type: string
+              financeEmail:
+                type: string
+              companyName:
+                type: string
+              companyRegNo:
+                type: string
+              companyContactNo:
+                type: string
+              companyFax:
+                type: string
+              companyNatureOfBusiness:
+                type: string
+              remark:
+                type: string
+              designation:
+                type: string
+              contactNo:
+                type: string
+              personalEmail:
+                type: string
+              status:
+                type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Customer'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Customer
+      summary: Delete a customer
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: customerId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Customer'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError' 
+      security:
+        - Bearer: []
+  /v1/memberships:
+    get:
+      tags:
+        - Membership
+      summary: Membership
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: _id
+          in: query
+          type: string
+        - name: name
+          in: query
+          type: string
+        - name: description
+          in: query
+          type: string
+        - name: discountPercent
+          in: query
+          type: string
+        - name: updatedAt
+          in: query
+          type: string
+        - name: createdAt
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Membership'
+              meta:
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Membership
+      summary: create a membership
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/MembershipCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema: 
+            type: object
+            properties:
+              data: 
+                $ref: '#/definitions/MembershipCreateOut'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/memberships/{membershipId}':
+    get:
+      tags:
+        - Membership
+      summary: Get an existing membership
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: membershipId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Membership'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Membership
+      summary: Update an existing bembership
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: membershipId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/MembershipCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Membership'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Membership
+      summary: Delete a block
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: membershipId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Membership'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/blocks:
+    get:
+      tags:
+        - Block
+      summary: block
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          type: string
+        - name: description
+          in: query
+          type: string
+        - name: groupCode
+          in: query
+          type: string
+        - name: status
+          in: query
+          type: string
+        - name: position
+          in: query
+          type: string
+        - name: type
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Block'
+              meta: 
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Block
+      summary: create a block
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/BlockCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/BlockCreateOut'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/blocks/{blockId}':
+    get:
+      tags:
+        - Block
+      summary: Get an existing block
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: blockId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Block'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Block
+      summary: Update an existing block
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: blockId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/BlockCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Block'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Block
+      summary: Delete a block
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: blockId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+        '401':
+          description: UNAUTHORIZED
+        '404':
+          description: Not found
+      security:
+        - Bearer: []
+  /v1/post-categories:
+    get:
+      tags:
+        - Post Category
+      summary: post
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          type: string
+        - name: url
+          in: query
+          type: string
+        - name: description
+          in: query
+          type: string
+        - name: status
+          in: query
+          type: string
+        - name: parent
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/PostCategory'
+              meta: 
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Post Category
+      summary: create a post Category
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/PostCategoryCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/PostCategoryCreateOut'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/post-categories/{postCategoryId}':
+    get:
+      tags:
+        - Post Category
+      summary: Get an existing post category
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: postCategoryId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/PostCategory'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Post Category
+      summary: Update an existing post category
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: postCategoryId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/PostCategoryCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/PostCategory'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Post Category
+      summary: Delete a post category
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: postCategoryId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/PostCategory'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/posts:
+    get:
+      tags:
+        - Post
+      summary: post
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          type: string
+        - name: description
+          in: query
+          type: string
+        - name: url
+          in: query
+          type: string
+        - name: pushlish
+          in: query
+          type: string
+        - name: site
+          in: query
+          type: string
+        - name: postCategory
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Post'
+              meta: 
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Post
+      summary: create a post
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/PostCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/PostCreateOut'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/posts/{postId}':
+    get:
+      tags:
+        - Post
+      summary: Get an existing post
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: postId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Post'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Post
+      summary: Update an existing post
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: postId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/PostCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Post'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Post
+      summary: Delete a post
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: postId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Post'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/pages:
+    get:
+      tags:
+        - Page
+      summary: Page
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          type: string
+        - name: description
+          in: query
+          type: string
+        - name: url
+          in: query
+          type: string
+        - name: pushlish
+          in: query
+          type: string
+        - name: site
+          in: query
+          type: string
+        - name: type
+          in: query
+          type: string
+        - name: theme
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Page'
+              meta: 
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Page
+      summary: create a page
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/PageCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/PageCreateOut'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/pages/page-url':
+    post: 
+      tags: 
+        - Page 
+      summary: get a page by url
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            properties:
+              url: 
+                type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Page'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+      security:
+        - Bearer: []
+  '/v1/pages/{pageId}':
+    get:
+      tags:
+        - Page
+      summary: Get an existing page
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: pageId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Page'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Page
+      summary: Update an existing page
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: pageId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/PageCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Page'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Page
+      summary: Delete a page
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: pageId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Page'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/sites:
+    get:
+      tags:
+        - Site
+      summary: Site
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: key
+          in: query
+          type: string
+        - name: name
+          in: query
+          type: string
+        - name: avatar
+          in: query
+          type: string
+        - name: status
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Site'
+              meta: 
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - Site
+      summary: create a site
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/SiteCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/PageCreateOut'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/sites/{siteId}':
+    get:
+      tags:
+        - Site
+      summary: Get an existing site
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: siteId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Page'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Site
+      summary: Update an existing site
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: siteId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/SiteCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Page'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Site
+      summary: Delete a site
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: siteId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Page'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/settings:
+    get:
+      tags:
+        - Setting
+      summary: Setting systems
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: key
+          in: query
+          type: string
+        - name: inputType
+          in: query
+          type: string
+        - name: module
+          in: query
+          type: string
+        - name: group
+          in: query
+          type: string
+        - name: label
+          in: query
+          type: string
+        - name: hint
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Setting'
+              meta: 
+                $ref: '#/definitions/Setting'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Setting
+      summary: Update an existing Setting
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/SettingCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Setting'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/approval:
+    get:
+      tags:
+        - Approval
+      summary: Approval
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: type
+          in: query
+          type: string
+        - name: status
+          in: query
+          type: string
+        - name: customer
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successfull
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/Approval'
+              meta:
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/approval/{approvalId}':
+    get:
+      tags:
+        - Membership
+      summary: Get an existing membership
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: approvalId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Approval'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - Approval
+      summary: Update status of approval
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: approvalId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            properties:
+              status: 
+                type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Approval'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - Approval
+      summary: delete a approval
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: approvalId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Approval'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/approval/{approvalId}/approve:
+    post:
+      tags:
+        - Approval
+      summary: approve a approval
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: approvalId
+          in: path
+          description: ''
+          required: true
+          type: string 
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Approval'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/approval/{approvalId}/reject:
+    post:
+      tags:
+        - Approval
+      summary: approve a approval
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: approvalId
+          in: path
+          description: ''
+          required: true
+          type: string 
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/Approval'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/user-groups:
+    get:
+      tags:
+        - User Group
+      summary: User group permission
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          type: string
+        - name: description
+          in: query
+          type: string
+        - name: active
+          in: query
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/ApiResponseUserGroup'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - User Group
+      summary: create a user group
+      description: ''
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/UserGroupCreateIn'
+      responses:
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/user-groups/{userGroupId}':
+    get:
+      tags:
+        - User Group
+      summary: Get an existing user group
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: userGroupId
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/UserGroup'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - User Group
+      summary: Update an existing user group
+      description: ''
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: userGroupId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/UserGroupCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/UserGroup'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - User Group
+      summary: Delete user group
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: userGroupId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/UserGroup'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/users:
+    get:
+      tags:
+        - User
+      summary: Find User
+      description: ''
+      operationId: find_user
+      produces:
+        - application/json
+      parameters:
+        - name: active
+          in: query
+          required: false
+          type: string
+        - name: name
+          in: query
+          required: false
+          type: string
+        - name: firstName
+          in: query
+          required: false
+          type: string
+        - name: lastName
+          in: query
+          required: false
+          type: string
+        - name: email
+          in: query
+          required: false
+          type: string
+        - name: birthday
+          in: query
+          required: false
+          type: string
+        - name: address
+          in: query
+          required: false
+          type: string
+        - name: gender
+          in: query
+          required: false
+          type: string
+        - name: salutation
+          in: query
+          required: false
+          type: string
+        - name: avatar
+          in: query
+          required: false
+          type: string
+        - name: accountType
+          in: query
+          required: false
+          type: string
+        - name: userGroup
+          in: query
+          required: false
+          type: string
+        - name: phone
+          in: query
+          required: false
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  $ref: '#/definitions/apiResponseUser'
+              meta:
+                $ref: '#/definitions/Meta'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+      security:
+        - Bearer: []
+    post:
+      tags:
+        - User
+      summary: Add a new User
+      description: ''
+      operationId: addUser
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: User object that needs to be added to the database
+          required: true
+          schema:
+            $ref: '#/definitions/UserCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/UserCreateOut'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  '/v1/users/{userId}':
+    get:
+      tags:
+        - User
+      summary: Update an existing user
+      description: ''
+      operationId: get_user
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: userId
+          in: path
+          description: userId of project to return
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/apiResponseUser'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    put:
+      tags:
+        - User
+      summary: Update an existing user
+      description: ''
+      operationId: update_user
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: userId
+          in: path
+          description: ''
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/UserCreateIn'
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/UserGroup'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+    delete:
+      tags:
+        - User
+      summary: Delete user
+      description: ''
+      operationId: delete_user
+      produces:
+        - application/json
+      parameters:
+        - name: userId
+          in: path
+          description: ''
+          required: true
+          type: string
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                $ref: '#/definitions/UserGroup'
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/auth/sign-in:
+    post:
+      tags:
+        - Authorization
+      summary: Sign in
+      description: ''
+      operationId: sign_in
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: body
+          in: body
+          description: ''
+          required: true
+          schema:
+            type: object
+            properties:
+              email:
+                type: string
+              password: 
+                type: string
+      responses:
+        '200':
+          description: successful operation
+          schema:
+            type: object
+            properties:
+              data: 
+                type: object
+                properties:
+                  device_token:
+                    type: string
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '403':
+          description: permission denied
+          schema:
+            $ref: '#/definitions/permissionDenied'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+  /v1/me:
+    get:
+      tags:
+        - User
+      summary: Get me
+      description: ''
+      operationId: get_me
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: successful
+          schema:
+            type: object
+            properties:
+              data:
+                type: object
+                properties:
+                  _id:
+                    type: string
+                  userGroup:
+                    $ref: '#/definitions/UserGroup'
+                  name:
+                    type: string
+                  firstName:
+                    type: string
+                  lastName:
+                    type: string
+                  gender:
+                    type: string
+                  salutation:
+                    type: string
+                  phone:
+                    type: string
+                  email:
+                    type: string
+                  avatar:
+                    type: string
+                  customer:
+                    $ref: '#/definitions/Customer'
+                  active:
+                    type: boolean
+                  updatedAt:
+                    type: string
+                  createdAt:
+                    type: string
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/change-password:
+    post:
+      tags:
+        - Authorization
+      summary: change password in user
+      produces:
+        - application/json
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            properties:
+              oldPassword:
+                type: string
+              newPassword:
+                type: string
+      responses:
+        '200':
+          description: successful
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/change-email:
+    post:
+      tags:
+        - Authorization
+      summary: change password in user
+      produces:
+        - application/json
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            properties:
+              email:
+                type: string
+      responses:
+        '200':
+          description: successful
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/auth/sign-out:
+    post:
+      tags:
+        - Authorization
+      summary: Logs out current logged in user session
+      description: ''
+      operationId: logoutUser
+      produces:
+        - application/json
+      parameters: []
+      responses:
+        '200':
+          description: successful operation
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+  /v1/reset-password:
+    post:
+      tags:
+        - Authorization
+      summary: reset password
+      produces:
+        - application/json
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            properties:
+              email:
+                type: string
+      responses:
+        '200':
+          description: successful operation
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+      security:
+        - Bearer: []
+  /v1/get-image/{imageName}:
+    get:
+      tags: 
+        - Upload
+      summary: Get image
+      description: ''
+      produces:
+        - image/png
+        - image/gif
+        - image/jpeg
+      parameters:
+        - name: imageName
+          in: path
+          type: string
+          required: true
+      responses:
+        '200':
+          description: OK
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+  /v1/upload-image:
+    post:
+      tags:
+        - Upload
+      summary: Upload a File
+      consumes:
+         - multipart/form-data
+      parameters:
+         - in: formData
+           name: upfile
+           type: file
+           description: The file to upload.
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+            properties:
+              data:
+                type: string
+        '401':
+          description: UNAUTHORIZED
+          schema:
+            $ref: '#/definitions/unAuthorized'
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+  /v1/get-file/{fileName}:
+    get:
+      tags: 
+        - Upload
+      summary: Get file
+      description: ''
+      produces:
+        - any-file
+      parameters:
+        - name: fileName
+          in: path
+          type: string
+          required: true
+      responses:
+        200:
+          description: OK
+  /v1/upload-file:
+    post:
+      tags:
+        - Upload
+      summary: Upload a File
+      consumes:
+         - multipart/form-data
+      parameters:
+         - in: formData
+           name: upfile
+           type: file
+           description: The file to upload.
+      responses:
+        200:
+          description: OK
+          schema:
+            type: object
+            properties:
+              data:
+                type: string
+        '400': 
+          description: bad request
+          schema: 
+            $ref: '#/definitions/badRequest'
+        '404':
+          description: not found
+          schema:
+            $ref: '#/definitions/notFound'
+        '500': 
+          description: server error
+          schema: 
+            $ref: '#/definitions/serverError'
+securityDefinitions:
+  Bearer:
+    type: apiKey
+    name: Authorization
+    in: header
+definitions:
+  Approval: 
+    type: object
+    properties: 
+      _id: 
+        type: string
+      type: 
+        type: string
+        enum:
+          - REGISTER_CUSTOMER
+      customer: 
+        $ref: '#/definitions/Customer'  
+      updatedBy:
+        type: string
+      createdAt:
+        type: string      
+  Block:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      type: 
+        type: string
+      description:
+        type: string
+      position: 
+        type: number
+      avatar:
+        type: string
+      groupCode:
+        type: string
+      styles:
+        $ref: '#/definitions/CmsStyle'
+      content:
+        type: string
+      status:
+        type: string
+        enum: 
+          - ENABLE
+          - DISABLE
+      updatedBy:
+        type: string
+      createdAt:
+        type: string
+  PostCategory:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      url:
+        type: string
+      description:
+        type: string
+      parent:
+        type: string
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      status:
+        type: string
+        enum: 
+          - ENABLE 
+          - DISABLE 
+      updatedBy:
+        type: string
+      createdAt:
+        type: string
+  CmsStyle:
+    type: object
+    properties:
+      object:
+        type: string
+      style:
+        type: string
+      styleCustomize:
+        type: string
+  SeoProp:
+    type: object
+    properties:
+      title:
+        type: string
+      description:
+        type: string
+      keywords:
+        type: string
+      images:
+        type: array
+        items:
+          type: string
+  Post:
+    type: object
+    properties:
+      _id:
+        type: string
+      site:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      url:
+        type: string
+      postCategory:
+        type: array
+        items:
+          $ref: '#/definitions/PostCategory'
+      avatar:
+        type: string
+      pushlish:
+        type: boolean
+      styles:
+        $ref: '#/definitions/CmsStyle'
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      content:
+        type: string
+      updatedBy:
+        type: string
+      createdAt:
+        type: string
+  Site:
+    type: object
+    properties:
+      _id:
+        type: string
+      key: 
+        type: string
+      name:
+        type: string
+      avatar:
+        type: string
+      seoPropDefault:
+        type: string
+      status:
+        type: string
+      updatedBy:
+        type: string
+      createdAt:
+        type: string
+  Page:
+    type: object
+    properties:
+      _id:
+        type: string
+      site:
+        type: string
+      theme: 
+        type: object
+        properties:
+          _id: 
+            type: string
+          name: 
+            type: string
+          pushlish:
+            type: boolean
+      name:
+        type: string
+      description:
+        type: string
+      url:
+        type: string
+      pushlish:
+        type: string
+      styles:
+        $ref: '#/definitions/CmsStyle'
+      content: 
+        type: string
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      updatedAt:
+        type: string
+      createdAt:
+        type: string
+  File: 
+    type: object
+    properties: 
+      _id: 
+        type: string
+      type: 
+        type: string
+      name: 
+        type: string
+      link: 
+        type: string
+      updatedBy: 
+        type: string
+      updatedAt:
+        type: string
+      createdAt:
+        type: string 
+  Setting:
+    type: object
+    properties:
+      _id:
+        type: string
+      key:
+        type: string
+      value:
+        type: string
+      inputType:
+        type: string
+      module:
+        type: string
+      group:
+        type: string
+      label:
+        type: string
+      hint:
+        type: string
+      options:
+        type: string
+      updatedAt:
+        type: string
+      createdAt:
+        type: string
+  User:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      userCode:
+        type: string
+      userGroup:
+        $ref: '#/definitions/UserGroup'
+      firstName:
+        type: string
+      lastName:
+        type: string
+      birthday:
+        type: string
+      address:
+        type: string
+      gender:
+        type: string
+        enum: 
+          - MALE 
+          - FEMALE 
+      lastLogin:
+        type: string
+      salutation:
+        type: string
+      phone:
+        type: string
+      email:
+        type: string
+      validTokens:
+        type: array
+        items: 
+          type: string
+      avatar:
+        type: string
+      password:
+        type: string
+      active:
+        type: boolean
+        default: true
+      status: 
+        type: string
+        enum: 
+          - ENABLE 
+          - DISABLE
+  apiResponseUser:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      userCode:
+        type: string
+      userGroup:
+        $ref: '#/definitions/UserGroup'
+      firstName:
+        type: string
+      lastName:
+        type: string
+      birthday:
+        type: string
+      address:
+        type: string
+      gender:
+        type: string
+        enum: 
+          - MALE 
+          - FEMALE 
+      salutation:
+        type: string
+      phone:
+        type: string
+      email:
+        type: string
+      validTokens:
+        type: array
+        items: 
+          type: string
+      avatar:
+        type: string
+      active:
+        type: boolean
+        default: true
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  UserGroup:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      roles:
+        type: array
+        items:
+          type: string
+      updatedBy:
+        type: string
+      createdAt:
+        type: string
+      updatedAt: 
+        type: string
+      active:
+        type: boolean
+  Customer:
+    type: object
+    properties:
+      _id:
+        type: string
+      membership:
+        $ref: '#/definitions/Membership'
+      user:
+        $ref: '#/definitions/User'
+      addressBlockNo:
+        type: string
+      addressStresstName:
+        type: string
+      addressFloor:
+        type: string
+      addressUnitNo:
+        type: string
+      addressBuildingName:
+        type: string
+      addressPostCode:
+        type: string
+      addressCity:
+        type: string
+      addressState:
+        type: string
+      addressCountry:
+        type: string
+      financeSalutation:
+        type: string
+      financeFirstName:
+        type: string
+      financeLastName:
+        type: string
+      financeContactNo:
+        type: string
+      financeEmail:
+        type: string
+      companyName:
+        type: string
+      companyRegNo:
+        type: string
+      companyContactNo:
+        type: string
+      companyFax:
+        type: string
+      companyNatureOfBusiness:
+        type: string
+      orderHistory:
+        type: array
+        items:
+          $ref: '#/definitions/OrderHistory'
+      internalNote:
+        type: array
+        items:
+          $ref: '#/definitions/InternalNote'
+      promotionCoupon:
+        type: array
+        items:
+          $ref: '#/definitions/Coupon'
+      remark:
+        type: string
+      designation:
+        type: string
+      contactNo:
+        type: string
+      personalEmail:
+        type: string
+      status:
+        type: string
+  PromotionProduct: 
+    type: object
+    properties: 
+      _id: 
+        type: string
+      product: 
+        $ref: '#/definitions/Product'
+      promotion: 
+        $ref: '#/definitions/Promotion'
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  Coupon:
+    type: object
+    properties:
+      _id: 
+        type: string
+      name: 
+        type: string
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  Promotion: 
+    type: object
+    properties: 
+      _id: 
+        type: string
+      type: 
+        type: string
+        enum:
+          - PERCENTAGE
+          - CASH_REBATE
+          - FREE_SHIPPING
+      percentageValue:
+        type: number
+      cashRebateValue: 
+        type: number
+      isFullShippingFee: 
+        type: boolean
+      freeShippingMaximum: 
+        type: number
+      name: 
+        type: string
+      status: 
+        type: string
+        enum: 
+          - ENABLE 
+          - DISABLE
+      startDate:
+        type: string
+      endDate: 
+        type: string
+      applyFor: 
+        type: string
+        enum: 
+          - SPECIAL_PRODUCTS
+          - ALL_PRODUCTS
+      capacity: 
+        type: number
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  PromotionCoupon:
+    type: object
+    properties: 
+      _id:
+        type: string
+      couponId:
+        type: string
+      customer: 
+        $ref: '#/definitions/Customer'
+      name: 
+        type: string
+      code: 
+        type: string
+      limit: 
+        type: number
+      type:
+        type: string
+      value: 
+        type: string
+      offFor: 
+        type: string
+      startDate: 
+        type: string
+      status: 
+        type: string
+      updatedAt:
+        type: string
+      createdAt: 
+        type: string
+  InternalNote:
+    type: object
+    properties:
+      _id:
+        type: string
+      user:
+        $ref: '#/definitions/Customer'
+      sendDate:
+        type: string
+      message:
+        type: string
+      pushlish:
+        type: boolean
+      customer:
+        $ref: '#/definitions/Customer'
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  OrderHistory:
+    type: object
+    properties:
+      no:
+        type: string
+      orderDateTime:
+        type: string
+      customer:
+        $ref: '#/definitions/Customer'
+      amount:
+        type: string
+      paymentOption:
+        type: string
+      shippingLocation:
+        type: string
+      status:
+        type: string
+  Membership:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      discountPercent: 
+        type: number
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  MembershipProduct:
+    type: object
+    properties:
+      _id: 
+        type: string
+      membership: 
+        $ref: '#/definitions/Membership'
+      product:
+        $ref: '#/definitions/Product'
+      price: 
+        type: number
+  Brand:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      url: 
+        type: string
+      code:
+        type: string
+      image:
+        type: string
+      description:
+        type: string
+      status:
+        type: string
+        enum: 
+          - ENABLE
+          - DISABLE
+      seoProps:
+        type: object
+        properties:
+          browserTitle:
+            type: string
+          metaKeyword:
+            type: string
+          metaDescription:
+            type: string
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  Color:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      url: 
+        type: string
+      code:
+        type: string
+      image:
+        type: string
+      description:
+        type: string
+      status:
+        type: string
+        enum: 
+          - ENABLE
+          - DISABLE
+      seoProps:
+        type: object
+        properties:
+          browserTitle:
+            type: string
+          metaKeyword:
+            type: string
+          metaDescription:
+            type: string
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  Theme: 
+    type: object
+    properties: 
+      _id:
+        type: string
+      name: 
+        type: string
+      description: 
+        type: string
+      pushlish: 
+        type: boolean
+      styles:
+        $ref: '#/definitions/CmsStyle'
+      content: 
+        type: string
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  Tag:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      status:
+        type: string
+      seoProps:
+        type: object
+        properties:
+          browserTitle:
+            type: string
+          metaKeyword:
+            type: string
+          metaDescription:
+            type: string
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  Product:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      url: 
+        type: string
+      sku:
+        type: string
+      description:
+        type: string
+      size:
+        type: string
+      typeAndMaterial:
+        type: string
+      uom:
+        type: string
+      unit:
+        type: string
+      itemPackingSize:
+        type: string
+      qtyPerCtn:
+        type: string
+      images:
+        type: array
+        items:
+          type: string
+      taxApply:
+        type: boolean
+      status:
+        type: string
+        enum: 
+          - ENABLE 
+          - DISABLE 
+      productCategories:
+        type: array
+        items: 
+          $ref: '#/definitions/ProductCategory'
+      brands:
+        type: array
+        items: 
+          $ref: '#/definitions/Brand'
+      colors:
+        type: array
+        items:
+          $ref: '#/definitions/Color'
+      tags:
+        type: array
+        items: 
+          $ref: '#/definitions/Tag'
+      publicPrice:
+        type: number
+      seoProps:
+        type: object
+        properties:
+          browserTilte:
+            type: string
+          metaKeyword:
+            type: string
+          metaDescription:
+            type: string
+      content:
+        type: string
+      published:
+        type: boolean
+      style:
+        $ref: '#/definitions/CmsStyle'
+      updatedAt: 
+        type: string
+      createdAt:
+        type: string
+  Price:
+    type: object
+    properties:
+      product:
+        type: string
+      membership:
+        type: string
+      strikePrice:
+        type: string
+  ProductCategory:
+    type: object
+    properties:
+      _id:
+        type: string
+      parent:
+        $ref: '#/definitions/ProductCategory'
+      name:
+        type: string
+      code:
+        type: string
+      url: 
+        type: string 
+      image:
+        type: string
+      description:
+        type: string
+      status:
+        type: string
+        enum: 
+          - ENABLE
+          - DISABLE 
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+      seoProps:
+        type: object
+        properties:
+          browserTilte:
+            type: string
+          metaKeyword:
+            type: string
+          metaDescription:
+            type: string
+  Cart: 
+    type: object
+    properties: 
+      _id: 
+        type: string
+      product: 
+        $ref: '#/definitions/Product'
+      quantity:
+        type: number
+      customer: 
+        $ref: '#/definitions/Customer'
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  Order:
+    type: object
+    properties:
+      _id: 
+        type: string
+      customer:
+        $ref: '#/definitions/Customer'
+      orderProduct:
+        type: array
+        items:
+          $ref: '#/definitions/OrderProduct'
+      totalWeight:
+        type: number
+      tax:
+        type: number
+      shippingFee:
+        type: number
+      HandlingFee:
+        type: number
+      subTotal:
+        type: number
+      membershipDiscount:
+        type: number
+      gstPayable:
+        type: number
+      orderNo: 
+        type: string
+      orderDateTime: 
+        type: string
+      total: 
+        type: number
+      shippingLocation: 
+        type: string
+      status:
+        type: string
+        enum: 
+          - PENDING
+          - PAID 
+          - DISPATCHED
+          - CANCELLED
+          - REFUND
+      grandtotal: 
+        type: number
+      payment: 
+        type: string
+      paymentStatus: 
+        type: string
+      gstNumber: 
+        type: string
+      updatedAt: 
+        type: string
+      createdAt: 
+        type: string
+  OrderProduct:
+    type: object
+    properties:
+      _id: 
+        type: string
+      product:
+        $ref: '#/definitions/Product'
+      quantity:
+        type: string
+      price:
+        type: string
+      total:
+        type: number
+      subTotal: 
+        type: number
+      membershipDiscount: 
+        type: number
+      createdAt: 
+        type: string
+      updatedAt: 
+        type: string
+  Enquiry:
+    type: object
+    properties:
+      product:
+        $ref: '#/definitions/Product'
+      internalNote: 
+        type: array
+        items:
+         $ref: '#/definitions/InternalNote'
+      status: 
+        type: string
+      _id: 
+        type: string
+      name: 
+       type: string
+      email: 
+        type: string
+      contact: 
+        type: string
+      message: 
+        type: string
+      reason: 
+        type: string
+      createdAt: 
+        type: string
+      updatedAt: 
+        type: string
+  EnquiryInternalNote:
+    type: object
+    properties: 
+      _id:
+        type: string
+      user:
+        $ref: '#/definitions/User'
+      sendDate: 
+        type: string
+      message: 
+        type: string
+      pushblish: 
+        type: boolean
+      enquiry: 
+        $ref: '#/definitions/Enquiry'
+      createdAt: 
+        type: string
+      updatedAt: 
+        type: string
+  Contact: 
+    type: object
+    properties: 
+      _id: 
+        type: string
+      name: 
+        type: string
+      email: 
+        type: string
+      contactNo: 
+        type: string 
+      message: 
+        type: string
+      isRead: 
+        type: boolean
+      readBy: 
+        type: string
+      readAt: 
+        type: string
+      createdAt: 
+        type: string
+      updatedAt: 
+        type: string
+  Image: 
+    type: object
+    properties:
+      _id: 
+        type: string
+      type: 
+        type: string
+      name: 
+        type: string
+      link: 
+        type: string
+      updatedBy: 
+        type: string
+      createdAt: 
+        type: string
+      updatedAt: 
+        type: string
+  ApiResponseUserGroup:
+    type: object
+    properties:
+      code:
+        type: integer
+      message:
+        type: string
+      data:
+        type: array
+        items:
+          $ref: '#/definitions/UserGroup'
+  
+
+  ApprovalCreateOut: 
+    type: object
+    properties: 
+      _id: 
+        type: string
+      type: 
+        type: string
+        enum:
+          - REGISTER_CUSTOMER
+      customer: 
+        type: string  
+      updatedBy:
+        type: string
+      createdAt:
+        type: string      
+  BlockCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      type: 
+        type: string
+      description:
+        type: string
+      position: 
+        type: number
+      avatar:
+        type: string
+      groupCode:
+        type: string
+      styles:
+        $ref: '#/definitions/CmsStyle'
+      content:
+        type: string
+      status:
+        type: string
+        enum: 
+          - ENABLE
+          - DISABLE
+      updatedBy:
+        type: string
+      createdAt:
+        type: string
+  PostCategoryCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      url:
+        type: string
+      description:
+        type: string
+      parent:
+        type: string
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      status:
+        type: string
+        enum: 
+          - ENABLE 
+          - DISABLE 
+      updatedBy:
+        type: string
+      createdAt:
+        type: string
+  PostCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      site:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      url:
+        type: string
+      postCategory:
+        type: array
+        items:
+          type: string
+      avatar:
+        type: string
+      pushlish:
+        type: boolean
+      styles:
+        $ref: '#/definitions/CmsStyle'
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      content:
+        type: string
+      updatedBy:
+        type: string
+      createdAt:
+        type: string
+  SiteCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      key: 
+        type: string
+      name:
+        type: string
+      avatar:
+        type: string
+      seoPropDefault:
+        type: string
+      status:
+        type: string
+      updatedBy:
+        type: string
+      createdAt:
+        type: string
+  PageCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      site:
+        type: string
+      theme: 
+        $ref: '#/definitions/Theme'
+      name:
+        type: string
+      description:
+        type: string
+      url:
+        type: string
+      pushlish:
+        type: string
+      styles:
+        $ref: '#/definitions/CmsStyle'
+      content: 
+        type: string
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      updatedAt:
+        type: string
+      createdAt:
+        type: string
+  FileCreateOut: 
+    type: object
+    properties: 
+      _id: 
+        type: string
+      type: 
+        type: string
+      name: 
+        type: string
+      link: 
+        type: string
+      updatedBy: 
+        type: string
+      updatedAt:
+        type: string
+      createdAt:
+        type: string 
+  SettingCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      key:
+        type: string
+      value:
+        type: string
+      inputType:
+        type: string
+      module:
+        type: string
+      group:
+        type: string
+      label:
+        type: string
+      hint:
+        type: string
+      options:
+        type: string
+      updatedAt:
+        type: string
+      createdAt:
+        type: string
+  UserCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      userCode:
+        type: string
+      userGroup:
+        type: string
+      firstName:
+        type: string
+      lastName:
+        type: string
+      birthday:
+        type: string
+      address:
+        type: string
+      gender:
+        type: string
+        enum: 
+          - MALE 
+          - FEMALE 
+      lastLogin:
+        type: string
+      salutation:
+        type: string
+      phone:
+        type: string
+      email:
+        type: string
+      validTokens:
+        type: array
+        items: 
+          type: string
+      avatar:
+        type: string
+      password:
+        type: string
+      active:
+        type: boolean
+        default: true
+      status: 
+        type: string
+        enum: 
+          - ENABLE 
+          - DISABLE
+  UserGroupCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      roles:
+        type: array
+        items:
+          type: string
+      updatedBy:
+        type: string
+      createdAt:
+        type: string
+      updatedAt: 
+        type: string
+      active:
+        type: boolean
+  CustomerCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      membership:
+        type: string
+      user:
+        type: string
+      addressBlockNo:
+        type: string
+      addressStresstName:
+        type: string
+      addressFloor:
+        type: string
+      addressUnitNo:
+        type: string
+      addressBuildingName:
+        type: string
+      addressPostCode:
+        type: string
+      addressCity:
+        type: string
+      addressState:
+        type: string
+      addressCountry:
+        type: string
+      financeSalutation:
+        type: string
+      financeFirstName:
+        type: string
+      financeLastName:
+        type: string
+      financeContactNo:
+        type: string
+      financeEmail:
+        type: string
+      companyName:
+        type: string
+      companyRegNo:
+        type: string
+      companyContactNo:
+        type: string
+      companyFax:
+        type: string
+      companyNatureOfBusiness:
+        type: string
+      orderHistory:
+        type: array
+        items:
+          type: string
+      internalNote:
+        type: array
+        items:
+          type: string
+      promotionCoupon:
+        type: array
+        items:
+          type: string
+      remark:
+        type: string
+      designation:
+        type: string
+      contactNo:
+        type: string
+      personalEmail:
+        type: string
+      status:
+        type: string
+  PromotionProductCreateOut: 
+    type: object
+    properties: 
+      _id: 
+        type: string
+      product: 
+        type: string
+      promotion: 
+        type: string
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  CouponCreateOut:
+    type: object
+    properties:
+      _id: 
+        type: string
+      name: 
+        type: string
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  PromotionCreateOut: 
+    type: object
+    properties: 
+      _id: 
+        type: string
+      type: 
+        type: string
+        enum:
+          - PERCENTAGE
+          - CASH_REBATE
+          - FREE_SHIPPING
+      percentageValue:
+        type: number
+      cashRebateValue: 
+        type: number
+      isFullShippingFee: 
+        type: boolean
+      freeShippingMaximum: 
+        type: number
+      name: 
+        type: string
+      status: 
+        type: string
+        enum: 
+          - ENABLE 
+          - DISABLE
+      startDate:
+        type: string
+      endDate: 
+        type: string
+      applyFor: 
+        type: string
+        enum: 
+          - SPECIAL_PRODUCTS
+          - ALL_PRODUCTS
+      capacity: 
+        type: number
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  PromotionCouponCreateOut:
+    type: object
+    properties: 
+      _id:
+        type: string
+      couponId:
+        type: string
+      customer: 
+        type: string
+      name: 
+        type: string
+      code: 
+        type: string
+      limit: 
+        type: number
+      type:
+        type: string
+      value: 
+        type: string
+      offFor: 
+        type: string
+      startDate: 
+        type: string
+      status: 
+        type: string
+      updatedAt:
+        type: string
+      createdAt: 
+        type: string
+  InternalNoteCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      user:
+        type: string
+      sendDate:
+        type: string
+      message:
+        type: string
+      pushlish:
+        type: boolean
+      customer:
+        type: string
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  OrderHistoryCreateOut:
+    type: object
+    properties:
+      no:
+        type: string
+      orderDateTime:
+        type: string
+      customer:
+        type: string
+      amount:
+        type: string
+      paymentOption:
+        type: string
+      shippingLocation:
+        type: string
+      status:
+        type: string
+  MembershipCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      discountPercent: 
+        type: number
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  MembershipProductCreateOut:
+    type: object
+    properties:
+      _id: 
+        type: string
+      membership: 
+        type: string
+      product:
+        type: string
+      price: 
+        type: number
+  BrandCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      url: 
+        type: string
+      code:
+        type: string
+      image:
+        type: string
+      description:
+        type: string
+      status:
+        type: string
+        enum: 
+          - ENABLE
+          - DISABLE
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  ColorCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      url: 
+        type: string
+      code:
+        type: string
+      image:
+        type: string
+      description:
+        type: string
+      status:
+        type: string
+        enum: 
+          - ENABLE
+          - DISABLE
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  ThemeCreateOut: 
+    type: object
+    properties: 
+      _id:
+        type: string
+      name: 
+        type: string
+      description: 
+        type: string
+      pushlish: 
+        type: boolean
+      styles:
+        $ref: '#/definitions/CmsStyle'
+      content: 
+        type: string
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  TagCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      status:
+        type: string
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  ProductCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      name:
+        type: string
+      url: 
+        type: string
+      sku:
+        type: string
+      description:
+        type: string
+      size:
+        type: string
+      typeAndMaterial:
+        type: string
+      uom:
+        type: string
+      unit:
+        type: string
+      itemPackingSize:
+        type: string
+      qtyPerCtn:
+        type: string
+      images:
+        type: array
+        items:
+          type: string
+      taxApply:
+        type: boolean
+      status:
+        type: string
+        enum: 
+          - ENABLE 
+          - DISABLE 
+      productCategories:
+        type: array
+        items: 
+          type: string
+      brands:
+        type: array
+        items: 
+          type: string
+      colors:
+        type: array
+        items:
+          type: string
+      tags:
+        type: array
+        items: 
+          type: string
+      publicPrice:
+        type: number
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      content:
+        type: string
+      published:
+        type: boolean
+      style:
+        $ref: '#/definitions/CmsStyle'
+      updatedAt: 
+        type: string
+      createdAt:
+        type: string
+  PriceCreateOut:
+    type: object
+    properties:
+      product:
+        type: string
+      membership:
+        type: string
+      strikePrice:
+        type: string
+  ProductCategoryCreateOut:
+    type: object
+    properties:
+      _id:
+        type: string
+      parent:
+        type: string
+      name:
+        type: string
+      code:
+        type: string
+      url: 
+        type: string 
+      image:
+        type: string
+      description:
+        type: string
+      status:
+        type: string
+        enum: 
+          - ENABLE
+          - DISABLE 
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+  CartCreateOut: 
+    type: object
+    properties: 
+      _id: 
+        type: string
+      product: 
+        type: string
+      quantity:
+        type: number
+      customer: 
+        type: string
+      createdAt:
+        type: string
+      updatedAt:
+        type: string
+  OrderCreateOut:
+    type: object
+    properties:
+      _id: 
+        type: string
+      customer:
+        type: string
+      orderProduct:
+        type: array
+        items:
+          type: string
+      totalWeight:
+        type: number
+      tax:
+        type: number
+      shippingFee:
+        type: number
+      HandlingFee:
+        type: number
+      subTotal:
+        type: number
+      membershipDiscount:
+        type: number
+      gstPayable:
+        type: number
+      orderNo: 
+        type: string
+      orderDateTime: 
+        type: string
+      total: 
+        type: number
+      shippingLocation: 
+        type: string
+      status:
+        type: string
+        enum: 
+          - PENDING
+          - PAID 
+          - DISPATCHED
+          - CANCELLED
+          - REFUND
+      grandtotal: 
+        type: number
+      payment: 
+        type: string
+      paymentStatus: 
+        type: string
+      gstNumber: 
+        type: string
+      updatedAt: 
+        type: string
+      createdAt: 
+        type: string
+  OrderProductCreateOut:
+    type: object
+    properties:
+      _id: 
+        type: string
+      product:
+        type: string
+      quantity:
+        type: string
+      price:
+        type: string
+      total:
+        type: number
+      subTotal: 
+        type: number
+      membershipDiscount: 
+        type: number
+      createdAt: 
+        type: string
+      updatedAt: 
+        type: string
+  EnquiryCreateOut:
+    type: object
+    properties:
+      product:
+        type: string
+      internalNote: 
+        type: array
+        items:
+         type: string
+      status: 
+        type: string
+      _id: 
+        type: string
+      name: 
+       type: string
+      email: 
+        type: string
+      contact: 
+        type: string
+      message: 
+        type: string
+      reason: 
+        type: string
+      createdAt: 
+        type: string
+      updatedAt: 
+        type: string
+  EnquiryInternalNoteCreateOut:
+    type: object
+    properties: 
+      _id:
+        type: string
+      user:
+        type: string
+      sendDate: 
+        type: string
+      message: 
+        type: string
+      pushblish: 
+        type: boolean
+      enquiry: 
+        type: string
+      createdAt: 
+        type: string
+      updatedAt: 
+        type: string
+  ContactCreateOut: 
+    type: object
+    properties: 
+      _id: 
+        type: string
+      name: 
+        type: string
+      email: 
+        type: string
+      contactNo: 
+        type: string 
+      message: 
+        type: string
+      isRead: 
+        type: boolean
+      readBy: 
+        type: string
+      readAt: 
+        type: string
+      createdAt: 
+        type: string
+      updatedAt: 
+        type: string
+  ImageCreateOut: 
+    type: object
+    properties:
+      _id: 
+        type: string
+      type: 
+        type: string
+      name: 
+        type: string
+      link: 
+        type: string
+      updatedBy: 
+        type: string
+      createdAt: 
+        type: string
+      updatedAt: 
+        type: string
+
+  ApprovalCreateIn: 
+    type: object
+    properties: 
+      type: 
+        type: string
+        enum:
+          - REGISTER_CUSTOMER
+      customer: 
+        type: string  
+  BlockCreateIn:
+    type: object
+    properties:
+      name:
+        type: string
+      type: 
+        type: string
+      description:
+        type: string
+      position: 
+        type: number
+      avatar:
+        type: string
+      groupCode:
+        type: string
+      styles:
+        $ref: '#/definitions/CmsStyle'
+      content:
+        type: string
+      status:
+        type: string
+        enum: 
+          - ENABLE
+          - DISABLE
+  PostCategoryCreateIn:
+    type: object
+    properties:
+      name:
+        type: string
+      url:
+        type: string
+      description:
+        type: string
+      parent:
+        type: string
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      status:
+        type: string
+        enum: 
+          - ENABLE 
+          - DISABLE 
+  PostCreateIn:
+    type: object
+    properties:
+      site:
+        type: string
+      name:
+        type: string
+      description:
+        type: string
+      url:
+        type: string
+      postCategory:
+        type: array
+        items:
+          type: string
+      avatar:
+        type: string
+      pushlish:
+        type: boolean
+      styles:
+        $ref: '#/definitions/CmsStyle'
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      content:
+        type: string
+  SiteCreateIn:
+    type: object
+    properties:
+      key: 
+        type: string
+      name:
+        type: string
+      avatar:
+        type: string
+      seoPropDefault:
+        type: string
+      status:
+        type: string
+  PageCreateIn:
+    type: object
+    properties:
+      site:
+        type: string
+      theme: 
+        $ref: '#/definitions/Theme'
+      name:
+        type: string
+      description:
+        type: string
+      url:
+        type: string
+      pushlish:
+        type: string
+      styles:
+        $ref: '#/definitions/CmsStyle'
+      content: 
+        type: string
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+  FileCreateIn: 
+    type: object
+    properties: 
+      type: 
+        type: string
+      name: 
+        type: string
+      link: 
+        type: string
+      updatedBy: 
+        type: string
+  SettingCreateIn:
+    type: object
+    properties:
+      key:
+        type: string
+      value:
+        type: string
+      inputType:
+        type: string
+      module:
+        type: string
+      group:
+        type: string
+      label:
+        type: string
+      hint:
+        type: string
+      options:
+        type: string
+  UserCreateIn:
+    type: object
+    properties:
+      name:
+        type: string
+      userCode:
+        type: string
+      userGroup:
+        type: string
+      firstName:
+        type: string
+      lastName:
+        type: string
+      birthday:
+        type: string
+      address:
+        type: string
+      gender:
+        type: string
+        enum: 
+          - MALE 
+          - FEMALE 
+      lastLogin:
+        type: string
+      salutation:
+        type: string
+      phone:
+        type: string
+      email:
+        type: string
+      validTokens:
+        type: array
+        items: 
+          type: string
+      avatar:
+        type: string
+      password:
+        type: string
+      active:
+        type: boolean
+        default: true
+      status: 
+        type: string
+        enum: 
+          - ENABLE 
+          - DISABLE
+  UserGroupCreateIn:
+    type: object
+    properties:
+      name:
+        type: string
+      description:
+        type: string
+      roles:
+        type: array
+        items:
+          type: string
+      updatedBy:
+        type: string
+      active:
+        type: boolean
+  CustomerCreateIn:
+    type: object
+    properties:
+      membership:
+        type: string
+      user:
+        type: string
+      addressBlockNo:
+        type: string
+      addressStresstName:
+        type: string
+      addressFloor:
+        type: string
+      addressUnitNo:
+        type: string
+      addressBuildingName:
+        type: string
+      addressPostCode:
+        type: string
+      addressCity:
+        type: string
+      addressState:
+        type: string
+      addressCountry:
+        type: string
+      financeSalutation:
+        type: string
+      financeFirstName:
+        type: string
+      financeLastName:
+        type: string
+      financeContactNo:
+        type: string
+      financeEmail:
+        type: string
+      companyName:
+        type: string
+      companyRegNo:
+        type: string
+      companyContactNo:
+        type: string
+      companyFax:
+        type: string
+      companyNatureOfBusiness:
+        type: string
+      orderHistory:
+        type: array
+        items:
+          type: string
+      internalNote:
+        type: array
+        items:
+          type: string
+      promotionCoupon:
+        type: array
+        items:
+          type: string
+      remark:
+        type: string
+      designation:
+        type: string
+      contactNo:
+        type: string
+      personalEmail:
+        type: string
+      status:
+        type: string
+  PromotionProductCreateIn: 
+    type: object
+    properties: 
+      product: 
+        type: string
+      promotion: 
+        type: string
+  CouponCreateIn:
+    type: object
+    properties:
+      name: 
+        type: string
+  PromotionCreateIn: 
+    type: object
+    properties: 
+      type: 
+        type: string
+        enum:
+          - PERCENTAGE
+          - CASH_REBATE
+          - FREE_SHIPPING
+      percentageValue:
+        type: number
+      cashRebateValue: 
+        type: number
+      isFullShippingFee: 
+        type: boolean
+      freeShippingMaximum: 
+        type: number
+      name: 
+        type: string
+      status: 
+        type: string
+        enum: 
+          - ENABLE 
+          - DISABLE
+      startDate:
+        type: string
+      endDate: 
+        type: string
+      applyFor: 
+        type: string
+        enum: 
+          - SPECIAL_PRODUCTS
+          - ALL_PRODUCTS
+      capacity: 
+        type: number
+  PromotionCouponCreateIn:
+    type: object
+    properties: 
+      couponId:
+        type: string
+      customer: 
+        type: string
+      name: 
+        type: string
+      code: 
+        type: string
+      limit: 
+        type: number
+      type:
+        type: string
+      value: 
+        type: string
+      offFor: 
+        type: string
+      startDate: 
+        type: string
+      status: 
+        type: string
+  InternalNoteCreateIn:
+    type: object
+    properties:
+      user:
+        type: string
+      sendDate:
+        type: string
+      message:
+        type: string
+      pushlish:
+        type: boolean
+      customer:
+        type: string
+  OrderHistoryCreateIn:
+    type: object
+    properties:
+      no:
+        type: string
+      orderDateTime:
+        type: string
+      customer:
+        type: string
+      amount:
+        type: string
+      paymentOption:
+        type: string
+      shippingLocation:
+        type: string
+      status:
+        type: string
+  MembershipCreateIn:
+    type: object
+    properties:
+      name:
+        type: string
+      description:
+        type: string
+      discountPercent: 
+        type: number
+  MembershipProductCreateIn:
+    type: object
+    properties:
+      membership: 
+        type: string
+      product:
+        type: string
+      price: 
+        type: number
+  BrandCreateIn:
+    type: object
+    properties:
+      name:
+        type: string
+      url: 
+        type: string
+      code:
+        type: string
+      image:
+        type: string
+      description:
+        type: string
+      status:
+        type: string
+        enum: 
+          - ENABLE
+          - DISABLE
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+  ColorCreateIn:
+    type: object
+    properties:
+      name:
+        type: string
+      url: 
+        type: string
+      code:
+        type: string
+      image:
+        type: string
+      description:
+        type: string
+      status:
+        type: string
+        enum: 
+          - ENABLE
+          - DISABLE
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+  ThemeCreateIn: 
+    type: object
+    properties: 
+      name: 
+        type: string
+      description: 
+        type: string
+      pushlish: 
+        type: boolean
+      styles:
+        $ref: '#/definitions/CmsStyle'
+      content: 
+        type: string
+  TagCreateIn:
+    type: object
+    properties:
+      name:
+        type: string
+      description:
+        type: string
+      status:
+        type: string
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+  ProductCreateIn:
+    type: object
+    properties:
+      name:
+        type: string
+      url: 
+        type: string
+      sku:
+        type: string
+      description:
+        type: string
+      size:
+        type: string
+      typeAndMaterial:
+        type: string
+      uom:
+        type: string
+      unit:
+        type: string
+      itemPackingSize:
+        type: string
+      qtyPerCtn:
+        type: string
+      images:
+        type: array
+        items:
+          type: string
+      taxApply:
+        type: boolean
+      status:
+        type: string
+        enum: 
+          - ENABLE 
+          - DISABLE 
+      productCategories:
+        type: array
+        items: 
+          type: string
+      brands:
+        type: array
+        items: 
+          type: string
+      colors:
+        type: array
+        items:
+          type: string
+      tags:
+        type: array
+        items: 
+          type: string
+      publicPrice:
+        type: number
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+      content:
+        type: string
+      published:
+        type: boolean
+      style:
+        $ref: '#/definitions/CmsStyle'
+  PriceCreateIn:
+    type: object
+    properties:
+      product:
+        type: string
+      membership:
+        type: string
+      strikePrice:
+        type: string
+  ProductCategoryCreateIn:
+    type: object
+    properties:
+      parent:
+        type: string
+      name:
+        type: string
+      code:
+        type: string
+      url: 
+        type: string 
+      image:
+        type: string
+      description:
+        type: string
+      status:
+        type: string
+        enum: 
+          - ENABLE
+          - DISABLE 
+      seoProps:
+        $ref: '#/definitions/SeoProp'
+  CartCreateIn: 
+    type: object
+    properties: 
+      product: 
+        type: string
+      quantity:
+        type: number
+      customer: 
+        type: string
+  OrderCreateIn:
+    type: object
+    properties:
+      customer:
+        type: string
+      orderProduct:
+        type: array
+        items:
+          type: string
+      totalWeight:
+        type: number
+      tax:
+        type: number
+      shippingFee:
+        type: number
+      HandlingFee:
+        type: number
+      subTotal:
+        type: number
+      membershipDiscount:
+        type: number
+      gstPayable:
+        type: number
+      orderNo: 
+        type: string
+      orderDateTime: 
+        type: string
+      total: 
+        type: number
+      shippingLocation: 
+        type: string
+      status:
+        type: string
+        enum: 
+          - PENDING
+          - PAID 
+          - DISPATCHED
+          - CANCELLED
+          - REFUND
+      grandtotal: 
+        type: number
+      payment: 
+        type: string
+      paymentStatus: 
+        type: string
+      gstNumber: 
+        type: string
+  OrderProductCreateIn:
+    type: object
+    properties:
+      product:
+        type: string
+      quantity:
+        type: string
+      price:
+        type: string
+      total:
+        type: number
+      subTotal: 
+        type: number
+      membershipDiscount: 
+        type: number
+  EnquiryCreateIn:
+    type: object
+    properties:
+      product:
+        type: string
+      internalNote: 
+        type: array
+        items:
+         type: string
+      status: 
+        type: string
+      name: 
+       type: string
+      email: 
+        type: string
+      contact: 
+        type: string
+      message: 
+        type: string
+      reason: 
+        type: string
+  EnquiryInternalNoteCreateIn:
+    type: object
+    properties: 
+      user:
+        type: string
+      sendDate: 
+        type: string
+      message: 
+        type: string
+      pushblish: 
+        type: boolean
+      enquiry: 
+        type: string
+  ContactCreateIn: 
+    type: object
+    properties: 
+      name: 
+        type: string
+      email: 
+        type: string
+      contactNo: 
+        type: string 
+      message: 
+        type: string
+      isRead: 
+        type: boolean
+      readBy: 
+        type: string
+      readAt: 
+        type: string 
+  ImageCreateIn: 
+    type: object
+    properties:
+      type: 
+        type: string
+      name: 
+        type: string
+      link: 
+        type: string
+      updatedBy: 
+        type: string
+
+
+  notFound:
+    type: object
+    properties:
+      message: 
+        type: string
+      data: 
+        type: array
+        items: 
+          type: object
+          properties:
+            arg: 
+              type: string
+            reason: 
+              type: string
+  badRequest: 
+    type: object
+    properties:
+      message: 
+        type: string
+      data: 
+        type: string
+  unAuthorized: 
+    type: object
+    properties:
+      message: 
+        type: string
+  permissionDenied: 
+    type: object 
+    properties: 
+      message: 
+        type: string
+  serverError:
+    type: object
+    properties: 
+      message: 
+        type: string
+      data: 
+        type: string   
+  Meta:
+    type: object
+    properties: 
+      paginate: 
+        type: object
+        properties:
+          pageSize: 
+            type: string
+          page: 
+            type: string
+          sort: 
+            type: array
+            items: 
+              type: string
+          total: 
+            type: string   

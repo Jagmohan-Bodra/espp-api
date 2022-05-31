@@ -1,0 +1,636 @@
+[{
+  "_id": {
+    "$oid": "1111afc66d44e1ceb3723002"
+  },
+  "name": "product name 2",
+  "url": "product-name-2",
+  "sku": "PRODUCT_2",
+  "description": "Description 2",
+  "publicPrice": "1100",
+  "unit": "$",
+  "size": "2",
+  "typeAndMaterial": "unknow",
+  "uom": "Uom 2",
+  "itemPackingSize": "21pc/packet",
+  "qtyPerCtn": "13pack/ctn",
+  "images": [
+    "http://staging.wiooh.com:3001/v1/drive/1625018893029_Image_41.png"
+  ],
+  "imagePaths": [
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxODg5MzAyOV9JbWFnZV80MS5wbmciLCJpYXQiOjE2MzI5Nzc4MDIsImV4cCI6MzE3MTc3NDIwMjAyfQ.fX5P5lHlkIDNyWOVgSknU990Ap3Zs1ZxTn3NTFnmV5I"
+  ],
+  "taxApply": "0",
+  "status": "ENABLED",
+  "published": "0",
+  "productCategories": [
+    {
+      "$oid": "1116afc66d44e1ceb3723002"
+    }
+  ],
+  "brands": [
+    {
+      "$oid": "1115afc66d44e1ceb3723005"
+    }
+  ],
+  "colors": [
+    {
+      "$oid": "1114afc66d44e1ceb3723002"
+    }
+  ],
+  "tags": [
+    {
+      "$oid": "1112afc66d44e1ceb3723002"
+    }
+  ],
+  "quantity": "101",
+  "barcode": "10000002",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T08:37:51.007Z"
+  },
+  "__v": 7
+},{
+  "_id": {
+    "$oid": "1111afc66d44e1ceb3723004"
+  },
+  "name": "product name 4",
+  "url": "product-name-4",
+  "sku": "PRODUCT_4",
+  "description": "Description 4",
+  "publicPrice": "1300",
+  "unit": "$",
+  "size": "4",
+  "typeAndMaterial": "unknow",
+  "uom": "Uom 4",
+  "itemPackingSize": "23pc/packet",
+  "qtyPerCtn": "15pack/ctn",
+  "images": [
+    "http://staging.wiooh.com:3001/v1/drive/1625018825230_Daco_3818676.png"
+  ],
+  "imagePaths": [
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxODgyNTIzMF9EYWNvXzM4MTg2NzYucG5nIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.edASV_uzUKvjngWBl2NF345jT6ToYAtiHi1In-VYf4U"
+  ],
+  "taxApply": "0",
+  "status": "ENABLED",
+  "published": "0",
+  "productCategories": [
+    {
+      "$oid": "1116afc66d44e1ceb3723004"
+    }
+  ],
+  "brands": [
+    {
+      "$oid": "1115afc66d44e1ceb3723005"
+    }
+  ],
+  "colors": [
+    {
+      "$oid": "1114afc66d44e1ceb3723004"
+    }
+  ],
+  "tags": [
+    {
+      "$oid": "1112afc66d44e1ceb3723004"
+    }
+  ],
+  "quantity": "103",
+  "barcode": "10000004",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T09:05:42.077Z"
+  },
+  "__v": 6
+},{
+  "_id": {
+    "$oid": "1111afc66d44e1ceb3723001"
+  },
+  "name": "product name 1",
+  "url": "product-name-1",
+  "sku": "PRODUCT_1",
+  "description": "Description 1",
+  "publicPrice": "1000",
+  "unit": "$",
+  "size": "1",
+  "typeAndMaterial": "unknow",
+  "uom": "Uom 1",
+  "itemPackingSize": "20pc/packet",
+  "qtyPerCtn": "12pack/ctn",
+  "images": [
+    "http://staging.wiooh.com:3001/v1/drive/1624886203837_Image_43.png"
+  ],
+  "imagePaths": [
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNDg4NjIwMzgzN19JbWFnZV80My5wbmciLCJpYXQiOjE2MzI5Nzc4MDIsImV4cCI6MzE3MTc3NDIwMjAyfQ.k2NlVBsemhUSw75AR4RKZxXvhaoYTARnY8HlhsM6WJM"
+  ],
+  "taxApply": "1",
+  "status": "ENABLED",
+  "published": "1",
+  "productCategories": [
+    {
+      "$oid": "1116afc66d44e1ceb3723001"
+    }
+  ],
+  "brands": [
+    {
+      "$oid": "1115afc66d44e1ceb3723012"
+    }
+  ],
+  "colors": [
+    {
+      "$oid": "1114afc66d44e1ceb3723001"
+    }
+  ],
+  "tags": [
+    {
+      "$oid": "1112afc66d44e1ceb3723001"
+    }
+  ],
+  "quantity": "100",
+  "barcode": "10000001",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:25.999Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T08:45:00.175Z"
+  },
+  "__v": 5,
+  "sold": 0,
+  "view": 0
+},{
+  "_id": {
+    "$oid": "1111afc66d44e1ceb3723006"
+  },
+  "name": "product name 6",
+  "url": "product-name-6",
+  "sku": "PRODUCT_6",
+  "description": "Description 6",
+  "publicPrice": "1500",
+  "unit": "$",
+  "size": "6",
+  "typeAndMaterial": "unknow",
+  "uom": "Uom 6",
+  "itemPackingSize": "25pc/packet",
+  "qtyPerCtn": "17pack/ctn",
+  "images": [
+    "http://staging.wiooh.com:3001/v1/drive/1625018736521_Image_43.png"
+  ],
+  "imagePaths": [
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxODczNjUyMV9JbWFnZV80My5wbmciLCJpYXQiOjE2MzI5Nzc4MDIsImV4cCI6MzE3MTc3NDIwMjAyfQ.p4-s_eWskwG94Tbi6jwPVZxrHqTs9PcEcP1qjQmkiFE"
+  ],
+  "taxApply": "1",
+  "status": "ENABLED",
+  "published": "1",
+  "productCategories": [
+    {
+      "$oid": "1116afc66d44e1ceb3723006"
+    }
+  ],
+  "brands": [
+    {
+      "$oid": "1115afc66d44e1ceb3723006"
+    }
+  ],
+  "colors": [
+    {
+      "$oid": "1114afc66d44e1ceb3723006"
+    }
+  ],
+  "tags": [
+    {
+      "$oid": "1112afc66d44e1ceb3723006"
+    }
+  ],
+  "quantity": 5,
+  "barcode": "10000006",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:31.001Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:55:09.972Z"
+  },
+  "__v": 4,
+  "sold": 100
+},{
+  "_id": {
+    "$oid": "1111afc66d44e1ceb3723005"
+  },
+  "name": "product name 5",
+  "url": "product-name-5",
+  "sku": "PRODUCT_5",
+  "description": "Description 5",
+  "publicPrice": "1400",
+  "unit": "$",
+  "size": "5",
+  "typeAndMaterial": "unknow",
+  "uom": "Uom 5",
+  "itemPackingSize": "24pc/packet",
+  "qtyPerCtn": "16pack/ctn",
+  "images": [
+    "http://staging.wiooh.com:3001/v1/drive/1625018751784_Image_42.png"
+  ],
+  "imagePaths": [
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxODc1MTc4NF9JbWFnZV80Mi5wbmciLCJpYXQiOjE2MzI5Nzc4MDIsImV4cCI6MzE3MTc3NDIwMjAyfQ.rvdMbR_ul4ovjnhWieO2v0yLtxao_BPh-kWTuBgenNM"
+  ],
+  "taxApply": "1",
+  "status": "ENABLED",
+  "published": "0",
+  "productCategories": [
+    {
+      "$oid": "1116afc66d44e1ceb3723005"
+    }
+  ],
+  "brands": [
+    {
+      "$oid": "1115afc66d44e1ceb3723005"
+    }
+  ],
+  "colors": [
+    {
+      "$oid": "1114afc66d44e1ceb3723005"
+    }
+  ],
+  "tags": [
+    {
+      "$oid": "1112afc66d44e1ceb3723005"
+    }
+  ],
+  "quantity": 89,
+  "barcode": "10000005",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:55:09.972Z"
+  },
+  "__v": 4,
+  "sold": 15
+},{
+  "_id": {
+    "$oid": "1111afc66d44e1ceb3723007"
+  },
+  "name": "product name 7",
+  "url": "product-name-7",
+  "sku": "PRODUCT_7",
+  "description": "Description 7",
+  "publicPrice": "1600",
+  "unit": "$",
+  "size": "7",
+  "typeAndMaterial": "unknow",
+  "uom": "Uom 7",
+  "itemPackingSize": "26pc/packet",
+  "qtyPerCtn": "18pack/ctn",
+  "images": [
+    "http://staging.wiooh.com:3001/v1/drive/1625018499444_Image_39.png"
+  ],
+  "imagePaths": [
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxODQ5OTQ0NF9JbWFnZV8zOS5wbmciLCJpYXQiOjE2MzI5Nzc4MDIsImV4cCI6MzE3MTc3NDIwMjAyfQ.5O779qMH7kIgP317PoeNEUVhD7UmQ2NX8w3KbPP5_F8"
+  ],
+  "taxApply": "1",
+  "status": "ENABLED",
+  "published": "1",
+  "productCategories": [
+    {
+      "$oid": "1116afc66d44e1ceb3723007"
+    }
+  ],
+  "brands": [
+    {
+      "$oid": "1115afc66d44e1ceb3723007"
+    }
+  ],
+  "colors": [
+    {
+      "$oid": "1114afc66d44e1ceb3723007"
+    }
+  ],
+  "tags": [
+    {
+      "$oid": "1112afc66d44e1ceb3723007"
+    }
+  ],
+  "quantity": "106",
+  "barcode": "10000007",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:32.001Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:01:40.596Z"
+  },
+  "__v": 4
+},{
+  "_id": {
+    "$oid": "1111afc66d44e1ceb3723003"
+  },
+  "name": "product name 3",
+  "url": "product-name-3",
+  "sku": "PRODUCT_3",
+  "description": "Description 3",
+  "publicPrice": "1200",
+  "unit": "$",
+  "size": "3",
+  "typeAndMaterial": "unknow",
+  "uom": "Uom 3",
+  "itemPackingSize": "22pc/packet",
+  "qtyPerCtn": "14pack/ctn",
+  "images": [
+    "http://staging.wiooh.com:3001/v1/drive/1625018847122_Daco_5595900.png"
+  ],
+  "imagePaths": [
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxODg0NzEyMl9EYWNvXzU1OTU5MDAucG5nIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.mtSHqKFOl7zFnEO3KSoDoSAX8J5-FfAG2k-JjNGuZJ4"
+  ],
+  "taxApply": "1",
+  "status": "ENABLED",
+  "published": "1",
+  "productCategories": [
+    {
+      "$oid": "1116afc66d44e1ceb3723003"
+    }
+  ],
+  "brands": [
+    {
+      "$oid": "1115afc66d44e1ceb3723003"
+    }
+  ],
+  "colors": [
+    {
+      "$oid": "1114afc66d44e1ceb3723003"
+    }
+  ],
+  "tags": [
+    {
+      "$oid": "1112afc66d44e1ceb3723003"
+    }
+  ],
+  "quantity": "102",
+  "barcode": "10000003",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:28Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-30T02:07:28.316Z"
+  },
+  "__v": 4
+},{
+  "_id": {
+    "$oid": "1111afc66d44e1ceb3723008"
+  },
+  "name": "STAEDTLER__",
+  "url": "staedtler__",
+  "sku": "PRODUCT_8",
+  "description": "Description 8",
+  "publicPrice": "1700",
+  "unit": "$",
+  "size": "8",
+  "typeAndMaterial": "unknow",
+  "uom": "Uom 8",
+  "itemPackingSize": "27pc/packet",
+  "qtyPerCtn": "19pack/ctn",
+  "images": [
+    "http://staging.wiooh.com:3001/v1/drive/1625018476673_Daco_5595900.png"
+  ],
+  "imagePaths": [
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxODQ3NjY3M19EYWNvXzU1OTU5MDAucG5nIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.dYv-xmy4UNWsBlfNxGha1wVXi0oo1cjbF8dJmhg4lRc"
+  ],
+  "taxApply": "0",
+  "status": "ENABLED",
+  "published": "1",
+  "productCategories": [
+    {
+      "$oid": "1116afc66d44e1ceb3723008"
+    }
+  ],
+  "brands": [
+    {
+      "$oid": "1115afc66d44e1ceb3723001"
+    }
+  ],
+  "colors": [
+    {
+      "$oid": "1114afc66d44e1ceb3723003"
+    }
+  ],
+  "tags": [
+    {
+      "$oid": "1112afc66d44e1ceb3723008"
+    }
+  ],
+  "quantity": "107",
+  "barcode": "10000008",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:33.001Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T08:44:47.452Z"
+  },
+  "__v": 6,
+  "sold": 0,
+  "view": 0
+},{
+  "_id": {
+    "$oid": "1111afc66d44e1ceb3723009"
+  },
+  "name": "STAEDTLERs",
+  "url": "staedtlers",
+  "sku": "PRODUCT_9",
+  "description": "Scissors with Safety Tip 14cm",
+  "publicPrice": "1800",
+  "unit": "$",
+  "size": "9",
+  "typeAndMaterial": "unknow",
+  "uom": "Uom 9",
+  "itemPackingSize": "28pc/packet",
+  "qtyPerCtn": "20pack/ctn",
+  "images": [
+    "http://staging.wiooh.com:3001/v1/drive/1625018465328_Image_41.png",
+    "http://staging.wiooh.com:3001/v1/drive/1627634792654_pexels-cottonbro-3944421.png"
+  ],
+  "imagePaths": [
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxODQ2NTMyOF9JbWFnZV80MS5wbmciLCJpYXQiOjE2MzI5Nzc4MDIsImV4cCI6MzE3MTc3NDIwMjAyfQ.H7rAVDqqKcSrDGwPce91NUbczKCLvCJfqpSr9p5gI_0",
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNzYzNDc5MjY1NF9wZXhlbHMtY290dG9uYnJvLTM5NDQ0MjEucG5nIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.NiJ-Af6AgXm7DYdWGGu3CXp_0El8HsgmTOtlw43i0gc"
+  ],
+  "taxApply": "1",
+  "status": "ENABLED",
+  "published": "1",
+  "productCategories": [
+    {
+      "$oid": "1116afc66d44e1ceb3723196"
+    }
+  ],
+  "brands": [
+    {
+      "$oid": "1115afc66d44e1ceb3723001"
+    }
+  ],
+  "colors": [
+    {
+      "$oid": "1114afc66d44e1ceb3723004"
+    }
+  ],
+  "tags": [
+    {
+      "$oid": "1112afc66d44e1ceb3723009"
+    }
+  ],
+  "quantity": 107,
+  "barcode": "10000009",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:34.001Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T06:06:11.035Z"
+  },
+  "__v": 13,
+  "sold": 1,
+  "view": 0
+},{
+  "_id": {
+    "$oid": "1111afc66d44e1ceb3723011"
+  },
+  "name": "Helix Oxford 56",
+  "url": "helix-oxford-56",
+  "sku": "Helix_Oxfo",
+  "description": "Oxford Maths Set",
+  "publicPrice": 40.12,
+  "unit": "$",
+  "size": "11",
+  "typeAndMaterial": "unknow",
+  "uom": "Uom 11",
+  "itemPackingSize": "30pc/packet",
+  "qtyPerCtn": "22pack/ctn",
+  "images": [
+    "http://staging.wiooh.com:3001/v1/drive/1625018383829_Daco_938783.png",
+    "http://staging.wiooh.com:3001/v1/drive/1627613327010_Gôm-Thiên-Long-E062.jpg"
+  ],
+  "imagePaths": [
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxODM4MzgyOV9EYWNvXzkzODc4My5wbmciLCJpYXQiOjE2MzI5Nzc4MDIsImV4cCI6MzE3MTc3NDIwMjAyfQ.bUPdUkEqh_jGYcYELkilo4gJuJwODjyNedHxFsZjEm0",
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNzYxMzMyNzAxMF9Hw7RtLVRoacOqbi1Mb25nLUUwNjIuanBnIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.7eInzULqsNBa0Snt85YzriG6q6f21LRHaKvU9QDk6vk"
+  ],
+  "taxApply": "1",
+  "status": "ENABLED",
+  "published": "1",
+  "productCategories": [
+    {
+      "$oid": "1116afc66d44e1ceb3723011"
+    }
+  ],
+  "brands": [
+    {
+      "$oid": "1115afc66d44e1ceb3723001"
+    },
+    {
+      "$oid": "1115afc66d44e1ceb3723012"
+    }
+  ],
+  "colors": [
+    {
+      "$oid": "1114afc66d44e1ceb3723003"
+    },
+    {
+      "$oid": "1114afc66d44e1ceb3723002"
+    }
+  ],
+  "tags": [
+    {
+      "$oid": "1112afc66d44e1ceb3723011"
+    },
+    {
+      "$oid": "1112afc66d44e1ceb3723005"
+    },
+    {
+      "$oid": "1112afc66d44e1ceb3723007"
+    },
+    {
+      "$oid": "1112afc66d44e1ceb3723008"
+    },
+    {
+      "$oid": "1112afc66d44e1ceb3723006"
+    }
+  ],
+  "quantity": 97,
+  "barcode": "10000011",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:36.002Z"
+  },
+  "updatedAt": {
+    "$date": "2021-09-20T08:43:51.151Z"
+  },
+  "__v": 28,
+  "moq": 5,
+  "sold": 119,
+  "view": 0,
+  "inventoryThreshold": 45
+},{
+  "_id": {
+    "$oid": "1111afc66d44e1ceb3723010"
+  },
+  "name": "STAEDTLER",
+  "url": "staedtler",
+  "sku": "PRODUCT_10",
+  "description": "Description 10",
+  "publicPrice": "1900",
+  "unit": "$",
+  "size": "10",
+  "typeAndMaterial": "unknow",
+  "uom": "Uom 10",
+  "itemPackingSize": "29pc/packet",
+  "qtyPerCtn": "21pack/ctn",
+  "images": [
+    "http://staging.wiooh.com:3001/v1/drive/1625018398958_Daco_3818676.png"
+  ],
+  "imagePaths": [
+    "/v1/drive/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlUGF0aCI6ImVzcHAvMTYyNTAxODM5ODk1OF9EYWNvXzM4MTg2NzYucG5nIiwiaWF0IjoxNjMyOTc3ODAyLCJleHAiOjMxNzE3NzQyMDIwMn0.xwsxANbJAcuIqrkXN1yWXvcZSaZstRvX-SaOR_FoNFA"
+  ],
+  "taxApply": "0",
+  "status": "ENABLED",
+  "published": "1",
+  "productCategories": [
+    {
+      "$oid": "1116afc66d44e1ceb3723010"
+    },
+    {
+      "$oid": "1116afc66d44e1ceb3723196"
+    }
+  ],
+  "brands": [
+    {
+      "$oid": "1115afc66d44e1ceb3723001"
+    }
+  ],
+  "colors": [
+    {
+      "$oid": "1114afc66d44e1ceb3723005"
+    }
+  ],
+  "tags": [
+    {
+      "$oid": "1112afc66d44e1ceb3723010"
+    }
+  ],
+  "quantity": 107,
+  "barcode": "10000010",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:35.002Z"
+  },
+  "updatedAt": {
+    "$date": "2021-09-01T04:08:06.190Z"
+  },
+  "__v": 17,
+  "moq": 2,
+  "sold": 2,
+  "view": 0,
+  "inventoryThreshold": 107
+}]

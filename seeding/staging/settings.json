@@ -1,0 +1,545 @@
+[{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0380"
+  },
+  "key": "INVENTORY_SETTING",
+  "value": "5",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:29.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d037c"
+  },
+  "key": "GENERAL_SHOP_NAME",
+  "value": "Ee Sin Paper Product (Pte) Ltd",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:25.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:25.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d037d"
+  },
+  "key": "GENERAL_SHOP_ADDRESS",
+  "value": "14 Arumugam Road",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:26.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0382"
+  },
+  "key": "EMAIL_PROVIDER_NOTIFICATION_ORDER_EVENT",
+  "value": "abc@gmail.com,miabush996@gmail.com",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:31.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-01T07:05:18.994Z"
+  },
+  "options": []
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0381"
+  },
+  "key": "EMAIL_PROVIDER_APPRAISER_LIST",
+  "value": "miabush996@gmail.com",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T08:54:43.732Z"
+  },
+  "options": []
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0383"
+  },
+  "key": "EMAIL_PROVIDER_NOTIFICATION_CONTACT_EVENT",
+  "value": "buingocmy996@gmail.com,miabush996@gmail.com",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:32.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-29T03:19:49.582Z"
+  },
+  "options": []
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0384"
+  },
+  "key": "EMAIL_PROVIDER_MAILER_HOST",
+  "value": "smtp.gmail.com",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:33.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-15T02:00:14.987Z"
+  },
+  "options": []
+},{
+  "_id": {
+    "$oid": "60f641674de39c142c3243c4"
+  },
+  "key": "MINIMUM_DELIVERY_VALUE",
+  "value": "15.75",
+  "options": [],
+  "updatedAt": {
+    "$date": "2021-08-28T06:13:38.440Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d037e"
+  },
+  "key": "CURRENCY_SETTING",
+  "value": "sg",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T07:03:17.143Z"
+  },
+  "options": [
+    {
+      "country": "sg",
+      "rate": "1",
+      "status": "active",
+      "id": 1630131313642
+    },
+    {
+      "country": "us",
+      "rate": "2",
+      "status": "active",
+      "id": 1630134195926
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0385"
+  },
+  "key": "EMAIL_PROVIDER_MAILER_PORT",
+  "value": "465",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:34.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:34.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0387"
+  },
+  "key": "EMAIL_PROVIDER_MAILER_SENDER_NAME",
+  "value": "espp@gmail.com",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:36.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-15T02:00:40.528Z"
+  },
+  "options": []
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d038b"
+  },
+  "key": "EMAIL_TEMPLATE_REGISTER_ACCOUNT_TEMPLATE",
+  "value": "<div class=\"raw-html-embed\">\n\n\n  <style>\n    table td {\n      border-bottom: 1px solid #ececed;\n      text-align: left;\n      padding: 10px 6px;\n      font-size: 1em;\n    }\n  </style>\n\n\n\n  <h4>REGISTER CUSTOMER: approval - {{data.firstName}} {{data.lastName}} </h4>\n  <br>\n  <br>\n  <table class=\"forms\" style=\"border-collapse: collapse;border-bottom: 0;width: 100%; border: 1px solid #ececed;\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\n    <thead>\n      <tr style=\"background: #ececed;\">\n        <th>Field Name</th>\n        <th>Value</th>\n      </tr>\n    </thead>\n    <tbody>\n\n      <tr>\n        <td>id</td>\n        <td>{{data._id}}</td>\n      </tr>\n\n      <tr>\n        <td>user</td>\n        <td>{{data.user}}</td>\n      </tr>\n\n      <tr>\n        <td>salutation</td>\n        <td>{{data.salutation}}</td>\n      </tr>\n\n      <tr>\n        <td>firstName</td>\n        <td>{{data.firstName}}</td>\n      </tr>\n\n      <tr>\n        <td>lastName</td>\n        <td>{{data.lastName}}</td>\n      </tr>\n\n      <tr>\n        <td>phone</td>\n        <td>{{data.phone}}</td>\n      </tr>\n\n      <tr>\n        <td>email</td>\n        <td>{{data.email}}</td>\n      </tr>\n\n      <tr>\n        <td>internalNote</td>\n        <td>{{data.internalNote}}</td>\n      </tr>\n\n      <tr>\n        <td>promotionCoupon</td>\n        <td>{{data.promotionCoupon}}</td>\n      </tr>\n\n      <tr>\n        <td>personalEmail</td>\n        <td>{{data.personalEmail}}</td>\n      </tr>\n\n      <tr>\n        <td>contactNo</td>\n        <td>{{data.contactNo}}</td>\n      </tr>\n\n      <tr>\n        <td>designation</td>\n        <td>{{data.designation}}</td>\n      </tr>\n\n      <tr>\n        <td>remark</td>\n        <td>{{data.remark}}</td>\n      </tr>\n\n      <tr>\n        <td>companyNatureOfBusiness</td>\n        <td>{{data.companyNatureOfBusiness}}</td>\n      </tr>\n\n      <tr>\n        <td>companyFax</td>\n        <td>{{data.companyFax}}</td>\n      </tr>\n\n      <tr>\n        <td>companyContactNo</td>\n        <td>{{data.companyContactNo}}</td>\n      </tr>\n\n      <tr>\n        <td>companyRegNo</td>\n        <td>{{data.companyRegNo}}</td>\n      </tr>\n\n      <tr>\n        <td>companyName</td>\n        <td>{{data.companyName}}</td>\n      </tr>\n\n      <tr>\n        <td>orderHistory</td>\n        <td>{{data.orderHistory}}</td>\n      </tr>\n\n      <tr>\n        <td>financeEmail</td>\n        <td>{{data.financeEmail}}</td>\n      </tr>\n\n      <tr>\n        <td>financeContactNo</td>\n        <td>{{data.financeContactNo}}</td>\n      </tr>\n\n      <tr>\n        <td>addressBlockNo</td>\n        <td>{{data.addressBlockNo}}</td>\n      </tr>\n\n      <tr>\n        <td>addressStresstName</td>\n        <td>{{data.addressStresstName}}</td>\n      </tr>\n\n      <tr>\n        <td>addressFloor</td>\n        <td>{{data.addressFloor}}</td>\n      </tr>\n\n      <tr>\n        <td>addressUnitNo</td>\n        <td>{{data.addressUnitNo}}</td>\n      </tr>\n\n      <tr>\n        <td>addressBuildingName</td>\n        <td>{{data.addressBuildingName}}</td>\n      </tr>\n\n      <tr>\n        <td>addressPostCode</td>\n        <td>{{data.addressPostCode}}</td>\n      </tr>\n\n      <tr>\n        <td>addressCity</td>\n        <td>{{data.addressCity}}</td>\n      </tr>\n\n      <tr>\n        <td>addressState</td>\n        <td>{{data.addressState}}</td>\n      </tr>\n\n      <tr>\n        <td>addressCountry</td>\n        <td>{{data.addressCountry}}</td>\n      </tr>\n\n      <tr>\n        <td>financeSalutation</td>\n        <td>{{data.financeSalutation}}</td>\n      </tr>\n\n      <tr>\n        <td>financeFirstName</td>\n        <td>{{data.financeFirstName}}</td>\n      </tr>\n\n      <tr>\n        <td>financeLastName</td>\n        <td>{{data.financeLastName}}</td>\n      </tr>\n\n\n    </tbody>\n  </table>\n  <hr style=\"margin: 20px;\">\n  <div style=\"width: 100%;text-align: center; margin: 0px auto;\">\n    <a href=\"{{fontendLink}}\" style=\"padding: 10px;border: 1px;background-color: green;color: white;font-style: inherit;margin-right: 20px;\">\n      Approve Page\n    </a>\n  </div>\n\n\n</div>",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:40.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-24T07:06:06.903Z"
+  },
+  "options": []
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0386"
+  },
+  "key": "EMAIL_PROVIDER_MAILER_PUBLIC_NAME",
+  "value": "ESPP",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:35.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:35.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0389"
+  },
+  "key": "EMAIL_PROVIDER_MAILER_PASSWORD",
+  "value": "xostpioyywyhvpow",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:38.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-15T02:01:10.013Z"
+  },
+  "options": []
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d038a"
+  },
+  "key": "EMAIL_TEMPLATE_REGISTER_ACCOUNT_TITLE",
+  "value": "ESPP - REGISTER CUSTOMER",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:39.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:39.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d038c"
+  },
+  "key": "EMAIL_TEMPLATE_FORGOT_PASSWORD_TITLE",
+  "value": "ESPP - RESET PASSWORD",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:41.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:41.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0390"
+  },
+  "key": "EMAIL_TEMPLATE_RECEIPT_TITLE",
+  "value": "ESPP - RECEIPT",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:45.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:45.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d038e"
+  },
+  "key": "EMAIL_TEMPLATE_INVOICE_TITLE",
+  "value": "ESPP - INVOICE",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:43.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:43.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0394"
+  },
+  "key": "EMAIL_TEMPLATE_PAYMENT_LOCAL_BANK_TRANSFER_TITLE",
+  "value": "ESPP - Payment Local Bank Transfer"
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d038d"
+  },
+  "key": "EMAIL_TEMPLATE_FORGOT_PASSWORD_TEMPLATE",
+  "value": "<p>Sent to:<strong> {{ name }} </strong>- {{ sender }},</p><p>Your new password at system ESPP is: <strong>{{ password }}</strong></p>",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:42.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-01T07:19:53.461Z"
+  },
+  "options": []
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d037f"
+  },
+  "key": "PAYMENT_SETTING",
+  "value": "paypal",
+  "options": [
+    {
+      "label": "Paypal",
+      "recipientEmail": "info@uno.com.my",
+      "status": true,
+      "id": "1",
+      "create": "2021-04-23T03:47:50.913Z",
+      "image": "/images/paypal.png",
+      "name": "Paypal",
+      "istest": "0",
+      "currencyCode": "SGD",
+      "update": "2021-07-12T02:18:16.539Z",
+      "instruction": ""
+    },
+    {
+      "id": "2",
+      "name": "Paynow",
+      "label": "PayNow",
+      "qrcode": "https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/22041032646/original/RgItugeuFVq91GFRfS4iNcUFzoOKjRuKjA.png?1562771229",
+      "paymentInStruction": "",
+      "status": true,
+      "paymentInstruction": "",
+      "update": "2021-07-12T07:12:47.864Z",
+      "instruction": "<p><strong>Step 1</strong>: Login to online banking or banking mobile application</p><p><strong>Step 2</strong>: Select “PAYNOW”</p><p><strong>Step 3</strong>: Select “UEN”</p><p><strong>Step 4</strong>: Key in UEN number provided below to make payment</p><p><strong>Step 5</strong>: Done!</p><p>Please PayNow to our UEN Number: 123456789K</p>"
+    },
+    {
+      "id": "3",
+      "name": "Bank transfer",
+      "label": "Local Bank Transfer",
+      "paymentInStruction": "",
+      "status": "1",
+      "instruction": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum.</p><p><strong>Coporate Account No</strong>: 1234567890</p><p><strong>Bank Code</strong>: 1234</p><p><strong>Branch Code</strong>: 123</p><p><strong>Bank Address</strong>: 14 Arumugam Road, #08-01, LTC Building C Singapore 409959</p>",
+      "update": "2021-07-11T11:07:04.093Z"
+    },
+    {
+      "id": "4",
+      "name": "Cash On Delivery",
+      "label": "Cash On Delivery",
+      "paymentInStruction": "",
+      "status": "1",
+      "instruction": "<p>1. Please choose Cash on delivery as the Shipping method and click Complete button below.</p><p>2. Kindly verify your order, and make cash payment in full when the delivery agent arrives at<br>your doorstep with your order.</p>",
+      "update": "2021-07-11T10:29:02.774Z"
+    }
+  ],
+  "option": [
+    {
+      "paymentInStruction": ""
+    }
+  ],
+  "update": "2021-04-23T03:47:50.913Z",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:28.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-12T07:12:49.402Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0391"
+  },
+  "key": "EMAIL_TEMPLATE_RECEIPT_ACCOUNT_TEMPLATE",
+  "value": "Dear Valued Customers",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:46.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:46.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0392"
+  },
+  "key": "EMAIL_TEMPLATE_SHIPPING_DETAIL_TITLE",
+  "value": "ESPP - SHIPPING DETAILS",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:47.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:47.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0395"
+  },
+  "key": "EMAIL_TEMPLATE_PAYMENT_LOCAL_BANK_TRANSFER_TEMPLATE",
+  "value": "<p><strong>ESPP - Payment Local Bank Transfer</strong></p><figure class=\"table\"><table><tbody><tr><td>Field Name</td><td>Value</td></tr><tr><td>Frist Name</td><td>{{data.customer.user.firstName}}</td></tr><tr><td>Last Name</td><td>{{data.customer.user.lastName}}</td></tr><tr><td>Email</td><td>{{data.customer.user.email}}</td></tr><tr><td>Order No</td><td>{{data.orderNo}}</td></tr><tr><td>Order At</td><td>{{data.orderDateTime}}</td></tr><tr><td>Total</td><td>{{data.total}}</td></tr><tr><td>Payment</td><td>{{data.payment}}</td></tr></tbody></table></figure><div class=\"raw-html-embed\"><hr style=\"margin: 20px;\">\n  <div style=\"width: 100%;text-align: center; margin: 0px auto;\">\n<a href=\"{{approveLink}}\" style=\"padding: 10px;border: 1px;background-color: green;color: white;font-style: inherit;margin-right: 20px;\">Approve</a>\n    |\n    <a href=\"{{rejectLink}}\" style=\"margin-left: 20px;background-color: red;color: white;padding: 10px;\">Rejected</a>\n</div></div>",
+  "options": [],
+  "updatedAt": {
+    "$date": "2021-07-14T03:29:10.491Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0396"
+  },
+  "key": "EMAIL_TEMPLATE_PAYMENT_PAYNOW_TITLE",
+  "value": "ESPP - Payment Paynow",
+  "options": [],
+  "updatedAt": {
+    "$date": "2021-07-14T03:28:23.954Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0397"
+  },
+  "key": "EMAIL_TEMPLATE_PAYMENT_PAYNOW_TEMPLATE",
+  "value": "<p><strong>ESPP - Payment Paynow</strong></p><figure class=\"table\"><table><tbody><tr><td>Field Name</td><td>Value</td></tr><tr><td>Frist Name</td><td>{{data.customer.user.firstName}}</td></tr><tr><td>Last Name</td><td>{{data.customer.user.lastName}}</td></tr><tr><td>Email</td><td>{{data.customer.user.email}}</td></tr><tr><td>Order No</td><td>{{data.orderNo}}</td></tr><tr><td>Order At</td><td>{{data.orderDateTime}}</td></tr><tr><td>Total</td><td>{{data.total}}</td></tr><tr><td>Payment</td><td>{{data.payment}}</td></tr></tbody></table></figure><div class=\"raw-html-embed\"><hr style=\"margin: 20px;\">\n  <div style=\"width: 100%;text-align: center; margin: 0px auto;\">\n<a href=\"{{approveLink}}\" style=\"padding: 10px;border: 1px;background-color: green;color: white;font-style: inherit;margin-right: 20px;\">Approve</a>\n    |\n    <a href=\"{{rejectLink}}\" style=\"margin-left: 20px;background-color: red;color: white;padding: 10px;\">Rejected</a>\n</div></div>",
+  "options": [],
+  "updatedAt": {
+    "$date": "2021-07-14T03:28:28.822Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0398"
+  },
+  "key": "EMAIL_TEMPLATE_PAYMENT_PAYPAL_TITLE",
+  "value": "ESPP - Payment Paypal",
+  "options": [],
+  "updatedAt": {
+    "$date": "2021-07-14T03:28:38.898Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0393"
+  },
+  "key": "EMAIL_TEMPLATE_SHIPPING_DETAIL_TEMPLATE",
+  "value": "Dear Valued Customers",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:48.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:48.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d038f"
+  },
+  "key": "EMAIL_TEMPLATE_INVOICE_TEMPLATE",
+  "value": "<div class=\"raw-html-embed\"><div>\n    <div>\n        <p>Order Date: {{orderDateTime}}</p>\n        <p>Order No: {{orderNo}}</p>\n        <p>Order Status: {{status}}</p>\n        <p>Payment Status: {{paymentStatus}}</p>\n        <p>GST Number: {{gstNumber}}</p>\n    </div>\n\n    \n            {{#orderProducts}}\n            \n            {{/orderProducts}}\n        <table class=\"forms\" style=\"border-collapse: collapse;border-bottom: 0;width: 100%; border: 1px solid #ececed;\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\">\n        <thead>\n            <tr style=\"background: #ececed;\">\n                <th>SKU</th>\n                <th>Product Name</th>\n                <th>Unit Price (SGD)</th>\n                <th>Quantity</th>\n                <th>Total (SGD)</th>\n            </tr>\n        </thead>\n        <tbody><tr>\n                <td>{{product.sku}}</td>\n                <td>{{product.name}}</td>\n                <td>{{product.publicPrice}}</td>\n                <td>{{quantity}}</td>\n                <td>{{total}}</td>\n            </tr></tbody>\n    </table>\n    <p>Sub Total: {{subTotal}}</p>\n    <p>Membership Discount: {{membershipDiscount}}</p>\n    <p>GST Payable: {{gstPayable}}</p>\n    <p>Grand Total: {{grandTotal}}</p>\n</div></div>",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:44.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:44.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0402"
+  },
+  "key": "EMAIL_TEMPLATE_ORDER_SORRY_TITLE",
+  "value": "ESPP - Payment reject",
+  "options": [],
+  "updatedAt": {
+    "$date": "2021-07-14T03:30:01.895Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0399"
+  },
+  "key": "EMAIL_TEMPLATE_PAYMENT_PAYPAL_TEMPLATE",
+  "value": "<p><strong>ESPP - Payment Paypal</strong></p><figure class=\"table\"><table><tbody><tr><td>Field Name</td><td>Value</td></tr><tr><td>Frist Name</td><td>{{data.customer.user.firstName}}</td></tr><tr><td>Last Name</td><td>{{data.customer.user.lastName}}</td></tr><tr><td>Email</td><td>{{data.customer.user.email}}</td></tr><tr><td>Order No</td><td>{{data.orderNo}}</td></tr><tr><td>Order At</td><td>{{data.orderDateTime}}</td></tr><tr><td>Total</td><td>{{data.total}}</td></tr><tr><td>Payment</td><td>{{data.payment}}</td></tr></tbody></table></figure><div class=\"raw-html-embed\"><hr style=\"margin: 20px;\">\n  <div style=\"width: 100%;text-align: center; margin: 0px auto;\">\n<a href=\"{{approveLink}}\" style=\"padding: 10px;border: 1px;background-color: green;color: white;font-style: inherit;margin-right: 20px;\">Approve</a>\n    |\n    <a href=\"{{rejectLink}}\" style=\"margin-left: 20px;background-color: red;color: white;padding: 10px;\">Rejected</a>\n</div></div>",
+  "options": [],
+  "updatedAt": {
+    "$date": "2021-07-14T03:28:43.657Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0388"
+  },
+  "key": "EMAIL_PROVIDER_MAILER_USERNAME",
+  "value": "no.reply.website789@gmail.com",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:37.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-15T02:01:01.342Z"
+  },
+  "options": []
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0400"
+  },
+  "key": "EMAIL_TEMPLATE_ORDER_THANK_YOU_TITLE",
+  "value": "ESPP - Thanks you",
+  "options": [],
+  "updatedAt": {
+    "$date": "2021-07-14T03:29:51.098Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0403"
+  },
+  "key": "EMAIL_TEMPLATE_ORDER_SORRY_TEMPLATE",
+  "value": "<p>Sorry<span style=\"color:#4D4D4D;\"> pla…</span></p>",
+  "options": [],
+  "updatedAt": {
+    "$date": "2021-07-24T10:29:31.554Z"
+  }
+},{
+  "_id": {
+    "$oid": "60d9396991737d398e7d0401"
+  },
+  "key": "EMAIL_TEMPLATE_ORDER_THANK_YOU_TEMPLATE",
+  "value": "<p>ESPP Thanks you for …</p>",
+  "options": [],
+  "updatedAt": {
+    "$date": "2021-07-14T03:30:22.782Z"
+  }
+},{
+  "_id": {
+    "$oid": "60fbb94e1bcb3b09a145d087"
+  },
+  "key": "EMAIL_TEMPLATE_REGISTER_USER_TITLE",
+  "value": "ESPP - register User",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:29.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60fbb96a1bcb3b09a145d088"
+  },
+  "key": "EMAIL_TEMPLATE_REGISTER_USER_TEMPLATE",
+  "value": "<p>Sent to: <strong>{{ name }} </strong>- {{ sender }},</p><p>Your password at system ESPP is: <strong>{{ password }}</strong></p>",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-24T07:26:08.805Z"
+  },
+  "options": []
+},{
+  "_id": {
+    "$oid": "60efba616243614d39edce36"
+  },
+  "key": "EMAIL_TEMPLATE_CONTACT_US_TEMPLATE",
+  "value": "<p><strong>ESPP - Form contact us</strong></p><figure class=\"table\"><table><tbody><tr><td><strong>FIELD NAME</strong></td><td><strong>VALUE</strong></td></tr><tr><td>Name</td><td>{{data.name}}</td></tr><tr><td>Email</td><td>{{data.email}}</td></tr><tr><td>Contact</td><td>{{data.contact}}</td></tr><tr><td>Message</td><td>{{data.message}}</td></tr></tbody></table></figure>",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:25.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:25.977Z"
+  }
+},{
+  "_id": {
+    "$oid": "60efba4a6243614d39edce35"
+  },
+  "key": "EMAIL_TEMPLATE_CONTACT_US_TITLE",
+  "value": "ESPP - Form contact us",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:25.977Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:25.977Z"
+  }
+}]

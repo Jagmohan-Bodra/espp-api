@@ -1,0 +1,37 @@
+<div>
+    <div>
+        <p>Order Date: {{orderDateTime}}</p>
+        <p>Order No: {{orderNo}}</p>
+        <p>Order Status: {{status}}</p>
+        <p>Payment Status: {{paymentStatus}}</p>
+        <p>GST Number: {{gstNumber}}</p>
+    </div>
+
+    <table class="forms" style="border-collapse: collapse;border-bottom: 0;width: 100%; border: 1px solid #ececed;"
+        width="100%" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr style="background: #ececed;">
+                <th>SKU</th>
+                <th>Product Name</th>
+                <th>Unit Price (SGD)</th>
+                <th>Quantity</th>
+                <th>Total (SGD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#orderProducts}}
+            <tr>
+                <td>{{product.sku}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.publicPrice}}</td>
+                <td>{{quantity}}</td>
+                <td>{{total}}</td>
+            </tr>
+            {{/orderProducts}}
+        </tbody>
+    </table>
+    <p>Sub Total: {{subTotal}}</p>
+    <p>Membership Discount: {{membershipDiscount}}</p>
+    <p>GST Payable: {{gstPayable}}</p>
+    <p>Grand Total: {{grandTotal}}</p>
+</div>

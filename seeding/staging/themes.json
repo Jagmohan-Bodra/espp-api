@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "60a1e334b8204d2a6d786bcb"
+  },
+  "description": "ESPP Theme 2",
+  "name": "ESPP Theme",
+  "pushlish": true,
+  "variants": [
+    {
+      "$oid": "5143afc12e44e1ceb3754001"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754002"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754004"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754005"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754006"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754007"
+    },
+    {
+      "$oid": "5143afc12e44e1ceb3754008"
+    },
+    {
+      "$oid": "60d9852862b63a0021877cb5"
+    }
+  ],
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.111Z"
+  },
+  "updatedAt": {
+    "$date": "2021-09-03T05:41:39.726Z"
+  },
+  "__v": 1
+}]

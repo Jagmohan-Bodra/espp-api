@@ -1,0 +1,1852 @@
+[{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720002"
+  },
+  "designation": "Designation 2",
+  "remark": "Remark 2",
+  "contactNo": "908123457",
+  "personalEmail": "emailcustomer2@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "2",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "2",
+  "addressUnitNo": "32",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Noah",
+  "financeLastName": "Johnson",
+  "financeContactNo": "908123457",
+  "financeEmail": "emailcustomer2@gmail.com",
+  "companyName": "company B",
+  "companyRegNo": "3473194649",
+  "companyContactNo": "3473194663",
+  "companyFax": "3473194677",
+  "companyNatureOfBusiness": "saler",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754009"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27.088Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:27.088Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720001"
+  },
+  "designation": "Designation 1",
+  "remark": "Remark 1",
+  "contactNo": "908123456",
+  "personalEmail": "emailcustomer1@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "1",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "1",
+  "addressUnitNo": "123",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Liam",
+  "financeLastName": "Smith",
+  "financeContactNo": "908123456",
+  "financeEmail": "emailcustomer1@gmail.com",
+  "companyName": "company A",
+  "companyRegNo": "3473194648",
+  "companyContactNo": "3473194662",
+  "companyFax": "3473194676",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754001"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.088Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T05:19:01.793Z"
+  },
+  "__v": 1,
+  "addressList": [],
+  "addresses": []
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720003"
+  },
+  "designation": "Designation 3",
+  "remark": "Remark 3",
+  "contactNo": "908123458",
+  "personalEmail": "emailcustomer3@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "3",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "3",
+  "addressUnitNo": "23",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Oliver",
+  "financeLastName": "Williams",
+  "financeContactNo": "908123458",
+  "financeEmail": "emailcustomer3@gmail.com",
+  "companyName": "company C",
+  "companyRegNo": "3473194650",
+  "companyContactNo": "3473194664",
+  "companyFax": "3473194678",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754010"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720003"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:28.088Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:28.088Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720004"
+  },
+  "designation": "Designation 4",
+  "remark": "Remark 4",
+  "contactNo": "908123459",
+  "personalEmail": "emailcustomer4@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "2",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "4",
+  "addressUnitNo": "23",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "William",
+  "financeLastName": "Brown",
+  "financeContactNo": "908123459",
+  "financeEmail": "emailcustomer4@gmail.com",
+  "companyName": "company D",
+  "companyRegNo": "3473194651",
+  "companyContactNo": "3473194665",
+  "companyFax": "3473194679",
+  "companyNatureOfBusiness": "saler",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754011"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720004"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.088Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:29.088Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720005"
+  },
+  "designation": "Designation 5",
+  "remark": "Remark 5",
+  "contactNo": "908123460",
+  "personalEmail": "emailcustomer5@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "1",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "1",
+  "addressUnitNo": "23",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Elijah",
+  "financeLastName": "Jones",
+  "financeContactNo": "908123460",
+  "financeEmail": "emailcustomer5@gmail.com",
+  "companyName": "company E",
+  "companyRegNo": "3473194652",
+  "companyContactNo": "3473194666",
+  "companyFax": "3473194680",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754012"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720005"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30.088Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:30.088Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720006"
+  },
+  "designation": "Designation 6",
+  "remark": "Remark 6",
+  "contactNo": "908123461",
+  "personalEmail": "emailcustomer6@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "3",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "2",
+  "addressUnitNo": "42",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "James",
+  "financeLastName": "Garcia",
+  "financeContactNo": "908123461",
+  "financeEmail": "emailcustomer6@gmail.com",
+  "companyName": "company A",
+  "companyRegNo": "3473194653",
+  "companyContactNo": "3473194667",
+  "companyFax": "3473194681",
+  "companyNatureOfBusiness": "saler",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754013"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720006"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:31.088Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:31.088Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720007"
+  },
+  "designation": "Designation 7",
+  "remark": "Remark 7",
+  "contactNo": "908123462",
+  "personalEmail": "emailcustomer7@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "2",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "3",
+  "addressUnitNo": "124",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Benjamin",
+  "financeLastName": "Miller",
+  "financeContactNo": "908123462",
+  "financeEmail": "emailcustomer7@gmail.com",
+  "companyName": "company B",
+  "companyRegNo": "3473194654",
+  "companyContactNo": "3473194668",
+  "companyFax": "3473194682",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754014"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720007"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:32.089Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:32.089Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720008"
+  },
+  "designation": "Designation 8",
+  "remark": "Remark 8",
+  "contactNo": "908123463",
+  "personalEmail": "emailcustomer8@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "3",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "1",
+  "addressUnitNo": "33",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Lucas",
+  "financeLastName": "Davis",
+  "financeContactNo": "908123463",
+  "financeEmail": "emailcustomer8@gmail.com",
+  "companyName": "company C",
+  "companyRegNo": "3473194655",
+  "companyContactNo": "3473194669",
+  "companyFax": "3473194683",
+  "companyNatureOfBusiness": "saler",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754015"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720008"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:33.089Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:33.089Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720009"
+  },
+  "designation": "Designation 9",
+  "remark": "Remark 9",
+  "contactNo": "908123464",
+  "personalEmail": "emailcustomer9@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "4",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "2",
+  "addressUnitNo": "24",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Mason",
+  "financeLastName": "Rodriguez",
+  "financeContactNo": "908123464",
+  "financeEmail": "emailcustomer9@gmail.com",
+  "companyName": "company D",
+  "companyRegNo": "3473194656",
+  "companyContactNo": "3473194670",
+  "companyFax": "3473194684",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754016"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720009"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:34.089Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:34.089Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720011"
+  },
+  "designation": "Designation 11",
+  "remark": "Remark 11",
+  "contactNo": "908123466",
+  "personalEmail": "emailcustomer11@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "2",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "4",
+  "addressUnitNo": "24",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mrs",
+  "financeFirstName": "Emma",
+  "financeLastName": "Hernandez",
+  "financeContactNo": "908123466",
+  "financeEmail": "emailcustomer11@gmail.com",
+  "companyName": "company A",
+  "companyRegNo": "3473194658",
+  "companyContactNo": "3473194672",
+  "companyFax": "3473194686",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754018"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:36.089Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:36.089Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720012"
+  },
+  "designation": "Designation 12",
+  "remark": "Remark 12",
+  "contactNo": "908123467",
+  "personalEmail": "emailcustomer12@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "4",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "5",
+  "addressUnitNo": "43",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mrs",
+  "financeFirstName": "Ava",
+  "financeLastName": "Lopez",
+  "financeContactNo": "908123467",
+  "financeEmail": "emailcustomer12@gmail.com",
+  "companyName": "company B",
+  "companyRegNo": "3473194659",
+  "companyContactNo": "3473194673",
+  "companyFax": "3473194687",
+  "companyNatureOfBusiness": "saler",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754019"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:37.089Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:37.089Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720013"
+  },
+  "designation": "Designation 13",
+  "remark": "Remark 13",
+  "contactNo": "908123468",
+  "personalEmail": "emailcustomer13@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "3",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "2",
+  "addressUnitNo": "125",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mrs",
+  "financeFirstName": "Sophia",
+  "financeLastName": "Gonzales",
+  "financeContactNo": "908123468",
+  "financeEmail": "emailcustomer13@gmail.com",
+  "companyName": "company C",
+  "companyRegNo": "3473194660",
+  "companyContactNo": "3473194674",
+  "companyFax": "3473194688",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754020"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720003"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:38.089Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:38.089Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720010"
+  },
+  "designation": "Designation 10",
+  "remark": "Remark 10",
+  "contactNo": "908123465",
+  "personalEmail": "emailcustomer10@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "3",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "3",
+  "addressUnitNo": "24",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mrs",
+  "financeFirstName": "Olivia",
+  "financeLastName": "Martinez",
+  "financeContactNo": "908123465",
+  "financeEmail": "emailcustomer10@gmail.com",
+  "companyName": "company E",
+  "companyRegNo": "3473194657",
+  "companyContactNo": "3473194671",
+  "companyFax": "3473194685",
+  "companyNatureOfBusiness": "saler",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754017"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720010"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:35.089Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:35.089Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720015"
+  },
+  "designation": "Designation 15",
+  "remark": "Remark 15",
+  "contactNo": "908123470",
+  "personalEmail": "emailcustomer15@gmail.com",
+  "status": "PENDING",
+  "addressBlockNo": "1",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "1",
+  "addressUnitNo": "123",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Liam",
+  "financeLastName": "Smith",
+  "financeContactNo": "908123456",
+  "financeEmail": "emailcustomer1@gmail.com",
+  "companyName": "company A",
+  "companyRegNo": "3473194648",
+  "companyContactNo": "3473194662",
+  "companyFax": "3473194676",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754022"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720005"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:40.090Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:40.090Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720016"
+  },
+  "designation": "Designation 16",
+  "remark": "Remark 16",
+  "contactNo": "908123471",
+  "personalEmail": "emailcustomer16@gmail.com",
+  "status": "PENDING",
+  "addressBlockNo": "2",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "2",
+  "addressUnitNo": "32",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Noah",
+  "financeLastName": "Johnson",
+  "financeContactNo": "908123457",
+  "financeEmail": "emailcustomer2@gmail.com",
+  "companyName": "company B",
+  "companyRegNo": "3473194649",
+  "companyContactNo": "3473194663",
+  "companyFax": "3473194677",
+  "companyNatureOfBusiness": "saler",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754023"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720006"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:41.090Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:41.090Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720014"
+  },
+  "designation": "Designation 14",
+  "remark": "Remark 14",
+  "contactNo": "908123469",
+  "personalEmail": "emailcustomer14@gmail.com",
+  "status": "PENDING",
+  "addressBlockNo": "4",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "3",
+  "addressUnitNo": "34",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mrs",
+  "financeFirstName": "Isabella",
+  "financeLastName": "Wilson",
+  "financeContactNo": "908123469",
+  "financeEmail": "emailcustomer14@gmail.com",
+  "companyName": "company D",
+  "companyRegNo": "3473194661",
+  "companyContactNo": "3473194675",
+  "companyFax": "3473194689",
+  "companyNatureOfBusiness": "saler",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754021"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720004"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:39.090Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:39.090Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720017"
+  },
+  "designation": "Designation 17",
+  "remark": "Remark 17",
+  "contactNo": "908123472",
+  "personalEmail": "emailcustomer17@gmail.com",
+  "status": "PENDING",
+  "addressBlockNo": "3",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "3",
+  "addressUnitNo": "23",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Oliver",
+  "financeLastName": "Williams",
+  "financeContactNo": "908123458",
+  "financeEmail": "emailcustomer3@gmail.com",
+  "companyName": "company C",
+  "companyRegNo": "3473194650",
+  "companyContactNo": "3473194664",
+  "companyFax": "3473194678",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754024"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720007"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:42.090Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:42.090Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720018"
+  },
+  "designation": "Designation 18",
+  "remark": "Remark 18",
+  "contactNo": "908123473",
+  "personalEmail": "emailcustomer18@gmail.com",
+  "status": "PENDING",
+  "addressBlockNo": "2",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "4",
+  "addressUnitNo": "23",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "William",
+  "financeLastName": "Brown",
+  "financeContactNo": "908123459",
+  "financeEmail": "emailcustomer4@gmail.com",
+  "companyName": "company D",
+  "companyRegNo": "3473194651",
+  "companyContactNo": "3473194665",
+  "companyFax": "3473194679",
+  "companyNatureOfBusiness": "saler",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754025"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720008"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:43.091Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:43.091Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720019"
+  },
+  "designation": "Designation 19",
+  "remark": "Remark 19",
+  "contactNo": "908123474",
+  "personalEmail": "emailcustomer19@gmail.com",
+  "status": "PENDING",
+  "addressBlockNo": "1",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "1",
+  "addressUnitNo": "23",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Elijah",
+  "financeLastName": "Jones",
+  "financeContactNo": "908123460",
+  "financeEmail": "emailcustomer5@gmail.com",
+  "companyName": "company E",
+  "companyRegNo": "3473194652",
+  "companyContactNo": "3473194666",
+  "companyFax": "3473194680",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754026"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720009"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:44.091Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:44.091Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720020"
+  },
+  "designation": "Designation 20",
+  "remark": "Remark 20",
+  "contactNo": "908123475",
+  "personalEmail": "emailcustomer20@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "3",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "2",
+  "addressUnitNo": "42",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "James",
+  "financeLastName": "Garcia",
+  "financeContactNo": "908123461",
+  "financeEmail": "emailcustomer6@gmail.com",
+  "companyName": "company A",
+  "companyRegNo": "3473194653",
+  "companyContactNo": "3473194667",
+  "companyFax": "3473194681",
+  "companyNatureOfBusiness": "saler",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754027"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720010"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:45.091Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T07:17:24.811Z"
+  },
+  "__v": 1,
+  "addresses": []
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720021"
+  },
+  "designation": "Designation 21",
+  "remark": "Remark 21",
+  "contactNo": "908123476",
+  "personalEmail": "emailcustomer21@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "2",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "3",
+  "addressUnitNo": "124",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Benjamin",
+  "financeLastName": "Miller",
+  "financeContactNo": "908123462",
+  "financeEmail": "emailcustomer7@gmail.com",
+  "companyName": "company B",
+  "companyRegNo": "3473194654",
+  "companyContactNo": "3473194668",
+  "companyFax": "3473194682",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754028"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:46.091Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-26T09:57:26.788Z"
+  },
+  "__v": 2,
+  "addresses": [],
+  "addressList": [],
+  "currency": "us"
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720022"
+  },
+  "designation": "Designation 22",
+  "remark": "Remark 22",
+  "contactNo": "908123477",
+  "personalEmail": "emailcustomer22@gmail.com",
+  "status": "PENDING",
+  "addressBlockNo": "3",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "1",
+  "addressUnitNo": "33",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Lucas",
+  "financeLastName": "Davis",
+  "financeContactNo": "908123463",
+  "financeEmail": "emailcustomer8@gmail.com",
+  "companyName": "company C",
+  "companyRegNo": "3473194655",
+  "companyContactNo": "3473194669",
+  "companyFax": "3473194683",
+  "companyNatureOfBusiness": "saler",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754029"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:47.091Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:47.091Z"
+  }
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720024"
+  },
+  "designation": "Designation 24",
+  "remark": "Remark 24",
+  "contactNo": "908123479",
+  "personalEmail": "emailcustomer24@gmail.com",
+  "status": "ACTIVE",
+  "addressBlockNo": "6",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "2",
+  "addressUnitNo": "25",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Mason",
+  "financeLastName": "Rodriguez",
+  "financeContactNo": "908125464",
+  "financeEmail": "emailcustomer10@gmail.com",
+  "companyName": "company D",
+  "companyRegNo": "3473194657",
+  "companyContactNo": "3473194671",
+  "companyFax": "3473194684",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754031"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720004"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:49.091Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T09:02:38.042Z"
+  },
+  "__v": 1,
+  "addresses": [],
+  "personalContact": "1111",
+  "salesExecutive": "222",
+  "creditTerms": "333",
+  "accountType": "PERSONAL",
+  "currency": "us"
+},{
+  "_id": {
+    "$oid": "1143afc66d44e1ceb3720023"
+  },
+  "designation": "Designation 23",
+  "remark": "Remark 23",
+  "contactNo": "908123478",
+  "personalEmail": "emailcustomer23@gmail.com",
+  "status": "PENDING",
+  "addressBlockNo": "4",
+  "addressStresstName": "Alexandre de Rhodes",
+  "addressFloor": "2",
+  "addressUnitNo": "24",
+  "addressBuildingName": "Empire State Building",
+  "addressPostCode": "74000",
+  "addressCity": "New York",
+  "addressState": "NEW YORK",
+  "addressCountry": "USA",
+  "financeSalutation": "Mr",
+  "financeFirstName": "Mason",
+  "financeLastName": "Rodriguez",
+  "financeContactNo": "908123464",
+  "financeEmail": "emailcustomer9@gmail.com",
+  "companyName": "company D",
+  "companyRegNo": "3473194656",
+  "companyContactNo": "3473194670",
+  "companyFax": "3473194684",
+  "companyNatureOfBusiness": "computer",
+  "user": {
+    "$oid": "5143afc66d44e1ceb3754030"
+  },
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "internalNote": [
+    {
+      "$oid": "5143afc66d44e1ceb3721001"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721002"
+    },
+    {
+      "$oid": "5143afc66d44e1ceb3721003"
+    }
+  ],
+  "promotionCoupon": [
+    {
+      "$oid": "1143afc66d44e1ceb3720001"
+    },
+    {
+      "$oid": "1143afc66d44e1ceb3720002"
+    }
+  ],
+  "orderHistory": [
+    {
+      "$oid": "1143afc66d44e1ceb3720003"
+    }
+  ],
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:48.091Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:48.091Z"
+  }
+},{
+  "_id": {
+    "$oid": "60f95428f1607f002192f1cb"
+  },
+  "status": "PENDING",
+  "internalNote": [],
+  "promotionCoupon": [],
+  "orderHistory": [],
+  "addressStresstName": "222222",
+  "addressBuildingName": "22222",
+  "addressPostCode": "22222",
+  "addressCountry": "222",
+  "financeSalutation": "MS",
+  "financeFirstName": "2222",
+  "financeLastName": "2222",
+  "financeContactNo": "22222",
+  "financeEmail": "ab@gmail.com",
+  "companyName": "2222",
+  "companyRegNo": "22222",
+  "companyContactNo": "222",
+  "companyFax": "2222",
+  "companyNatureOfBusiness": "2222",
+  "designation": "22222",
+  "contactNo": "222222",
+  "personalEmail": "ab@gmail.com",
+  "addresses": [],
+  "user": {
+    "$oid": "60f95428f1607f002192f1ca"
+  },
+  "createdAt": {
+    "$date": "2021-07-22T11:19:04.690Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T11:19:04.690Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f9a1a7f1607f002192f1ce"
+  },
+  "status": "PENDING",
+  "internalNote": [],
+  "promotionCoupon": [],
+  "orderHistory": [],
+  "addressStresstName": "Street Name",
+  "addressBuildingName": "Building Name",
+  "addressPostCode": "77777",
+  "addressCountry": "Country",
+  "financeSalutation": "MR",
+  "financeFirstName": "first",
+  "financeLastName": "Last",
+  "financeContactNo": "`1`1`1`121",
+  "financeEmail": "abc234@gmail.com",
+  "companyName": "Company",
+  "companyRegNo": "Company Reg. No",
+  "companyContactNo": "1223243656323",
+  "companyFax": "Company Fax",
+  "companyNatureOfBusiness": "Company Nature",
+  "designation": "Designation",
+  "contactNo": "1234523231",
+  "personalEmail": "abc234@gmail.com",
+  "addresses": [],
+  "user": {
+    "$oid": "60f9a1a7f1607f002192f1cd"
+  },
+  "createdAt": {
+    "$date": "2021-07-22T16:49:43.464Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T16:49:43.464Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f9aa14f1607f002192f1d1"
+  },
+  "status": "PENDING",
+  "internalNote": [],
+  "promotionCoupon": [],
+  "orderHistory": [],
+  "addresses": [],
+  "user": {
+    "$oid": "60f9aa14f1607f002192f1d0"
+  },
+  "createdAt": {
+    "$date": "2021-07-22T17:25:40.927Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T17:25:40.927Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f9adc3f1607f002192f1d4"
+  },
+  "status": "SUSPEND",
+  "internalNote": [],
+  "promotionCoupon": [],
+  "orderHistory": [],
+  "addresses": [],
+  "user": {
+    "$oid": "60f9adc3f1607f002192f1d3"
+  },
+  "createdAt": {
+    "$date": "2021-07-22T17:41:23.395Z"
+  },
+  "updatedAt": {
+    "$date": "2021-09-02T09:39:43.339Z"
+  },
+  "__v": 1,
+  "addressList": [],
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723002"
+  }
+},{
+  "_id": {
+    "$oid": "60fbd32cf1607f002192f1e0"
+  },
+  "status": "ACTIVE",
+  "internalNote": [],
+  "promotionCoupon": [],
+  "orderHistory": [],
+  "addressBlockNo": "my.ngoc@wibrand.asia",
+  "addressStresstName": "123",
+  "addressFloor": "my.ngoc@wibrand.asia",
+  "addressUnitNo": "my.ngoc@wibrand.asia",
+  "addressBuildingName": "my.ngoc@wibrand.asia",
+  "addressPostCode": "my.ngoc@wibrand.asia",
+  "addressCity": "123",
+  "addressState": "my.ngoc@wibrand.asia",
+  "addressCountry": "my.ngoc@wibrand.asia",
+  "financeSalutation": "MS",
+  "financeFirstName": "my.ngoc@wibrand.asia",
+  "financeLastName": "my.ngoc@wibrand.asia",
+  "financeContactNo": "my.ngoc@wibrand.asia",
+  "financeEmail": "my.ngoc@wibrand.asia",
+  "companyName": "my.ngoc@wibrand.asia",
+  "companyRegNo": "my.ngoc@wibrand.asia",
+  "companyContactNo": "my.ngoc@wibrand.asia",
+  "companyFax": "my.ngoc@wibrand.asia",
+  "companyNatureOfBusiness": "my.ngoc@wibrand.asia",
+  "designation": "Lorem Ipsum",
+  "contactNo": "Lorem Ipsum",
+  "personalEmail": "my.ngoc@wibrand.asia",
+  "addresses": [],
+  "user": {
+    "$oid": "60fbd32cf1607f002192f1df"
+  },
+  "createdAt": {
+    "$date": "2021-07-24T08:45:32.310Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T06:04:21.987Z"
+  },
+  "__v": 1,
+  "addressList": [],
+  "currency": "us"
+},{
+  "_id": {
+    "$oid": "610228af6133d70020b8a4a4"
+  },
+  "status": "ACTIVE",
+  "internalNote": [
+    {
+      "$oid": "610777791df5340020d31c66"
+    },
+    {
+      "$oid": "6107777f1df5340020d31c67"
+    }
+  ],
+  "promotionCoupon": [],
+  "orderHistory": [],
+  "addresses": [
+    {
+      "_id": {
+        "$oid": "61022db66133d70020b8a4a6"
+      },
+      "default": true,
+      "firstName": "Anna",
+      "lastName": "Anna",
+      "phone": "464646",
+      "blockNo": "46",
+      "stresstName": "46, Lorem Ipsum",
+      "floor": "46",
+      "unitNo": "46",
+      "buildingName": "46",
+      "state": "46",
+      "postCode": "46",
+      "country": "AF",
+      "city": "BAM",
+      "isDefault": true
+    },
+    {
+      "_id": {
+        "$oid": "61022f326133d70020b8a4a7"
+      },
+      "default": true,
+      "firstName": "BELL",
+      "lastName": "BELL",
+      "phone": "Lorem",
+      "blockNo": "Lorem",
+      "stresstName": "Lorem",
+      "floor": "Lorem",
+      "unitNo": "Lorem",
+      "buildingName": "Lorem",
+      "state": "Lorem",
+      "postCode": "Lorem",
+      "country": "AW",
+      "city": "AW",
+      "isDefault": true
+    },
+    {
+      "_id": {
+        "$oid": "6129c7a4d692980021c7c5d8"
+      },
+      "default": true,
+      "firstName": "DDD",
+      "lastName": "DDD",
+      "phone": "0123456789",
+      "stresstName": "123",
+      "blockNo": "123",
+      "floor": "123",
+      "unitNo": "123",
+      "buildingName": "123",
+      "state": "123",
+      "postCode": "123",
+      "country": "AT",
+      "city": "3",
+      "isDefault": true
+    }
+  ],
+  "addressList": [
+    {
+      "level1": "Mia",
+      "level2": "Bush",
+      "level3": "0123456789",
+      "level4": "1",
+      "level5": "123",
+      "level6": "123",
+      "level7": "123",
+      "level8": "123",
+      "level9": "123",
+      "level10": "BAL",
+      "level11": "AF",
+      "level12": "1",
+      "level13": "",
+      "level14": "",
+      "_id": {
+        "$oid": "6129c76ed692980021c7c5d7"
+      }
+    }
+  ],
+  "user": {
+    "$oid": "610228af6133d70020b8a4a3"
+  },
+  "createdAt": {
+    "$date": "2021-07-29T04:03:59.034Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T06:14:45.586Z"
+  },
+  "__v": 8,
+  "membership": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "addressesDefault": {
+    "$oid": "6129c7a4d692980021c7c5d8"
+  },
+  "financeSalutation": "1",
+  "companyName": "1",
+  "companyRegNo": "2",
+  "companyContactNo": "3",
+  "companyFax": "4",
+  "companyNatureOfBusiness": "5",
+  "currency": "us"
+}]

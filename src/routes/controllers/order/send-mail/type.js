@@ -1,0 +1,5 @@
+export default {
+  INVOICE: 'ORDER_INVOICE',
+  RECEIPT: 'ORDER_RECEIPT',
+  SLIP: 'ORDER_SLIP',
+};

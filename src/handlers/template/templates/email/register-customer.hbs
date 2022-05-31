@@ -1,0 +1,211 @@
+<html>
+
+<head>
+  <style>
+    table td {
+      border-bottom: 1px solid #ececed;
+      text-align: left;
+      padding: 10px 6px;
+      font-size: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <h4>REGISTER CUSTOMER: approval - {{data.firstName}} {{data.lastName}} </h4>
+  <br />
+  <br />
+  <table class="forms" style="border-collapse: collapse;border-bottom: 0;width: 100%; border: 1px solid #ececed;"
+    width="100%" cellspacing="0" cellpadding="0">
+    <thead>
+      <tr style="background: #ececed;">
+        <th>Field Name</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>id</td>
+        <td>{{data._id}}</td>
+      </tr>
+
+      <tr>
+        <td>user</td>
+        <td>{{data.user}}</td>
+      </tr>
+
+      <tr>
+        <td>salutation</td>
+        <td>{{data.salutation}}</td>
+      </tr>
+
+      <tr>
+        <td>firstName</td>
+        <td>{{data.firstName}}</td>
+      </tr>
+
+      <tr>
+        <td>lastName</td>
+        <td>{{data.lastName}}</td>
+      </tr>
+
+      <tr>
+        <td>phone</td>
+        <td>{{data.phone}}</td>
+      </tr>
+
+      <tr>
+        <td>email</td>
+        <td>{{data.email}}</td>
+      </tr>
+
+      <tr>
+        <td>internalNote</td>
+        <td>{{data.internalNote}}</td>
+      </tr>
+
+      <tr>
+        <td>promotionCoupon</td>
+        <td>{{data.promotionCoupon}}</td>
+      </tr>
+
+      <tr>
+        <td>personalEmail</td>
+        <td>{{data.personalEmail}}</td>
+      </tr>
+
+      <tr>
+        <td>contactNo</td>
+        <td>{{data.contactNo}}</td>
+      </tr>
+
+      <tr>
+        <td>designation</td>
+        <td>{{data.designation}}</td>
+      </tr>
+
+      <tr>
+        <td>remark</td>
+        <td>{{data.remark}}</td>
+      </tr>
+
+      <tr>
+        <td>companyNatureOfBusiness</td>
+        <td>{{data.companyNatureOfBusiness}}</td>
+      </tr>
+
+      <tr>
+        <td>companyFax</td>
+        <td>{{data.companyFax}}</td>
+      </tr>
+
+      <tr>
+        <td>companyContactNo</td>
+        <td>{{data.companyContactNo}}</td>
+      </tr>
+
+      <tr>
+        <td>companyRegNo</td>
+        <td>{{data.companyRegNo}}</td>
+      </tr>
+
+      <tr>
+        <td>companyName</td>
+        <td>{{data.companyName}}</td>
+      </tr>
+
+      <tr>
+        <td>orderHistory</td>
+        <td>{{data.orderHistory}}</td>
+      </tr>
+
+      <tr>
+        <td>financeEmail</td>
+        <td>{{data.financeEmail}}</td>
+      </tr>
+
+      <tr>
+        <td>financeContactNo</td>
+        <td>{{data.financeContactNo}}</td>
+      </tr>
+
+      <tr>
+        <td>addressBlockNo</td>
+        <td>{{data.addressBlockNo}}</td>
+      </tr>
+
+      <tr>
+        <td>addressStresstName</td>
+        <td>{{data.addressStresstName}}</td>
+      </tr>
+
+      <tr>
+        <td>addressFloor</td>
+        <td>{{data.addressFloor}}</td>
+      </tr>
+
+      <tr>
+        <td>addressUnitNo</td>
+        <td>{{data.addressUnitNo}}</td>
+      </tr>
+
+      <tr>
+        <td>addressBuildingName</td>
+        <td>{{data.addressBuildingName}}</td>
+      </tr>
+
+      <tr>
+        <td>addressPostCode</td>
+        <td>{{data.addressPostCode}}</td>
+      </tr>
+
+      <tr>
+        <td>addressCity</td>
+        <td>{{data.addressCity}}</td>
+      </tr>
+
+      <tr>
+        <td>addressState</td>
+        <td>{{data.addressState}}</td>
+      </tr>
+
+      <tr>
+        <td>addressCountry</td>
+        <td>{{data.addressCountry}}</td>
+      </tr>
+
+      <tr>
+        <td>financeSalutation</td>
+        <td>{{data.financeSalutation}}</td>
+      </tr>
+
+      <tr>
+        <td>financeFirstName</td>
+        <td>{{data.financeFirstName}}</td>
+      </tr>
+
+      <tr>
+        <td>financeLastName</td>
+        <td>{{data.financeLastName}}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+  <hr style="margin: 20px;">
+  <div style="width: 100%;text-align: center; margin: 0px auto;">
+    <a 
+      href="{{fontendLink}}"
+      style="padding: 10px;border: 1px;background-color: green;color: white;font-style: inherit;margin-right: 20px;"
+    >
+      Approve Page
+    </a>
+    {{!-- <a href="{{approveLink}}"
+      style="padding: 10px;border: 1px;background-color: green;color: white;font-style: inherit;margin-right: 20px;">Approve</a>
+    |
+    <a href="{{rejectLink}}" style="margin-left: 20px;background-color: red;color: white;padding: 10px;">Rejected</a> --}}
+  </div>
+</body>
+
+</html>

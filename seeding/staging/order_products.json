@@ -1,0 +1,649 @@
+[{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723002"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723001"
+  },
+  "quantity": "20",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "1800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:27.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723004"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723001"
+  },
+  "quantity": "50",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "6800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:29.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723001"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723001"
+  },
+  "quantity": "10",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.108Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:26.108Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723003"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723001"
+  },
+  "quantity": "30",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "2800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:28.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:28.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723006"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723002"
+  },
+  "quantity": "70",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "6800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:31.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:31.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723007"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723002"
+  },
+  "quantity": "80",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "7800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:32.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:32.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723005"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723001"
+  },
+  "quantity": "60",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "5800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:30.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723009"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723002"
+  },
+  "quantity": "100",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "9800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:34.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:34.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723008"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723002"
+  },
+  "quantity": "90",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "8800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:33.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:33.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723011"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723003"
+  },
+  "quantity": "120",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "11800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:36.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:36.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723010"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723002"
+  },
+  "quantity": "110",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "10800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:35.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:35.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723012"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723003"
+  },
+  "quantity": "130",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "12800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:37.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:37.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723013"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723003"
+  },
+  "quantity": "140",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "13800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:38.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:38.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723015"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723003"
+  },
+  "quantity": "160",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "15800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:40.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:40.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "1321afc66d44e1ceb3723014"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723003"
+  },
+  "quantity": "150",
+  "total": "100",
+  "price": "200",
+  "membershipDiscount": "14800",
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:39.109Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:39.109Z"
+  }
+},{
+  "_id": {
+    "$oid": "60f925b6f1607f002192f1b5"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723001"
+  },
+  "quantity": 20,
+  "price": 200,
+  "total": 20000,
+  "subTotal": 4000,
+  "membershipDiscount": 16000,
+  "createdAt": {
+    "$date": "2021-07-22T08:00:54.209Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T08:00:54.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "60f925b6f1607f002192f1b6"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723002"
+  },
+  "quantity": 1,
+  "price": 880,
+  "total": 1100,
+  "subTotal": 880,
+  "membershipDiscount": 220,
+  "createdAt": {
+    "$date": "2021-07-22T08:00:54.209Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T08:00:54.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "60f925b6f1607f002192f1b7"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723003"
+  },
+  "quantity": 1,
+  "price": 960,
+  "total": 1200,
+  "subTotal": 960,
+  "membershipDiscount": 240,
+  "createdAt": {
+    "$date": "2021-07-22T08:00:54.209Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T08:00:54.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "60f925b6f1607f002192f1b8"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723004"
+  },
+  "quantity": 1,
+  "price": 1040,
+  "total": 1300,
+  "subTotal": 1040,
+  "membershipDiscount": 260,
+  "createdAt": {
+    "$date": "2021-07-22T08:00:54.210Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T08:00:54.210Z"
+  }
+},{
+  "_id": {
+    "$oid": "60f925b6f1607f002192f1b9"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723008"
+  },
+  "quantity": 1,
+  "price": 1360,
+  "total": 1700,
+  "subTotal": 1360,
+  "membershipDiscount": 340,
+  "createdAt": {
+    "$date": "2021-07-22T08:00:54.210Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T08:00:54.210Z"
+  }
+},{
+  "_id": {
+    "$oid": "60f925b6f1607f002192f1ba"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723009"
+  },
+  "quantity": 1,
+  "price": 1440,
+  "total": 1800,
+  "subTotal": 1440,
+  "membershipDiscount": 360,
+  "createdAt": {
+    "$date": "2021-07-22T08:00:54.211Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T08:00:54.211Z"
+  }
+},{
+  "_id": {
+    "$oid": "60f925b6f1607f002192f1bb"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723010"
+  },
+  "quantity": 1,
+  "price": 1520,
+  "total": 1900,
+  "subTotal": 1520,
+  "membershipDiscount": 380,
+  "createdAt": {
+    "$date": "2021-07-22T08:00:54.212Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T08:00:54.212Z"
+  }
+},{
+  "_id": {
+    "$oid": "60f9384af1607f002192f1c5"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723010"
+  },
+  "quantity": 109,
+  "price": 1520,
+  "total": 207100,
+  "subTotal": 165680,
+  "membershipDiscount": 41420,
+  "createdAt": {
+    "$date": "2021-07-22T09:20:10.221Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T09:20:10.221Z"
+  }
+},{
+  "_id": {
+    "$oid": "60f945e6f1607f002192f1c7"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723011"
+  },
+  "quantity": 5,
+  "price": 4000,
+  "total": 25000,
+  "subTotal": 20000,
+  "membershipDiscount": 5000,
+  "createdAt": {
+    "$date": "2021-07-22T10:18:14.616Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T10:18:14.616Z"
+  }
+},{
+  "_id": {
+    "$oid": "60fbd1b7f1607f002192f1dc"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723011"
+  },
+  "quantity": 120,
+  "price": 38.114,
+  "total": 4814.4,
+  "subTotal": 4573.68,
+  "membershipDiscount": 240.72,
+  "createdAt": {
+    "$date": "2021-07-24T08:39:19.953Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-24T08:39:19.953Z"
+  }
+},{
+  "_id": {
+    "$oid": "60fbd1b7f1607f002192f1dd"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723010"
+  },
+  "quantity": 2,
+  "price": 1805,
+  "total": 3800,
+  "subTotal": 3610,
+  "membershipDiscount": 190,
+  "createdAt": {
+    "$date": "2021-07-24T08:39:19.954Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-24T08:39:19.954Z"
+  }
+},{
+  "_id": {
+    "$oid": "610113cc6133d70020b8a49a"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723011"
+  },
+  "quantity": 1,
+  "price": 34.102,
+  "total": 40.12,
+  "subTotal": 34.102,
+  "membershipDiscount": 6.018,
+  "createdAt": {
+    "$date": "2021-07-28T08:22:36.042Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T08:22:36.042Z"
+  }
+},{
+  "_id": {
+    "$oid": "6102302a6133d70020b8a4aa"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723011"
+  },
+  "quantity": 4,
+  "price": 32.096,
+  "total": 160.48,
+  "subTotal": 128.384,
+  "membershipDiscount": 32.096,
+  "createdAt": {
+    "$date": "2021-07-29T04:35:54.047Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-29T04:35:54.047Z"
+  }
+},{
+  "_id": {
+    "$oid": "61036a0d1df5340020d31c54"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723011"
+  },
+  "quantity": 10,
+  "price": 32.096,
+  "total": 401.2,
+  "subTotal": 320.96,
+  "membershipDiscount": 80.24,
+  "createdAt": {
+    "$date": "2021-07-30T02:55:09.931Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:55:09.931Z"
+  }
+},{
+  "_id": {
+    "$oid": "61036a0d1df5340020d31c55"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723006"
+  },
+  "quantity": 100,
+  "price": 1200,
+  "total": 150000,
+  "subTotal": 120000,
+  "membershipDiscount": 30000,
+  "createdAt": {
+    "$date": "2021-07-30T02:55:09.932Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:55:09.932Z"
+  }
+},{
+  "_id": {
+    "$oid": "61036a0d1df5340020d31c56"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723005"
+  },
+  "quantity": 15,
+  "price": 1120,
+  "total": 21000,
+  "subTotal": 16800,
+  "membershipDiscount": 4200,
+  "createdAt": {
+    "$date": "2021-07-30T02:55:09.932Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T02:55:09.932Z"
+  }
+},{
+  "_id": {
+    "$oid": "6103c6c51df5340020d31c5a"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723011"
+  },
+  "quantity": 60,
+  "price": 32.096,
+  "total": 2407.2,
+  "subTotal": 1925.76,
+  "membershipDiscount": 481.44,
+  "createdAt": {
+    "$date": "2021-07-30T09:30:45.618Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-30T09:30:45.618Z"
+  }
+},{
+  "_id": {
+    "$oid": "6129d216d692980021c7c5da"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723011"
+  },
+  "quantity": 2,
+  "price": 32.096,
+  "total": 80.24,
+  "subTotal": 64.192,
+  "membershipDiscount": 16.048,
+  "createdAt": {
+    "$date": "2021-08-28T06:05:10.877Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T06:05:10.877Z"
+  }
+},{
+  "_id": {
+    "$oid": "6129d216d692980021c7c5db"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723010"
+  },
+  "quantity": 2,
+  "price": 1520,
+  "total": 3800,
+  "subTotal": 3040,
+  "membershipDiscount": 760,
+  "createdAt": {
+    "$date": "2021-08-28T06:05:10.878Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T06:05:10.878Z"
+  }
+},{
+  "_id": {
+    "$oid": "6129d253d692980021c7c5de"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723009"
+  },
+  "quantity": 1,
+  "price": 1440,
+  "total": 1800,
+  "subTotal": 1440,
+  "membershipDiscount": 360,
+  "createdAt": {
+    "$date": "2021-08-28T06:06:11.014Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T06:06:11.014Z"
+  }
+},{
+  "_id": {
+    "$oid": "6129d330d692980021c7c5e1"
+  },
+  "product": {
+    "$oid": "1111afc66d44e1ceb3723011"
+  },
+  "quantity": 47,
+  "price": 32.096,
+  "total": 1885.64,
+  "subTotal": 1508.512,
+  "membershipDiscount": 377.128,
+  "createdAt": {
+    "$date": "2021-08-28T06:09:52.329Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-28T06:09:52.329Z"
+  }
+}]

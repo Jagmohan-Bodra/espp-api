@@ -1,0 +1,313 @@
+[{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3720001"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "status": "PENDING",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720015"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.161Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:26.161Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3720002"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "status": "PENDING",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720016"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27.161Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:27.161Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3720003"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "status": "PENDING",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720017"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:28.161Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:28.161Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3720004"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "status": "PENDING",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720018"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.161Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:29.161Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3720005"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "status": "PENDING",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720019"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30.161Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:30.161Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3720006"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "status": "PENDING",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720020"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:31.161Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:31.161Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3720009"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "status": "PENDING",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720023"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:34.161Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:34.161Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3720008"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "status": "PENDING",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720022"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:33.161Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:33.161Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3720007"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "status": "PENDING",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720021"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:32.161Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:32.161Z"
+  }
+},{
+  "_id": {
+    "$oid": "5143afc66d44e1ceb3720010"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "status": "PENDING",
+  "customer": {
+    "$oid": "1143afc66d44e1ceb3720024"
+  },
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:35.161Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-28T02:52:35.161Z"
+  }
+},{
+  "_id": {
+    "$oid": "60f95428f1607f002192f1cc"
+  },
+  "status": "PENDING",
+  "customer": {
+    "$oid": "60f95428f1607f002192f1cb"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "form": {
+    "password": "12345678"
+  },
+  "createdAt": {
+    "$date": "2021-07-22T11:19:04.693Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T11:19:04.693Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f9a1a7f1607f002192f1cf"
+  },
+  "status": "PENDING",
+  "customer": {
+    "$oid": "60f9a1a7f1607f002192f1ce"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "form": {
+    "password": "12345678"
+  },
+  "createdAt": {
+    "$date": "2021-07-22T16:49:43.467Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T16:49:43.467Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f9aa14f1607f002192f1d2"
+  },
+  "status": "PENDING",
+  "customer": {
+    "$oid": "60f9aa14f1607f002192f1d1"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "form": {
+    "password": "11111111"
+  },
+  "createdAt": {
+    "$date": "2021-07-22T17:25:40.929Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T17:25:40.929Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f9adc3f1607f002192f1d5"
+  },
+  "status": "PENDING",
+  "customer": {
+    "$oid": "60f9adc3f1607f002192f1d4"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "form": {
+    "password": "123456781"
+  },
+  "createdAt": {
+    "$date": "2021-07-22T17:41:23.398Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-22T17:41:23.399Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60fbd32cf1607f002192f1e1"
+  },
+  "status": "PENDING",
+  "customer": {
+    "$oid": "60fbd32cf1607f002192f1e0"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "form": {
+    "password": "12345678"
+  },
+  "createdAt": {
+    "$date": "2021-07-24T08:45:32.314Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-24T08:45:32.314Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610108fd6133d70020b8a48f"
+  },
+  "status": "REJECTED",
+  "customer": {
+    "$oid": "610108fd6133d70020b8a48e"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "form": {
+    "password": "12345678"
+  },
+  "createdAt": {
+    "$date": "2021-07-28T07:36:29.465Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T07:37:15.516Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61010d126133d70020b8a492"
+  },
+  "status": "APPROVED",
+  "customer": {
+    "$oid": "61010d126133d70020b8a491"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "form": {
+    "password": "12345678"
+  },
+  "createdAt": {
+    "$date": "2021-07-28T07:53:54.242Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-28T07:59:22.812Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "610228af6133d70020b8a4a5"
+  },
+  "status": "APPROVED",
+  "customer": {
+    "$oid": "610228af6133d70020b8a4a4"
+  },
+  "type": "REGISTER_CUSTOMER",
+  "form": {
+    "password": "12345678"
+  },
+  "createdAt": {
+    "$date": "2021-07-29T04:03:59.037Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-29T04:04:55.166Z"
+  },
+  "__v": 0
+}]

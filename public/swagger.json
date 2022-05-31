@@ -1,0 +1,5266 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "api",
+    "version": "1.0.0",
+    "title": "BINYAN Project - APIs document",
+    "contact": {
+      "email": "tuan@ideabox.com.au"
+    }
+  },
+  "host": "espp.staging.wiooh.com:3001",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/v1/enquiries": {
+      "get": {
+        "tags": [
+          "Enquiry"
+        ],
+        "summary": "Enquiry",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Enquiry"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Enquiry"
+        ],
+        "summary": "Create a enquiry",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customer": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "createdAt": {
+                  "type": "string"
+                },
+                "updatedAt": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/enquiries/{enquiryId}": {
+      "get": {
+        "tags": [
+          "Enquiry"
+        ],
+        "summary": "Get an existing enquiry",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "enquiryId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/Enquiry"
+            }
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Enquiry"
+        ],
+        "summary": "Update an existing enquiry",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "enquiryId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customer": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "createdAt": {
+                  "type": "string"
+                },
+                "updatedAt": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Enquiry"
+        ],
+        "summary": "Delete a enquiry",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "enquiryId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/orders": {
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "summary": "Order",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Order"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "summary": "Create a order",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customer": {
+                  "type": "string"
+                },
+                "orderProduct": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "product": {
+                        "type": "string"
+                      },
+                      "quantity": {
+                        "type": "string"
+                      },
+                      "price": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "address": {
+                  "type": "string"
+                },
+                "postCode": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "contactNo": {
+                  "type": "string"
+                },
+                "totalWeight": {
+                  "type": "string"
+                },
+                "discountCode": {
+                  "type": "string"
+                },
+                "discountValue": {
+                  "type": "string"
+                },
+                "discountName": {
+                  "type": "string"
+                },
+                "tax": {
+                  "type": "string"
+                },
+                "shippingFee": {
+                  "type": "string"
+                },
+                "handlingFee": {
+                  "type": "string"
+                },
+                "subTotal": {
+                  "type": "string"
+                },
+                "membershipDiscount": {
+                  "type": "string"
+                },
+                "payable": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/orders/{orderId}": {
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "summary": "Get an existing order",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/Order"
+            }
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Order"
+        ],
+        "summary": "Update an existing order",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customer": {
+                  "type": "string"
+                },
+                "orderProduct": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "product": {
+                        "type": "string"
+                      },
+                      "quantity": {
+                        "type": "string"
+                      },
+                      "price": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "address": {
+                  "type": "string"
+                },
+                "postCode": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "contactNo": {
+                  "type": "string"
+                },
+                "totalWeight": {
+                  "type": "string"
+                },
+                "discountCode": {
+                  "type": "string"
+                },
+                "discountValue": {
+                  "type": "string"
+                },
+                "discountName": {
+                  "type": "string"
+                },
+                "tax": {
+                  "type": "string"
+                },
+                "shippingFee": {
+                  "type": "string"
+                },
+                "handlingFee": {
+                  "type": "string"
+                },
+                "subTotal": {
+                  "type": "string"
+                },
+                "membershipDiscount": {
+                  "type": "string"
+                },
+                "payable": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Order"
+        ],
+        "summary": "Delete a order",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/products": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Product",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Product"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Create a product",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "sku": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "string"
+                },
+                "typeAndMaterial": {
+                  "type": "string"
+                },
+                "uom": {
+                  "type": "string"
+                },
+                "itemPackingSize": {
+                  "type": "string"
+                },
+                "quantityPerCtn": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "taxApply": {
+                  "type": "boolean"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "categories": {
+                  "type": "string"
+                },
+                "brand": {
+                  "type": "string"
+                },
+                "colors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "price": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Price"
+                  }
+                },
+                "seo": {
+                  "type": "object",
+                  "properties": {
+                    "browserTilte": {
+                      "type": "string"
+                    },
+                    "metaKeyword": {
+                      "type": "string"
+                    },
+                    "metaDescription": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "content": {
+                  "type": "string"
+                },
+                "published": {
+                  "type": "boolean"
+                },
+                "style": {
+                  "$ref": "#/definitions/CmsStyle"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/products/{productId}": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get an existing productId",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Update an existing product",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "sku": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "string"
+                },
+                "typeAndMaterial": {
+                  "type": "string"
+                },
+                "uom": {
+                  "type": "string"
+                },
+                "itemPackingSize": {
+                  "type": "string"
+                },
+                "quantityPerCtn": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "taxApply": {
+                  "type": "boolean"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "categories": {
+                  "type": "string"
+                },
+                "brand": {
+                  "type": "string"
+                },
+                "colors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "price": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Price"
+                  }
+                },
+                "seo": {
+                  "type": "object",
+                  "properties": {
+                    "browserTilte": {
+                      "type": "string"
+                    },
+                    "metaKeyword": {
+                      "type": "string"
+                    },
+                    "metaDescription": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "content": {
+                  "type": "string"
+                },
+                "published": {
+                  "type": "boolean"
+                },
+                "style": {
+                  "$ref": "#/definitions/CmsStyle"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Delete a product",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/product-categories": {
+      "get": {
+        "tags": [
+          "Product Category"
+        ],
+        "summary": "Brand",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/ProductCategory"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Product Category"
+        ],
+        "summary": "Create a product category",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductCategory"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/product-categories/{productCategoryId}": {
+      "get": {
+        "tags": [
+          "Product Category"
+        ],
+        "summary": "Get an existing ban",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productCategoryId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/ProductCategory"
+            }
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Product Category"
+        ],
+        "summary": "Update an existing Product Category",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productCategoryId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductCategory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Product Category"
+        ],
+        "summary": "Delete a product category",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productCategoryId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/brands": {
+      "get": {
+        "tags": [
+          "Brand"
+        ],
+        "summary": "Brand",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Brand"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Brand"
+        ],
+        "summary": "Create a brand",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Brand"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/brands/{brandId}": {
+      "get": {
+        "tags": [
+          "Brand"
+        ],
+        "summary": "Get an existing ban",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "brandId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/Brand"
+            }
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Brand"
+        ],
+        "summary": "Update an existing Brand",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "brandId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Brand"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Brand"
+        ],
+        "summary": "Delete a brand",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "brandId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/colors": {
+      "get": {
+        "tags": [
+          "Color"
+        ],
+        "summary": "Color",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Color"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Color"
+        ],
+        "summary": "Create a color",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Color"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/colors/{colorId}": {
+      "get": {
+        "tags": [
+          "Color"
+        ],
+        "summary": "Get an existing color",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "colorId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/Color"
+            }
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Color"
+        ],
+        "summary": "Update an existing color",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "colorId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Color"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Color"
+        ],
+        "summary": "Delete a color",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "colorId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/tags": {
+      "get": {
+        "tags": [
+          "Tag"
+        ],
+        "summary": "Tag",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Tag"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Tag"
+        ],
+        "summary": "Create a tag",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Tag"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/tags/{tagId}": {
+      "get": {
+        "tags": [
+          "Tag"
+        ],
+        "summary": "Get an existing tag",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "tagId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/Tag"
+            }
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Tag"
+        ],
+        "summary": "Update an existing tag",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "tagId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Tag"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid Id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Tag"
+        ],
+        "summary": "Delete a tag",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "tagId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/customers": {
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "summary": "Customer",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Customer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Customer"
+        ],
+        "summary": "Create a customer",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "membership": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "addressBlockNo": {
+                  "type": "string"
+                },
+                "addressStresstName": {
+                  "type": "string"
+                },
+                "addressFloor": {
+                  "type": "string"
+                },
+                "addressUnitNo": {
+                  "type": "string"
+                },
+                "addressBuildingName": {
+                  "type": "string"
+                },
+                "addressPostCode": {
+                  "type": "string"
+                },
+                "addressCity": {
+                  "type": "string"
+                },
+                "addressState": {
+                  "type": "string"
+                },
+                "addressCountry": {
+                  "type": "string"
+                },
+                "financeSalutation": {
+                  "type": "string"
+                },
+                "financeFirstName": {
+                  "type": "string"
+                },
+                "financeLastName": {
+                  "type": "string"
+                },
+                "financeContactNo": {
+                  "type": "string"
+                },
+                "financeEmail": {
+                  "type": "string"
+                },
+                "companyName": {
+                  "type": "string"
+                },
+                "companyRegNo": {
+                  "type": "string"
+                },
+                "companyContactNo": {
+                  "type": "string"
+                },
+                "companyFax": {
+                  "type": "string"
+                },
+                "companyNatureOfBusiness": {
+                  "type": "string"
+                },
+                "remark": {
+                  "type": "string"
+                },
+                "designation": {
+                  "type": "string"
+                },
+                "contactNo": {
+                  "type": "string"
+                },
+                "personalEmail": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/customers/{customerId}": {
+      "get": {
+        "tags": [
+          "Customer"
+        ],
+        "summary": "Get an existing customer",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "customerId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/Customer"
+            }
+          },
+          "400": {
+            "description": "Invalid customerId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Customer"
+        ],
+        "summary": "Update an existing customer",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "customerId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "membership": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "addressBlockNo": {
+                  "type": "string"
+                },
+                "addressStresstName": {
+                  "type": "string"
+                },
+                "addressFloor": {
+                  "type": "string"
+                },
+                "addressUnitNo": {
+                  "type": "string"
+                },
+                "addressBuildingName": {
+                  "type": "string"
+                },
+                "addressPostCode": {
+                  "type": "string"
+                },
+                "addressCity": {
+                  "type": "string"
+                },
+                "addressState": {
+                  "type": "string"
+                },
+                "addressCountry": {
+                  "type": "string"
+                },
+                "financeSalutation": {
+                  "type": "string"
+                },
+                "financeFirstName": {
+                  "type": "string"
+                },
+                "financeLastName": {
+                  "type": "string"
+                },
+                "financeContactNo": {
+                  "type": "string"
+                },
+                "financeEmail": {
+                  "type": "string"
+                },
+                "companyName": {
+                  "type": "string"
+                },
+                "companyRegNo": {
+                  "type": "string"
+                },
+                "companyContactNo": {
+                  "type": "string"
+                },
+                "companyFax": {
+                  "type": "string"
+                },
+                "companyNatureOfBusiness": {
+                  "type": "string"
+                },
+                "remark": {
+                  "type": "string"
+                },
+                "designation": {
+                  "type": "string"
+                },
+                "contactNo": {
+                  "type": "string"
+                },
+                "personalEmail": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid customerId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Customer"
+        ],
+        "summary": "Delete a customer",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "customerId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/memberships": {
+      "get": {
+        "tags": [
+          "Membership"
+        ],
+        "summary": "Membership",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Membership"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Membership"
+        ],
+        "summary": "create a membership",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Membership"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/memberships/{membershipId}": {
+      "get": {
+        "tags": [
+          "Membership"
+        ],
+        "summary": "Get an existing membership",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "membershipId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/Membership"
+            }
+          },
+          "400": {
+            "description": "Invalid id supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Membership"
+        ],
+        "summary": "Update an existing bembership",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "membershipId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Membership"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid blockId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Membership"
+        ],
+        "summary": "Delete a block",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "membershipId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/blocks": {
+      "get": {
+        "tags": [
+          "Block"
+        ],
+        "summary": "block",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Block"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Block"
+        ],
+        "summary": "create a block",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Block"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/blocks/{blockId}": {
+      "get": {
+        "tags": [
+          "Block"
+        ],
+        "summary": "Get an existing block",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "blockId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/Block"
+            }
+          },
+          "400": {
+            "description": "Invalid blockId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Block"
+        ],
+        "summary": "Update an existing block",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "blockId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Block"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid blockId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Block"
+        ],
+        "summary": "Delete a block",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "blockId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/post-categories": {
+      "get": {
+        "tags": [
+          "Post Category"
+        ],
+        "summary": "post",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/PostCategory"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Post Category"
+        ],
+        "summary": "create a post Category",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PostCategory"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/post-categories/{postCategoryId}": {
+      "get": {
+        "tags": [
+          "Post Category"
+        ],
+        "summary": "Get an existing post category",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "postCategoryId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/PostCategory"
+            }
+          },
+          "400": {
+            "description": "Invalid postCategoryId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Post Category"
+        ],
+        "summary": "Update an existing post category",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "postCategoryId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PostCategory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid postCategoryId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Post Category"
+        ],
+        "summary": "Delete a post category",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "postCategoryId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/posts": {
+      "get": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "post",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Post"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "create a post",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Post"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/posts/{postId}": {
+      "get": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "Get an existing post",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/Post"
+            }
+          },
+          "400": {
+            "description": "Invalid postId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "Update an existing post",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Post"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid postId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Post"
+        ],
+        "summary": "Delete a post",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "postId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/pages": {
+      "get": {
+        "tags": [
+          "Page"
+        ],
+        "summary": "Page",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Page"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Page"
+        ],
+        "summary": "create a page",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Page"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/pages/{pageId}": {
+      "get": {
+        "tags": [
+          "Page"
+        ],
+        "summary": "Get an existing page",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "pageId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/Page"
+            }
+          },
+          "400": {
+            "description": "Invalid pageId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Page"
+        ],
+        "summary": "Update an existing page",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "pageId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Page"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid pageId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Page"
+        ],
+        "summary": "Delete a page",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "pageId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/sites": {
+      "get": {
+        "tags": [
+          "Site"
+        ],
+        "summary": "Site",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/Site"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "Site"
+        ],
+        "summary": "create a site",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Site"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/sites/{siteId}": {
+      "get": {
+        "tags": [
+          "Site"
+        ],
+        "summary": "Get an existing site",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "siteId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/Site"
+            }
+          },
+          "400": {
+            "description": "Invalid siteId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Site"
+        ],
+        "summary": "Update an existing site",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "siteId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Site"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid siteId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "Site"
+        ],
+        "summary": "Delete a site",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "siteId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/settings": {
+      "get": {
+        "tags": [
+          "Setting"
+        ],
+        "summary": "Setting systems",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "key",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "$ref": "#/definitions/Setting"
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "Setting"
+        ],
+        "summary": "Update an existing Setting",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/UserGroup"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/user-groups": {
+      "get": {
+        "tags": [
+          "User Group"
+        ],
+        "summary": "User group permission",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "action",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successfull",
+            "schema": {
+              "$ref": "#/definitions/ApiResponseUserGroup"
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "User Group"
+        ],
+        "summary": "create a user group",
+        "description": "",
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UserGroup"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/user-groups/{userGroupId}": {
+      "get": {
+        "tags": [
+          "User Group"
+        ],
+        "summary": "Get an existing user group",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "userGroupId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "$ref": "#/definitions/UserGroup"
+            }
+          },
+          "400": {
+            "description": "Invalid userGroupId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "User Group"
+        ],
+        "summary": "Update an existing user group",
+        "description": "",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "userGroupId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UserGroup"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid userGroupId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "User Group"
+        ],
+        "summary": "Delete user group",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "userGroupId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/users": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Find User",
+        "description": "",
+        "operationId": "find_user",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/User"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Add a new User",
+        "description": "",
+        "operationId": "addUser",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "User object that needs to be added to the database",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "422": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/users/{userId}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Update an existing user",
+        "description": "",
+        "operationId": "get_user",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "userId of project to return",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "object",
+                  "$ref": "#/definitions/User"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid userId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Update an existing user",
+        "description": "",
+        "operationId": "update_user",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "400": {
+            "description": "Invalid userId supplied"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "422": {
+            "description": "Validation exception"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Delete user",
+        "description": "",
+        "operationId": "delete_user",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          },
+          "401": {
+            "description": "UNAUTHORIZED"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/auth/sign-in": {
+      "post": {
+        "tags": [
+          "Authorization"
+        ],
+        "summary": "Sign in",
+        "description": "",
+        "operationId": "sign_in",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "description": "email",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "description": "password",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": {
+                  "type": "boolean"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "device_token": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/me": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Get me",
+        "description": "",
+        "operationId": "get_me",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "success": {
+                  "type": "boolean"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "phone": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "avatar": {
+                      "type": "string"
+                    },
+                    "account_type": {
+                      "type": "string"
+                    },
+                    "active": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/change-password": {
+      "post": {
+        "tags": [
+          "Authorization"
+        ],
+        "summary": "change password in user",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "oldPassword": {
+                  "type": "string"
+                },
+                "newPassword": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/auth/sign-out": {
+      "post": {
+        "tags": [
+          "Authorization"
+        ],
+        "summary": "Logs out current logged in user session",
+        "description": "",
+        "operationId": "logoutUser",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/v1/reset-password": {
+      "post": {
+        "tags": [
+          "Authorization"
+        ],
+        "summary": "reset password",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "email": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        },
+        "security": [
+          {
+            "Bearer": []
+          }
+        ]
+      }
+    },
+    "/v1/get-image/{imageName}": {
+      "get": {
+        "tags": [
+          "Upload"
+        ],
+        "summary": "Get image",
+        "description": "",
+        "produces": [
+          "image/png",
+          "image/gif",
+          "image/jpeg"
+        ],
+        "parameters": [
+          {
+            "name": "imageName",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/v1/upload-image": {
+      "post": {
+        "tags": [
+          "Upload"
+        ],
+        "summary": "Upload a File",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "upfile",
+            "type": "file",
+            "description": "The file to upload."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/get-file/{fileName}": {
+      "get": {
+        "tags": [
+          "Upload"
+        ],
+        "summary": "Get file",
+        "description": "",
+        "produces": [
+          "any-file"
+        ],
+        "parameters": [
+          {
+            "name": "fileName",
+            "in": "path",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/v1/upload-file": {
+      "post": {
+        "tags": [
+          "Upload"
+        ],
+        "summary": "Upload a File",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "upfile",
+            "type": "file",
+            "description": "The file to upload."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/import-bulk-product": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Import Bulk Products",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "upfile",
+            "type": "file",
+            "description": "The file to upload."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "definitions": {
+    "Block": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "avatar": {
+          "type": "string"
+        },
+        "groupCode": {
+          "type": "string"
+        },
+        "styles": {
+          "$ref": "#/definitions/CmsStyle"
+        },
+        "content": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        }
+      }
+    },
+    "PostCategory": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "parentId": {
+          "type": "string"
+        },
+        "seoProps": {
+          "$ref": "#/definitions/SeoProp"
+        },
+        "status": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        }
+      }
+    },
+    "CmsStyle": {
+      "type": "object",
+      "properties": {
+        "object": {
+          "type": "string"
+        },
+        "style": {
+          "type": "string"
+        },
+        "styleCustomize": {
+          "type": "string"
+        }
+      }
+    },
+    "SeoProp": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "keywords": {
+          "type": "string"
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Post": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "siteId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "postCategories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "avatar": {
+          "type": "string"
+        },
+        "pushlish": {
+          "type": "boolean"
+        },
+        "styles": {
+          "$ref": "#/definitions/CmsStyle"
+        },
+        "seoProps": {
+          "$ref": "#/definitions/SeoProp"
+        },
+        "contens": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        }
+      }
+    },
+    "Site": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "avatar": {
+          "type": "string"
+        },
+        "seoPropDefault": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        }
+      }
+    },
+    "Page": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "siteId": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "pushlish": {
+          "type": "string"
+        },
+        "seo_props": {
+          "type": "string"
+        },
+        "styles": {
+          "$ref": "#/definitions/CmsStyle"
+        },
+        "seoProps": {
+          "$ref": "#/definitions/SeoProp"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        }
+      }
+    },
+    "Setting": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "inputType": {
+          "type": "string"
+        },
+        "module": {
+          "type": "string"
+        },
+        "group": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "hint": {
+          "type": "string"
+        },
+        "options": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        }
+      }
+    },
+    "User": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "userCode": {
+          "type": "string"
+        },
+        "userGroupId": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "birthday": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "lastLogin": {
+          "type": "string"
+        },
+        "salutation": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "jwt_token": {
+          "type": "string"
+        },
+        "avatar": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "account_type": {
+          "type": "string"
+        },
+        "active": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "UserGroup": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "updatedBy": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "active": {
+          "type": "boolean"
+        }
+      }
+    },
+    "Customer": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "membership": {
+          "$ref": "#/definitions/Membership"
+        },
+        "user": {
+          "$ref": "#/definitions/User"
+        },
+        "addressBlockNo": {
+          "type": "string"
+        },
+        "addressStresstName": {
+          "type": "string"
+        },
+        "addressFloor": {
+          "type": "string"
+        },
+        "addressUnitNo": {
+          "type": "string"
+        },
+        "addressBuildingName": {
+          "type": "string"
+        },
+        "addressPostCode": {
+          "type": "string"
+        },
+        "addressCity": {
+          "type": "string"
+        },
+        "addressState": {
+          "type": "string"
+        },
+        "addressCountry": {
+          "type": "string"
+        },
+        "financeSalutation": {
+          "type": "string"
+        },
+        "financeFirstName": {
+          "type": "string"
+        },
+        "financeLastName": {
+          "type": "string"
+        },
+        "financeContactNo": {
+          "type": "string"
+        },
+        "financeEmail": {
+          "type": "string"
+        },
+        "companyName": {
+          "type": "string"
+        },
+        "companyRegNo": {
+          "type": "string"
+        },
+        "companyContactNo": {
+          "type": "string"
+        },
+        "companyFax": {
+          "type": "string"
+        },
+        "companyNatureOfBusiness": {
+          "type": "string"
+        },
+        "orderHistory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/OrderHistory"
+          }
+        },
+        "internalNote": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/InternalNote"
+          }
+        },
+        "promotionCoupon": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Coupon"
+          }
+        },
+        "remark": {
+          "type": "string"
+        },
+        "designation": {
+          "type": "string"
+        },
+        "contactNo": {
+          "type": "string"
+        },
+        "personalEmail": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "Coupon": {
+      "type": "object",
+      "properties": {
+        "couponId": {
+          "type": "string"
+        },
+        "customer": {
+          "$ref": "#/definitions/Customer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "limit": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "offFor": {
+          "type": "string"
+        },
+        "startDate": {
+          "type": "string"
+        },
+        "endDate": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "InternalNote": {
+      "type": "object",
+      "properties": {
+        "user": {
+          "$ref": "#/definitions/Customer"
+        },
+        "sendDate": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "OrderHistory": {
+      "type": "object",
+      "properties": {
+        "no": {
+          "type": "string"
+        },
+        "orderDateTime": {
+          "type": "string"
+        },
+        "customer": {
+          "$ref": "#/definitions/Customer"
+        },
+        "amount": {
+          "type": "string"
+        },
+        "paymentOption": {
+          "type": "string"
+        },
+        "shippingLocation": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "Membership": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "Brand": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "seo": {
+          "type": "object",
+          "properties": {
+            "browserTitle": {
+              "type": "string"
+            },
+            "metaKeyword": {
+              "type": "string"
+            },
+            "metaDescription": {
+              "type": "string"
+            }
+          }
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      }
+    },
+    "Color": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "seo": {
+          "type": "object",
+          "properties": {
+            "browserTitle": {
+              "type": "string"
+            },
+            "metaKeyword": {
+              "type": "string"
+            },
+            "metaDescription": {
+              "type": "string"
+            }
+          }
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      }
+    },
+    "Tag": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "seo": {
+          "type": "object",
+          "properties": {
+            "browserTitle": {
+              "type": "string"
+            },
+            "metaKeyword": {
+              "type": "string"
+            },
+            "metaDescription": {
+              "type": "string"
+            }
+          }
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      }
+    },
+    "Product": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "sku": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "size": {
+          "type": "string"
+        },
+        "typeAndMaterial": {
+          "type": "string"
+        },
+        "uom": {
+          "type": "string"
+        },
+        "itemPackingSize": {
+          "type": "string"
+        },
+        "quantityPerCtn": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        },
+        "taxApply": {
+          "type": "boolean"
+        },
+        "status": {
+          "type": "string"
+        },
+        "categories": {
+          "$ref": "#/definitions/ProductCategory"
+        },
+        "brand": {
+          "$ref": "#/definitions/Brand"
+        },
+        "colors": {
+          "$ref": "#/definitions/Color"
+        },
+        "tags": {
+          "$ref": "#/definitions/Tag"
+        },
+        "price": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Price"
+          }
+        },
+        "seo": {
+          "type": "object",
+          "properties": {
+            "browserTilte": {
+              "type": "string"
+            },
+            "metaKeyword": {
+              "type": "string"
+            },
+            "metaDescription": {
+              "type": "string"
+            }
+          }
+        },
+        "content": {
+          "type": "string"
+        },
+        "published": {
+          "type": "boolean"
+        },
+        "style": {
+          "$ref": "#/definitions/CmsStyle"
+        }
+      }
+    },
+    "Price": {
+      "type": "object",
+      "properties": {
+        "product": {
+          "type": "string"
+        },
+        "membership": {
+          "type": "string"
+        },
+        "strikePrice": {
+          "type": "string"
+        }
+      }
+    },
+    "ProductCategory": {
+      "type": "object",
+      "properties": {
+        "parent": {
+          "$ref": "#/definitions/ProductCategory"
+        },
+        "name": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "image": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "seo": {
+          "type": "object",
+          "properties": {
+            "browserTilte": {
+              "type": "string"
+            },
+            "metaKeyword": {
+              "type": "string"
+            },
+            "metaDescription": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "Order": {
+      "type": "object",
+      "properties": {
+        "customer": {
+          "$ref": "#/definitions/Customer"
+        },
+        "orderProduct": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/OrderProduct"
+          }
+        },
+        "address": {
+          "type": "string"
+        },
+        "postCode": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "contactNo": {
+          "type": "string"
+        },
+        "totalWeight": {
+          "type": "string"
+        },
+        "discountCode": {
+          "type": "string"
+        },
+        "discountValue": {
+          "type": "string"
+        },
+        "discountName": {
+          "type": "string"
+        },
+        "tax": {
+          "type": "string"
+        },
+        "shippingFee": {
+          "type": "string"
+        },
+        "handlingFee": {
+          "type": "string"
+        },
+        "subTotal": {
+          "type": "string"
+        },
+        "membershipDiscount": {
+          "type": "string"
+        },
+        "payable": {
+          "type": "string"
+        }
+      }
+    },
+    "OrderProduct": {
+      "type": "object",
+      "properties": {
+        "order": {
+          "$ref": "#/definitions/Order"
+        },
+        "product": {
+          "$ref": "#/definitions/Product"
+        },
+        "quantity": {
+          "type": "string"
+        },
+        "price": {
+          "type": "string"
+        }
+      }
+    },
+    "Enquiry": {
+      "type": "object",
+      "properties": {
+        "customer": {
+          "$ref": "#/definitions/Customer"
+        },
+        "product": {
+          "$ref": "#/definitions/Product"
+        },
+        "message": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        }
+      }
+    },
+    "ApiResponseUserGroup": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer"
+        },
+        "message": {
+          "type": "string"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/UserGroup"
+          }
+        }
+      }
+    }
+  }
+}

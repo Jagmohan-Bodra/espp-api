@@ -1,0 +1,1 @@
+npm run serve & npm run consume & npm run socket

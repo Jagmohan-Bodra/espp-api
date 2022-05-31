@@ -1,0 +1,25 @@
+{
+    "plugins": [
+        [
+            "babel-plugin-root-import",
+            {
+                "rootPathSuffix": "./src",
+                "rootPathPrefix": "~/",
+                "functions": [
+                    "jest.mock"
+                ]
+            }
+        ],
+        "@babel/plugin-proposal-class-properties"
+    ],
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ]
+    ]
+}

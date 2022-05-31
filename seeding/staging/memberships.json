@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "1113afc66d44e1ceb3723002"
+  },
+  "name": "School",
+  "description": "membership description",
+  "discountPercent": 15,
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:27.991Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-21T15:01:16.263Z"
+  },
+  "isDefault": false
+},{
+  "_id": {
+    "$oid": "1113afc66d44e1ceb3723003"
+  },
+  "name": "Company",
+  "description": "membership description ",
+  "discountPercent": 5,
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:30.991Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-21T15:00:30.833Z"
+  },
+  "isDefault": false
+},{
+  "_id": {
+    "$oid": "1113afc66d44e1ceb3723004"
+  },
+  "name": "Office",
+  "description": "membership description",
+  "discountPercent": 10,
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:29.991Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-21T15:00:54.825Z"
+  },
+  "isDefault": false
+},{
+  "_id": {
+    "$oid": "1113afc66d44e1ceb3723001"
+  },
+  "name": "Customer Specific",
+  "description": "membership description",
+  "discountPercent": 20,
+  "pushlish": null,
+  "createdAt": {
+    "$date": "2021-06-28T02:52:26.991Z"
+  },
+  "updatedAt": {
+    "$date": "2021-07-21T15:02:01.731Z"
+  },
+  "isDefault": false
+}]
